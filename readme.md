@@ -1,1 +1,1 @@
-Uma comunicaÃ§Ã£o informatizada entre seguradora e segurado.
+Sempre atentos à você!
