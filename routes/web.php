@@ -18,6 +18,7 @@ Route::get  ('Login', 'Requests@Login');
 
 // GeoLocalização
 Route::post ('Geo/update', 'GeoLocation@update');
+Route::get  ('Geo/info', 'GeoLocation@getInfo');
 
 // Administração de usuários
 Route::get  ('Users', 'UsersController@index');
