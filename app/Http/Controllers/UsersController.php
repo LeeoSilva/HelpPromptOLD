@@ -33,7 +33,7 @@ class UsersController extends Controller{
 
         // TODO verificar se os campos já existem no banco de dados.
 
-        $users            = new users;
+		$users            = new users;
         $users->usr_ip    = Request::ip(); // Request especial para pegar o IP do usuário (teste).
         $users->usr_name  = $request->username;
         $users->usr_pass  = md5($request->password);
@@ -140,7 +140,6 @@ class UsersController extends Controller{
 		*/
 	
 		$users = users::find($id);
-
 		$users->usr_ip    = $request->userip;
 		$users->usr_name  = $request->username;
 		$users->usr_pass  = md5($request->userpass);
@@ -152,4 +151,23 @@ class UsersController extends Controller{
 
 		return redirect('Users');
 	}
+
+	/*
+	|---------------
+	| Métodos GET's
+	|---------------
+	| 
+	| Métodos GET para pegar cada valor individual do banco de dados.
+	| [e.g] O método getIP recebe o IP do usuário como parâmetro e 
+	| retorna o IP daquele usuário daquele id em específico.
+	| O método getName recebe o IP e retorna o nome, e assim por diante;
+	*/
+
+	public function getIP($id){    return users::find($id)->usr_ip;    }
+	public function getName($id){  return users::find($id)->usr_name;  }
+	public function getPass($id){  return users::find($id)->usr_pass;  }
+	public function getMail($id){  return users::find($id)->usr_mail;  }
+	public function getCPF($id){   return users::find($id)->usr_cpf;   }
+	public function getBirth($id){ return users::find($id)->usr_birth; }
+	public function getLevel($id){ return users::find($id)->usr_level; }
 }

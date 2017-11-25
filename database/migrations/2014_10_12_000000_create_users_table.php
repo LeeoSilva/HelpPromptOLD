@@ -86,8 +86,9 @@ class CreateUsersTable extends Migration
             | 0 - Nível de permissão máxima (Desenvolvedores);
             | 1 - Nível de permissão de Administradores (SysAdmins);
             | 2 - Nível de permissão de seguradora;
-            | 3 - Nível de permissão de cliente (segurado);
-            | TODO nível Oficina           
+			| 3 - Nível de permissão de cliente (segurado);
+			| 4 - Nível de permissão da oficina.
+            |            
             */
 
 			// TODO Table for

@@ -14,7 +14,9 @@ class GeoLocation extends Controller{
 	// TODO: Pegar informações para formulário de solicitação com SMSGateway
 
 	
-
+	public function getInfo(){
+		//
+	}
 
 
 
