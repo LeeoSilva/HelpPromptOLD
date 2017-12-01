@@ -35,11 +35,11 @@ class UsersController extends Controller{
 
 		$users            = new users;
         $users->usr_ip    = Request::ip(); // Request especial para pegar o IP do usuário (teste).
-        $users->usr_name  = $request->username;
-        $users->usr_pass  = md5($request->password);
-        $users->usr_mail  = $request->usermail;
-        $users->usr_cpf   = $request->usercpf;
-        $users->usr_birth = $request->userbirth;
+        $users->usr_name  = $request->usr_name;
+        $users->usr_pass  = md5($request->usr_pass);
+        $users->usr_mail  = $request->usr_mail;
+        $users->usr_cpf   = $request->usr_cpf;
+        $users->usr_birth = $request->usr_birth;
         $users->usr_level = 0;
         $users->save();
 
@@ -55,6 +55,7 @@ class UsersController extends Controller{
 		| Route para enviar o usuário para a página de registro 
 		|
 		*/
+		
         return view('Formularios.Register');
     }
     
@@ -72,12 +73,9 @@ class UsersController extends Controller{
 		| <Retorno>: Em JSON
 		| 		
 		*/
+
 		$output =  users::find($id);
-
-		if( $output == null ){
-			return "Usuário não existe.";
-		}
-
+		if( $output == null ){ return "Usuário não existe."; }
         return $output;
     }
 
@@ -94,11 +92,7 @@ class UsersController extends Controller{
 		*/
 
 		$destroy = users::find($id);
-
-		if( $destroy == null ){
-			return "Usuário não existe.";
-		}
-
+		if( $destroy == null ){ return "Usuário não existe."; }
 		$destroy->delete();
 		return redirect('Users');
 	}
@@ -117,11 +111,7 @@ class UsersController extends Controller{
 		*/
 
 		$info = users::find($id);
-
-		if( $info == null ){
-			return 'Usuário não existe.';
-		}
-
+		if( $info == null ){ return 'Usuário não existe.'; }
 		return view('Formularios.Edit', compact('info'));
 	}
 
@@ -140,13 +130,15 @@ class UsersController extends Controller{
 		*/
 	
 		$users = users::find($id);
-		$users->usr_ip    = $request->userip;
-		$users->usr_name  = $request->username;
-		$users->usr_pass  = md5($request->userpass);
-		$users->usr_mail  = $request->usermail;
-		$users->usr_cpf   = $request->usercpf;
-		$users->usr_birth = $request->userbirth;
-		$users->usr_level = $request->userlevel;
+
+		if( $users == null ){ return "Usuário não existe"; }
+		$users->usr_ip    = $request->usr_ip;
+		$users->usr_name  = $request->usr_name;
+		$users->usr_pass  = md5($request->usr_pass);
+		$users->usr_mail  = $request->usr_mail;
+		$users->usr_cpf   = $request->usr_cpf;
+		$users->usr_birth = $request->usr_birth;
+		$users->usr_level = $request->usr_level;
 		$users->save();
 
 		return redirect('Users');
@@ -163,11 +155,11 @@ class UsersController extends Controller{
 	| O método getName recebe o IP e retorna o nome, e assim por diante;
 	*/
 
-	public function getIP($id){    return users::find($id)->usr_ip;    }
-	public function getName($id){  return users::find($id)->usr_name;  }
-	public function getPass($id){  return users::find($id)->usr_pass;  }
-	public function getMail($id){  return users::find($id)->usr_mail;  }
-	public function getCPF($id){   return users::find($id)->usr_cpf;   }
+	public function getIP($id)   { return users::find($id)->usr_ip;    }
+	public function getName($id) { return users::find($id)->usr_name;  }
+	public function getPass($id) { return users::find($id)->usr_pass;  }
+	public function getMail($id) { return users::find($id)->usr_mail;  }
+	public function getCPF($id)  { return users::find($id)->usr_cpf;   }
 	public function getBirth($id){ return users::find($id)->usr_birth; }
 	public function getLevel($id){ return users::find($id)->usr_level; }
 }

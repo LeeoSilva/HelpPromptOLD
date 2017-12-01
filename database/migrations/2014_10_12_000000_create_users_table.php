@@ -72,11 +72,11 @@ class CreateUsersTable extends Migration
             |--------
             | Users
             |--------
-            | usr_ip: Endereço Ipv4 do usuário;
-            | usr_name: Nome do usuário;
-            | usr_pass: Senha do usuário (md5 Crypyo);
-            | usr_mail: Email do usuário;
-            | usr_cpf: CPF do usuário;
+            | usr_ip:    Endereço Ipv4 do usuário;
+            | usr_name:  Nome do usuário;
+            | usr_pass:  Senha do usuário (md5 Crypyo);
+            | usr_mail:  Email do usuário;
+            | usr_cpf:   CPF do usuário;
             | usr_level: Nível de permissão do usuário;
             | usr_birth: Data de nascimento do usuário;
             |            
@@ -97,7 +97,7 @@ class CreateUsersTable extends Migration
 				Endereço->Complemento->Número
 				CNPJ
 				CEP
-				EStad
+				Estado
 				Bairro
 				Nome da empresa
 				Telefone
@@ -112,7 +112,7 @@ class CreateUsersTable extends Migration
             $table->integer('usr_level');
             $table->date('usr_birth');
             $table->rememberToken();
-            $table->timestamps();
+			$table->timestamps();
         });
     }
 

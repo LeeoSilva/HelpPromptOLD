@@ -7,11 +7,11 @@
 
 	{!! Form::open(['url' => 'Login', 'method' => 'POST', 'autocomplete' => 'off']); !!}<br>
 	
-	{!! Form::label('usermail', 'Usuário ou Email: '); !!}
-	{!! Form::text('namemail'); !!}<br>
+	{!! Form::label('usr_mail', 'Usuário ou Email: '); !!}
+	{!! Form::text('usr_name'); !!}<br>
 
 	{!! Form::label('pass', 'Senha: '); !!}
-	{!! Form::password('password'); !!}<br>
+	{!! Form::password('usr_pass'); !!}<br>
 	
 	{{--  TODO: Remember Me Token  --}}
 

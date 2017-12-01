@@ -36,31 +36,23 @@ class EditRequest extends FormRequest
         */
 
         return [
-            'username.required'  => 'Campo do usuário não preenchido.',
-            'username.alpha_num' => 'Campo não deve ter characteres especiais',
-            'username.min'       => 'Campo do usuário deve ter no mínimo 6 caractéres.',
-            'username.max'       => 'Campo de usuário muito grande.',
+            'usr_name.alpha_num' => 'Campo não deve ter characteres especiais',
+            'usr_name.min'       => 'Campo do usuário deve ter no mínimo 6 caractéres.',
+			'usr_name.max'       => 'Campo de usuário muito grande.',
 
-            'userpass.required'  => 'Campo da senha não preenchido',
-            'userpass.min'       => 'Campo de senha muito inseguro',           
-            'userpass.max'       => 'Campo de senha muito grande',
+            'usr_pass.min'       => 'Campo de senha muito inseguro',           
+            'usr_pass.max'       => 'Campo de senha muito grande',
             
-            'usermail.required'  => 'Campo de email não preenchido',
-            'usermail.email'     => 'Email não existe',
-            'usermail.max'       => 'Email muito grande',
+            'usr_mail.email'     => 'Email não existe',
+            'usr_mail.max'       => 'Email muito grande',
 
-            'usercpf.required'   => 'CPF não preenchido',
-            'usercpf.integer'    => 'Cheque seu campo de CPF',
+            'usr_cpf.integer'    => 'Cheque seu campo de CPF',
 
-            'userbirth.required' => 'Campo de nascimento não preenchido',
-			'userbirth.date'     => 'Cheque seu campo de nascimento',
+			'usr_birth.date'     => 'Cheque seu campo de nascimento',
 			
-			'userlevel.required' => 'Nível de usuário não preenchido',
-			'userlevel.integer'  => 'Cheque seu campo de nível de usuário'
+			'usr_level.integer'  => 'Cheque seu campo de nível de usuário'
         ];
 	}
-	
-
 
     public function rules(){
         /*
@@ -78,7 +70,8 @@ class EditRequest extends FormRequest
         | 'email': Campo deverá ter formato de email [e.g] exemplo@exemplo;
         | 'ipv4': Campo deverá ter o formato de um endereço ipv4 [e.g] 127.0.0.1;
         | 'integer': Campo deverá ser preenchido por números inteiros; 
-        | 'date': Campo deverá ter o formato de uma data;
+		| 'date': Campo deverá ter o formato de uma data;
+		| 'nullable' O campo pode ser nulo (tem suporte a requisição min);
         |
         | Obs: o número máximo dos campos no banco de dados são 191
         | caracteres, por isso estão definidos com esse parâmetro.
@@ -89,12 +82,12 @@ class EditRequest extends FormRequest
         */
 
         return [
-            'username'  => ['required', 'alpha_num', 'min:6', 'max:191'],
-            'userpass'  => ['required', 'min:6', 'max:191'],
-            'usermail'  => ['required', 'email', 'max:191'],
-            'usercpf'   => ['required', 'integer'],
-			'userbirth' => ['required', 'date'],
-			'userlevel' => ['required', 'integer']
+            'usr_name'  => ['alpha_num', 'min:6', 'max:191', 'nullable', 'unique: users'],
+            'usr_pass'  => ['min:6', 'max:191', 'nullable'],
+            'usr_mail'  => ['email', 'max:191', 'nullable'],
+            'usr_cpf'   => ['integer', 'nullable'],
+			'usr_birth' => ['date', 'nullable'],
+			'usr_level' => ['integer', 'nullable'],
         ];
     }
 }

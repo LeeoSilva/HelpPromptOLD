@@ -22,16 +22,15 @@ Route::post ('Geo/update', 'GeoLocation@update');
 Route::get  ('Geo/info',   'GeoLocation@getInfo');
 
 // Administração de usuários
-Route::get  ('Users',        'UsersController@index');
-Route::post ('User/create',  'UsersController@store');
-Route::get  ('Register',     'UsersController@create');
-
+Route::get  ('Users',             'UsersController@index');
+Route::get  ('User/{id}', 		  'UsersController@show');
+Route::post ('User/create',       'UsersController@store');
+Route::get  ('Register',          'UsersController@create');
 Route::get  ('User/delete/{id}',  'UsersController@destroy');
 Route::post ('User/edition/{id}', 'UsersController@edition');
 Route::get  ('User/edit/{id}',    'UsersController@edit');
-Route::get  ('User/{id}', '        UsersController@show');
 
-// Gets
+// Métodos GET do UsersController
 Route::get  ('User/IP/{id}',     'UsersController@getIP');
 Route::get  ('User/Name/{id}',   'UsersController@getName');
 Route::get  ('User/Pass/{id}',   'UsersController@getPass');
