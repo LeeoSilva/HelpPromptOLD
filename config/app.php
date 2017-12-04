@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'HelpPrompt'),
 
     /*
     |--------------------------------------------------------------------------
@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
+    'debug' => env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -175,7 +175,12 @@ return [
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+		App\Providers\RouteServiceProvider::class,
+		
+
+		// SMS Gateway
+		Limatheus\SmsGateway\SmsGatewayServiceProvider::class,
+
 
     ],
 
@@ -224,8 +229,10 @@ return [
         'Storage' => Illuminate\Support\Facades\Storage::class,
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
-        'View' => Illuminate\Support\Facades\View::class,
+		'View' => Illuminate\Support\Facades\View::class,
 
+		// SMS Gateway
+		'SMSGateway' => Limatheus\SmsGateway\Facade::class,
     ],
 
 ];

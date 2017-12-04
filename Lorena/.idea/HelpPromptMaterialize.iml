@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="google-appengine-php" name="Google App Engine (Python)">
+      <configuration>
+        <option name="rootFolder" value="" />
+        <option name="sdkFolder" value="" />
+        <option name="pythonPath" value="" />
+        <option name="email" value="arnaldo.pib@gmail.com" />
+        <option name="gp" value="dfc0dfd8df99df9edf9bdf99df93df98df99df9fdf9b" />
+        <option name="oauth2" value="false" />
+        <option name="nocache" value="false" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
