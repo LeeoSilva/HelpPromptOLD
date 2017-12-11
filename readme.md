@@ -23,4 +23,11 @@ Obs: Esses comandos devem ser executados no terminal.
 Após isso você deve estar pronto para contribuir com o projeto.
 ## Documentação de desenvolvimento:
 
+## Ambiente de Banco de Dados `database/migrations/2014_10_12_000000_create_users_table.php`
+Tabela users:
+
+
+Ambiente de Controladores `app/Http/Controllers/`
+
+
 

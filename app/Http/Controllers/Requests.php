@@ -15,7 +15,7 @@ class Requests extends Controller{
 		| Route para visualzação da página inicial;
 		|
 		*/
-		return view('#');
+		return view('index');
     }
 
     public function login(){

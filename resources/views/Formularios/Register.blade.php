@@ -8,22 +8,22 @@
 	<div class="form-group">
 	{!! Form::open(['url' => 'User/create', 'method' => 'post', 'autocomplete' => 'off']); !!}
 
-	{!! Form::label('name', 'Usuário: '); !!} 
 	{!! Form::text('username'); !!} <br>
+	{!! Form::label('name', 'Usuário: '); !!} 
 
-	{!! Form::label('pass', 'Senha: '); !!} 
 	{!! Form::password('userpass'); !!} <br>
+	{!! Form::label('pass', 'Senha: '); !!} 
 
 	{{--  TODO: CheckBox para ver a senha em texto   --}}
 
-	{!! Form::label('email', 'Email: '); !!}
 	{!! Form::email('usermail'); !!} <br>
+	{!! Form::label('email', 'Email: '); !!}
 
-	{!! Form::label('cpf', 'CPF: '); !!} 
 	{!! Form::text('usercpf'); !!} <br>
+	{!! Form::label('cpf', 'CPF: '); !!} 
 
-	{!! Form::label('birthday', 'Nascimento: ') !!}
 	{!! Form::date('userbirth'); !!} <br>
+	{!! Form::label('birthday', 'Nascimento: ') !!}
 
 	{!! Form::submit('Submit', ['class' => 'btn btn-primary']); !!} <br><br>
 	

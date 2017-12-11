@@ -8,7 +8,6 @@
 	</div>
 	@if( $info != null )
 		@foreach( $info as $infos )
-
 			<ul>
 				<a href="{{ URL::action('UsersController@show', $infos->id) }}"><h2>{{$infos->id . '-' . $infos->usr_name }}</h2></a>
 				<a href="{{ URL::to('User/delete/' . $infos->id) }}"><button type="submit" class="btn btn-danger btn-mini">Deletar</button></a><br><br>
