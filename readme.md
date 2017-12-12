@@ -1,5 +1,5 @@
 ## HelpPrompt Site - Sinopse:
-Uma comunicação entre seguradora e segurado.
+Sempre atentos à você.
 
 ## Preparação para desenvolvimento:
 Após clonar o repositório é necessário alguns passos para começar a desenvolver.
