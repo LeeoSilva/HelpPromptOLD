@@ -2,7 +2,7 @@
 Sempre atentos à você.
 
 ## Preparação para desenvolvimento:
-Após clonar o repositório é necessário alguns passos para começar a desenvolver.
+Após clonar o repositório são necessários alguns passos para começar a desenvolver.
 Obs: Esses comandos devem ser executados no terminal.
 
 1. Primeiro instale os pacotes necessários para o projeto.
