@@ -24,7 +24,6 @@
 	
 	//botão para aparecer depois da imagem
 	$(window).scroll(function() {
-	console.log($(this).scrollTop());
 	if ($(this).scrollTop()>120)
 	{
 	$('#button').show();
