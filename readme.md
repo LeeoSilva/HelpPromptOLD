@@ -1,6 +1,16 @@
 ## HelpPrompt Site - Sinopse:
 Uma comunicação entre seguradora e segurado.
 
+## Requisitos mínimos pra contribuir com o projeto:
+# Software
+[https://getcomposer.org/](Composer);
+[https://git-scm.com/downloads]([Git])
+
+Caso esteja do Windows baixe:
+[http://www.wampserver.com/en/#download-wrapper](WAMP) ou [https://www.apachefriends.org/pt_br/download.html](XAMP)
+
+Caso esteja do Linux baixe os pacotes de desenvolvimento LAMP Server de sua distribuição.
+
 ## Preparação para desenvolvimento:
 Após clonar o repositório são necessários alguns passos para começar a desenvolver.
 Obs: Esses comandos devem ser executados no terminal.
@@ -17,7 +27,10 @@ Obs: Esses comandos devem ser executados no terminal.
 4. E configure seu ambiente.
 `mv .env.exemple .env && php artisan key:generate`
 
-Após isso você deve estar pronto para contribuir com o projeto.
+5. 
+
+
+Após isso você deve estar pronto para contribuir com o codigo.
 ## Documentação de desenvolvimento:
 
 
