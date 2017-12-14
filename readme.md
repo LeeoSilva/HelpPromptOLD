@@ -22,7 +22,7 @@ Obs: Esses comandos devem ser executados no terminal.
 `composer dump-autoload -o`
 
 4. E configure seu ambiente.
-`mv .env.exemple .env && php artisan key:generate`
+`cp .env.exemple .env && php artisan key:generate`
 
 5. Sincronize seu banco de dados local.
 Entre no MySQL e crie um banco de dados chamado `HelpPrompt`
@@ -45,6 +45,18 @@ Deve mostrar o nome de seu `branch` atual com um asterisco (*)
 `git pull origin <branch>` (sem asterisco)
 
 Seu repositório deve estar atualizado a esse ponto.
+
+## Enviando alterações para o repositório:
+
+1. Prepare os arquivos para o envio.
+`git add <seus arquivos alterados>`
+
+2. Comente as alterações.
+`git commit -m '<comentario sobre as alterações>'`
+
+3. Envie para o branch principal.
+`git push -u origin master`
+
 
 ## Ambiente de Banco de Dados `database/migrations/2014_10_12_000000_create_users_table.php`
 Tabela users: `App\users`;
