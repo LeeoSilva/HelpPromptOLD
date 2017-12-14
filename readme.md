@@ -15,16 +15,27 @@ Obs: Esses comandos devem ser executados no terminal.
 `composer dump-autoload -o`
 
 4. E configure seu ambiente.
-`mv .env.exemple .env`
-`php artisan key:generate`
+`mv .env.exemple .env && php artisan key:generate`
 
 Após isso você deve estar pronto para contribuir com o projeto.
 ## Documentação de desenvolvimento:
 
-## Ambiente de Banco de Dados `database/migrations/2014_10_12_000000_create_users_table.php`
-Tabela users: App\users;
-Tabela geo: App\geo;
-Ambiente de Controladores `app/Http/Controllers/`;
 
+## Atualizando seu repositório local:
+
+1. Verifique `branch` atual.
+`git branch`
+
+Deve mostrar o nome de seu `branch` atual com um asterisco (*)
+
+2. E então atualize seu `branch` local com o `branch` remoto
+`git pull origin <branch>` (sem asterisco)
+
+Seu repositório deve estar atualizado a esse ponto.
+
+## Ambiente de Banco de Dados `database/migrations/2014_10_12_000000_create_users_table.php`
+Tabela users: `App\users`;
+Tabela geo: `App\geo`;
+Ambiente de Controladores `app/Http/Controllers/`;
 
 
