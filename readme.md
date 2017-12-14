@@ -3,13 +3,10 @@ Uma comunicação entre seguradora e segurado.
 
 ## Requisitos mínimos pra contribuir com o projeto:
 # Software
-![https://getcomposer.org/](Composer);
-![Git]([https://git-scm.com/downloads])
-
-Caso esteja do Windows baixe:
-![WAMP](http://www.wampserver.com/en/#download-wrapper) ou [https://www.apachefriends.org/pt_br/download.html](XAMP)
-
-Caso esteja do Linux baixe os pacotes de desenvolvimento LAMP Server de sua distribuição.
+Composer;
+Git;
+WAMP ou XAMP Server caso esteja rodando Windows;
+e LAMP Server caso esteja rodando Linux;
 
 ## Preparação para desenvolvimento:
 Após clonar o repositório são necessários alguns passos para começar a desenvolver.
@@ -27,7 +24,10 @@ Obs: Esses comandos devem ser executados no terminal.
 4. E configure seu ambiente.
 `mv .env.exemple .env && php artisan key:generate`
 
-5. 
+5. Sincronize seu banco de dados local.
+Entre no MySQL e crie um banco de dados chamado `HelpPrompt`
+Depois digite `php artisan migrate`
+e por ultimo alimente o banco com `php artisan db:seed`
 
 
 Após isso você deve estar pronto para contribuir com o codigo.
