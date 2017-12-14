@@ -3,11 +3,11 @@ Uma comunicação entre seguradora e segurado.
 
 ## Requisitos mínimos pra contribuir com o projeto:
 # Software
-[https://getcomposer.org/](Composer);
-[https://git-scm.com/downloads]([Git])
+![https://getcomposer.org/](Composer);
+![Git]([https://git-scm.com/downloads])
 
 Caso esteja do Windows baixe:
-[http://www.wampserver.com/en/#download-wrapper](WAMP) ou [https://www.apachefriends.org/pt_br/download.html](XAMP)
+![WAMP](http://www.wampserver.com/en/#download-wrapper) ou [https://www.apachefriends.org/pt_br/download.html](XAMP)
 
 Caso esteja do Linux baixe os pacotes de desenvolvimento LAMP Server de sua distribuição.
 
