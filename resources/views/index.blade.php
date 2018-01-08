@@ -1,3 +1,4 @@
+@section('principal')
 <!DOCTYPE html>
 <html>
 	<head>
@@ -16,7 +17,7 @@
 		</div>
 		<!-- Fim do Cabeçalho -->
 		<!--Início -->
-		<div class="container-fluid scrollup" >
+		<div class="container-fluid scrollup">
 			<div id="index-banner" class="parallax-container" >
 				<div class="section no-pad-bot" >
 					<div class="container">
@@ -33,7 +34,7 @@
 								<div id="modal1" class="modal modal-fixed-footer">
 									<div class="modal-content">
 										<h4>Cadastro</h4>
-										<p></p>
+										@include('Formularios.Register')
 									</div>
 									<div class="modal-footer">
 										<a href="" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
@@ -63,7 +64,7 @@
 									</div>
 									<div class="col s12 m8 l8 right" style="padding-left: 10px; padding-right: 10px;">
 										<div class="bloco">
-											<h3 class="center-align light flow-text black-text" style="line-height: 150%; ">Help Prompt é um aplicativo destinado à facilitar a vida de quem procura uma oficina mecânica mais próxima e mais barata. Ele também está a disposição para calcular o tempo de trajeto.</h3>
+											<h3 class="center-align light flow-text black-text" style="line-height: 150%; ">Help Prompt é um aplicativo desenvolvido pela empresa Keys & Kases, que tem como desafio facilitar a vida de quem procura uma oficina mecânica mais próxima e um maior gosto financeiro. Help Prompt também tem a capacidade de calcular o tempo de trajeto para a chegada de um prestador de serviço até você.</h3>
 										</div>
 									</div>
 								</div>
@@ -122,8 +123,11 @@
 			<!-- JavaScript -->
 			
 			<!-- Fim do JavaScript -->
-			<script type="text/javascript" src='./javascript.js'>
+			<script type="text/javascript" language="javascript" >
 				$('#modal1').modal();
+				$('#modal2').modal();
+				$('#modal3').modal();
 			</script>
 		</body>
 	</html>
+@show

@@ -1,4 +1,4 @@
-@yield('rodape')
+@section('rodape')
 
 <style type="text/css" media="screen">
 body {
@@ -32,12 +32,11 @@ width: 250px;
         <div class="container">
           <div class="row">
             <div class="col s12 m8 l8">
-              © 2017 Keys & Kases
+              © 2018 Keys & Kases
             </div>
             <div class="col s12 m4 l4" style="text-align: right;">
-              <a href="" target="_blank"><img src="Contatos/gmail.png" class="contatos" ></a>
-              <a href="https://www.facebook.com/HelpPrompt-131174850922742/?ref=bookmarks" target="_blank"><img src="Contatos/facebook.png" class="contatos"></a>
-              <a href="https://twitter.com/HelpPrompt" target="_blank"><img src="Contatos/twitter.png" class="contatos"></a>
+              <a href="https://www.facebook.com/HelpPrompt-131174850922742/?ref=bookmarks" target="_blank"><img src="Contatos/facebook.svg" class="contatos"></a>
+              <a href="https://twitter.com/HelpPrompt" target="_blank"><img src="Contatos/twitter.svg" class="contatos"></a>
             </div>
             <div></div>
           </div>

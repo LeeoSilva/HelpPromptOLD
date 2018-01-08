@@ -1,20 +1,30 @@
-@section('content')
+@section('contento')
 
-	@include('HtmlWraps.header')
-	<h1>Login</h1>
+	<div class="row">
+		<form class="col s12 m12 l12">
+		{!! Form::open(['url' => 'Login', 'method' => 'post', 'autocomplete' => 'off']); !!}
+			<div class="input-field col s6 l6 m6">
+				{!! Form::text('usr_name'); !!}
+				{!! Form::label('usr_mail', 'Usuário ou Email: '); !!}
+			</div>
+			<div class="input-field col s6 l6 m6">
+				{!! Form::password('usr_pass'); !!}
+				{!! Form::label('pass', 'Senha: '); !!}			
+			</div>	
+			
+		</form>
+	</div>	
+	{!! Form::close() !!}
 
-	<hr/>
-
-	{!! Form::open(['url' => 'Login', 'method' => 'POST', 'autocomplete' => 'off']); !!}<br>
-	
-	{!! Form::label('usr_mail', 'Usuário ou Email: '); !!}
-	{!! Form::text('usr_name'); !!}<br>
-
-	{!! Form::label('pass', 'Senha: '); !!}
-	{!! Form::password('usr_pass'); !!}<br>
-	
 	{{--  TODO: Remember Me Token  --}}
 
-	{!! Form::submit('Submit'); !!}<br>
+	{{-- Verificação e apresentação de erros --}}
+	@if( $errors->any() )
+		<ul class='alert alert-danger'>
+			@foreach( $errors->all() as $error )
+				<li>{{ $error }} </li>
+			@endforeach
+		</ul>
+	@endif
 
-	{!! Form::close(); !!}
+	@show
