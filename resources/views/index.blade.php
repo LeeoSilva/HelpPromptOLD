@@ -8,7 +8,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Help Prompt</title>
 		<link rel="stylesheet" href="css/materialize.css">
-		
+
 	</head>
 	<body>
 		<!-- Cabeçalho -->
@@ -45,11 +45,12 @@
 							<br><br>
 						</div>
 					</div>
-					<div class="parallax"><img src="fundo.jpg" alt="Imagem de Fundo 01"></div>
+					<!-- <div class="parallax"><img src="fundo.jpg" alt="Imagem de Fundo 01"></div> -->
+					<div class="parallax"></div>
 				</div>
 			</div>
 			<!-- Fim do Início -->
-			
+
 			<!-- Bloco sobre  -->
 			<div class="container-fluid" id="sobre">
 				<div>
@@ -121,7 +122,7 @@
 			<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 			<script type="text/javascript" src="js/materialize.js"></script>
 			<!-- JavaScript -->
-			
+
 			<!-- Fim do JavaScript -->
 			<script type="text/javascript" language="javascript" >
 				$('#modal1').modal();

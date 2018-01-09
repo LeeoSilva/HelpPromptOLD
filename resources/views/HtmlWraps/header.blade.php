@@ -6,6 +6,14 @@
     width: 180px;
     padding: 0 0 25px 0;
     }
+
+		.parallax{
+			background-image: url('fundo.jpg');
+			width: auto;
+			height: auto;
+			position: sticky;
+		}
+
     .contatos{
     height: 40px;
     width: 40px;
@@ -20,7 +28,7 @@
     }
     </style>
 
-<div class="navbar"> 
+<div class="navbar">
       <nav class="cor">
         <div class="nav-wrapper" >
           <a href="index.php" class="brand-logo"><img src="Logo/invertidasemfundo.png" class="logo"/></a>
@@ -52,7 +60,7 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#parceiros">Parceiros</a></li>
-                <li><a href="trabalheconosco.blade.php">Trabalhe conosco</a></li>     
+                <li><a href="trabalheconosco.blade.php">Trabalhe conosco</a></li>
                 <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Login</a>
                 <!-- Modal Structure -->
                 <div id="modal3" class="modal modal-fixed-footer">
