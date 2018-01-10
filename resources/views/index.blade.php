@@ -17,6 +17,8 @@
 		@include('HtmlWraps.header')
 		</div>
 		<!-- Fim do Cabeçalho -->
+
+
 		<!--Início -->
 		<div class="container-fluid scrollup">
 			<div id="index-banner" class="parallax-container" >
@@ -46,8 +48,7 @@
 							<br><br>
 						</div>
 					</div>
-					<!-- <div class="parallax"><img src="fundo.jpg" alt="Imagem de Fundo 01"></div> -->
-					<div class="parallax"></div>
+						<div class="parallax"><img src="fundo.jpg"></div>
 				</div>
 			</div>
 			<!-- Fim do Início -->
@@ -129,6 +130,7 @@
 				$('#modal1').modal();
 				$('#modal2').modal();
 				$('#modal3').modal();
+  			$('.parallax').parallax();
 			</script>
 		</body>
 	</html>

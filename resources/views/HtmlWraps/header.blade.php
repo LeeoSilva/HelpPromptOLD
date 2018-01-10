@@ -6,13 +6,6 @@
     padding: 0 0 25px 0;
     }
 
-		.parallax{
-			background-image: url('fundo.jpg');
-			width: auto;
-			height: auto;
-			position: sticky;
-		}
-
     .contatos{
     height: 40px;
     width: 40px;
@@ -75,5 +68,5 @@
             </ul>
         </div>
       </nav>
-    </div>
+		</div>
 @show
