@@ -1,5 +1,4 @@
 @section('header')
-
 <style type="text/css" media="screen">
     .logo{
     height: 100px;

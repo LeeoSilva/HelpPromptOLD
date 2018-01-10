@@ -8,6 +8,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Help Prompt</title>
 		<link rel="stylesheet" href="css/materialize.css">
+		<link rel=icon href=./Logo/logobrancasemfundo.png>
 
 	</head>
 	<body>
