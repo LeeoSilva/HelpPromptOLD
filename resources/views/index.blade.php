@@ -1,5 +1,4 @@
 @section('principal')
-<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -9,9 +8,9 @@
 		<title>Help Prompt</title>
 		<link rel="stylesheet" href="css/materialize.css">
 		<link rel=icon href=./Logo/logobrancasemfundo.png>
-
 	</head>
 	<body>
+
 		<!-- Cabeçalho -->
 		<div>
 		@include('HtmlWraps.header')
@@ -120,18 +119,16 @@
 			<!-- Fim do Icone fixo -->
 			<!-- Rodapé -->
 				@include('HtmlWraps.rodape')
+
 			<!-- Fim do Rodapé -->
+
+			<!-- JavaScript -->
 			<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 			<script type="text/javascript" src="js/materialize.js"></script>
-			<!-- JavaScript -->
+			<script type="text/javascript" src="javascript.js"></script>
 
 			<!-- Fim do JavaScript -->
-			<script type="text/javascript" language="javascript" >
-				$('#modal1').modal();
-				$('#modal2').modal();
-				$('#modal3').modal();
-  			$('.parallax').parallax();
-			</script>
+
 		</body>
 	</html>
 @show

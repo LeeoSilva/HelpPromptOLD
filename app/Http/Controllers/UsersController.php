@@ -13,27 +13,26 @@ use App\Http\Requests\EditRequest; // Request de validação para edição de da
 class UsersController extends Controller{
 
     public function index(){
-        // Envia todos os usuários registrados no banco
-        // Para uma página trata-los e lista-los
+      // Envia todos os usuários registrados no banco
+      // Para uma página trata-los e lista-los
 
-		$info = users::all();
-		return view('Users.List', compact('info'));
+			$info = users::all();
+			return view('Users.List', compact('info'));
     }
 
-    public function store(RegisterRequest $request){
+		public function store(RegisterRequest $request){
         /*
         |-------
         | Store
         |-------
         |
-        | Utiliza um Request para validação e envia para o banco de dados. 
+        | Utiliza um Request para validação e envia para o banco de dados.
         | Se quiser mais detalhes (app/Http/Requests/RegisterRequest)
         |
         */
 
-        // TODO verificar se os campos já existem no banco de dados.
 
-		$users            = new users;
+				$users            = new users;
         $users->usr_ip    = Request::ip(); // Request especial para pegar o IP do usuário (teste).
         $users->usr_name  = $request->usr_name;
         $users->usr_pass  = md5($request->usr_pass);
@@ -45,20 +44,20 @@ class UsersController extends Controller{
 
         return redirect('Users');
     }
-    
+
     public function create(){
 		/*
 		|---------
 		| Create
 		|---------
-		| 
-		| Route para enviar o usuário para a página de registro 
+		|
+		| Route para enviar o usuário para a página de registro
 		|
 		*/
-		
+
         return view('Formularios.Register');
     }
-    
+
 
     public function show($id){
 		/*
@@ -69,9 +68,9 @@ class UsersController extends Controller{
 		| Mostra as informações da tabela Users dado seu id.
 		| Caso seu id não conste no banco de dados
 		| será apresentado uma página dizendo que o usuário não existe.
-		| 
+		|
 		| <Retorno>: Em JSON
-		| 		
+		|
 		*/
 
 		$output =  users::find($id);
@@ -82,13 +81,13 @@ class UsersController extends Controller{
 	public function destroy($id){
 		/*
 		|----------
-		| Destroy		
+		| Destroy
 		|----------
-		|		
+		|
 		| Deleta um usuário dado seu id.
 		| Caso seu id não conste no banco de dados
-		| será apresentado uma página dizendo que o usuário não existe.		
-		|				
+		| será apresentado uma página dizendo que o usuário não existe.
+		|
 		*/
 
 		$destroy = users::find($id);
@@ -121,14 +120,14 @@ class UsersController extends Controller{
 		|----------
 		| Edition
 		|---------
-		| 
+		|
 		| Atualiza os campos editados na página de edição
 		| de um usuário dado seu id.
 		| Caso seu id não coste no banco de dados
 		| será apresentado uma página dizendo que o usuário não existe.
 		|
 		*/
-	
+
 		$users = users::find($id);
 
 		if( $users == null ){ return "Usuário não existe"; }
@@ -148,9 +147,9 @@ class UsersController extends Controller{
 	|---------------
 	| Métodos GET's
 	|---------------
-	| 
+	|
 	| Métodos GET para pegar cada valor individual do banco de dados.
-	| [e.g] O método getIP recebe o IP do usuário como parâmetro e 
+	| [e.g] O método getIP recebe o IP do usuário como parâmetro e
 	| retorna o IP daquele usuário daquele id em específico.
 	| O método getName recebe o IP e retorna o nome, e assim por diante;
 	*/
