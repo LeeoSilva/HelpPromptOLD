@@ -1,6 +1,6 @@
 @section('contento')
 
-	<div class="row">
+	<div class="row" >
 		<form class="col s12 m12 l12">
 		{!! Form::open(['url' => 'Login', 'method' => 'post', 'autocomplete' => 'off']); !!}
 			<div class="input-field col s6 l6 m6">

@@ -8,7 +8,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Help Prompt</title>
 		<link rel="stylesheet" href="css/materialize.css">
-		
+		<link rel=icon href=./Logo/logobrancasemfundo.png>
+
 	</head>
 	<body>
 		<!-- Cabeçalho -->
@@ -27,29 +28,15 @@
 							<h5 class="header col s12 light white-text" style="text-shadow: 3px 3px  4px black;"><strong>Sempre atentos à você!</strong></h5>
 						</div>
 						<div class="row">
-							<div class="center header col s12">
-								<!-- Modal Trigger -->
-								<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Cadastra-se</a>
-								<!-- Modal Structure -->
-								<div id="modal1" class="modal modal-fixed-footer">
-									<div class="modal-content">
-										<h4>Cadastro</h4>
-										@include('Formularios.Register')
-									</div>
-									<div class="modal-footer">
-										<a href="" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
-										<a href="" class="modal-action modal-close waves-effect waves-green btn-flat ">Cadastrar</a>
-									</div>
-								</div>
-							</div>
+							@include('HtmlWraps.modal');
 							<br><br>
 						</div>
 					</div>
-					<div class="parallax"><img src="fundo.jpg" alt="Imagem de Fundo 01"></div>
+					<div class="parallax"><img src="fundo.jpg"></div>
 				</div>
 			</div>
 			<!-- Fim do Início -->
-			
+
 			<!-- Bloco sobre  -->
 			<div class="container-fluid" id="sobre">
 				<div>
@@ -73,11 +60,12 @@
 					</div>
 				</div>
 				<!-- Fim do Bloco sobre -->
-				<!-- Parallax -->
-				<div class="parallax-container">
-					<div class="parallax"><img src="fundo.jpg" alt="Imagem de Fundo 01"></div>
-				</div>
-				<!-- Fim do parallax -->
+				<!-- Trabalhe conosco -->
+					<div class="container" id="trabalheconosco">
+						<a nome="trabalheconosco">
+							@include('trabalheconosco')
+					</div>
+				<!-- Fim do Trabalhe conosco -->
 				<!-- Bloco parceiros -->
 				<div class="container" id="parceiros">
 					<a name="parceiros">
@@ -121,12 +109,33 @@
 			<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 			<script type="text/javascript" src="js/materialize.js"></script>
 			<!-- JavaScript -->
-			
+
 			<!-- Fim do JavaScript -->
 			<script type="text/javascript" language="javascript" >
 				$('#modal1').modal();
 				$('#modal2').modal();
 				$('#modal3').modal();
+				$('.parallax').parallax();
+				// Inicio da navbar
+				$('.button-collapse').sideNav({
+					menuWidth: 300, // Default is 240
+					edge: 'left', // Choose the horizontal origin
+					closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+				});
+				// Final da navbar
+				//botão para aparecer depois da imagem
+				$(window).scroll(function() {
+					// console.log($(this).scrollTop());
+					if ($(this).scrollTop()>120)
+					{
+						$('#button').show();
+					}
+					else
+					{
+						$('#button').hide();
+					}
+				});
+				//Fim do botão para aparecer depois da imagem
 			</script>
 		</body>
 	</html>

@@ -18,6 +18,16 @@
       height: 150px;
       width: 275px;
     }
+    .parallax{
+        background-image: url('fundo.jpg');
+        width: auto;
+        height: auto;
+        position: sticky;
+    }
+    .modalmobile{
+        height: 10%;
+        width: 10%;
+    }
     </style>
 
 <div class="navbar"> 
@@ -31,9 +41,9 @@
             <ul class="side-nav" id="menu-mobile">
                 <li><a href="">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#parceiros">Parceiros</a></li>
                 <li><a href="trabalheconosco.blade.php">Trabalhe conosco</a></li>
-                <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Login</a>
+                <li><a href="#parceiros">Parceiros</a></li>
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal2" class="modalmobile">Login</a>
                 <!-- Modal Structure -->
                 <div id="modal2" class="modal modal-fixed-footer">
                     <div class="modal-content">
@@ -51,8 +61,8 @@
             <ul class="right hide-on-med-and-down" id="menu-mobile">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#trabalheconosco">Trabalhe conosco</a></li>     
                 <li><a href="#parceiros">Parceiros</a></li>
-                <li><a href="trabalheconosco.blade.php">Trabalhe conosco</a></li>     
                 <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Login</a>
                 <!-- Modal Structure -->
                 <div id="modal3" class="modal modal-fixed-footer">
