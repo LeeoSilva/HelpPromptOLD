@@ -39,7 +39,7 @@ class CreateUsersTable extends Migration
         |
         */
 
-				Schema::create('geo', function (Blueprint $table) {
+				Schema::create('usr_geo', function (Blueprint $table) {
             /*
             |-----
             | Geo
@@ -58,15 +58,16 @@ class CreateUsersTable extends Migration
             |
             */
 
-            $table->increments('id');
+            $table->increments('id')->unsigned();
             $table->float('usr_lat');
             $table->float('usr_lon');
-            $table->string('usr_city');
-            $table->string('usr_state');
-            $table->string('usr_country');
+            $table->string('usr_cidade');
+            $table->string('usr_estado');
+            $table->string('usr_pais');
+						$table->string('usr_bairro');
         });
 
-        Schema::create('users', function (Blueprint $table) {
+				Schema::create('usr_login', function (Blueprint $table) {
             /*
             |--------
             | Users
@@ -88,19 +89,7 @@ class CreateUsersTable extends Migration
             |
             */
 
-			// TODO Table for
-			/*
-				Nome
-				Endereço->Complemento->Número
-				CNPJ
-				CEP
-				Estado
-				Bairro
-				Nome da empresa
-				Telefone
-			 */
-
-						$table->increments('id');
+						$table->increments('usr_id');
             $table->string		('usr_ip');
             $table->string		('usr_name')->unique();
             $table->string		('usr_pass', 191);
