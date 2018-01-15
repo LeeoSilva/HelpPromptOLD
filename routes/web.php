@@ -38,3 +38,15 @@ Route::get  ('User/Mail/{id}',   'UsersController@getMail');
 Route::get  ('User/CPF/{id}',    'UsersController@getCPF');
 Route::get  ('User/Birth/{id}',  'UsersController@getBirth');
 Route::get  ('Users/Level/{id}', 'UsersController@getLevel');
+
+// Administração de empresas
+Route::post('Empresas/estabelecimento', 'EmpresasController@storeEstabelecimento');
+Route::post('Empresas/cep', 'EmpresasController@storeEstab_cep');
+Route::post('Empresas/telefones', 'EmpresasController@storeTelefones');
+Route::post('Empresas/TipoServico', 'EmpresasController@storeTipo_servico');
+Route::post('Empresas/Veiculos', 'EmpresasController@storeVeiculos');
+Route::post('Empresas/Estado', 'EmpresasControler@storeEstado');
+Route::post('Empresa/Cidade', 'EmpresasController@storeCidade');
+Route::post('Empresa/Bairro', 'EmpresasController@storeBairro');
+Route::post('Empresa/Endereco', 'EmpresasController@storeEndereco');
+Route::post('Empresa/Representante', 'EmpresasControler@storeRepresentante');
