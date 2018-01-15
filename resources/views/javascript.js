@@ -1,11 +1,9 @@
 
-				// Começo da função do botão para subir
-				$('.scrollup').click(function () {
-					$("html, body").animate({
-						scrollTop: 0
-					}, 600);
-					return false;
+			
+				// Inicio da navbar
+				$('.button-collapse').sideNav({
+					menuWidth: 300, // Default is 240
+					edge: 'left', // Choose the horizontal origin
+					closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
 				});
-				// Final da função do botão para subir
-
-				
+				// Final da navbar
