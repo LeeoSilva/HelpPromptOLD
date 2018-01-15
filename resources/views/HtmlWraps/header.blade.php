@@ -29,7 +29,7 @@
     }
     #modal3{
         overflow: hidden;
-        width: 40%;
+        width: 35%;
         height: 50%;
     }
     </style>
@@ -67,25 +67,25 @@
             <ul class="right hide-on-med-and-down" id="menu-mobile">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#trabalheconosco">Trabalhe conosco</a></li>     
+                <li><a href="#trabalheconosco">Trabalhe conosco</a></li>
                 <li><a href="#parceiros">Parceiros</a></li>
                 <li><a href="trabalheconosco.blade.php">Trabalhe conosco</a></li>
                 <li><a class="waves-effect waves-light btn modal-trigger" href="#modal3">Login</a></li>
                 <!-- Modal Structure -->
-                <div id="modal3" class="modal modal-fixed-footer">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <h4><font color="black">Login</font></h4>
-                            @include('Formularios.Login')
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
-                        <a href="" class="modal-action modal-close waves-effect waves-green btn-flat ">Logar</a>
-                    </div>
-                </div>
-            </ul>
         </div>
       </nav>
+      <div id="modal3" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h4><font color="black">Login</font></h4>
+            @include('Formularios.Login')
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
+          <a href="" class="modal-action modal-close waves-effect waves-green btn-flat ">Logar</a>
+        </div>
+      </div>
 		</div>
 @show
+</ul>
