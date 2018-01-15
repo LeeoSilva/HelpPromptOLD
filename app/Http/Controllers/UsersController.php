@@ -20,7 +20,7 @@ class UsersController extends Controller{
 			return view('Users.List', compact('info'));
     }
 
-		public function store(RegisterRequest $request){
+	public function store(RegisterRequest $request){
         /*
         |-------
         | Store
