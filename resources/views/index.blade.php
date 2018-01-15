@@ -59,12 +59,38 @@
 					</div>
 				</div>
 				<!-- Fim do Bloco sobre -->
+
+				<!-- Parallax -->
+				<div class="parallax-container valign-wrapper">
+						<div class="section no-pad-bot">
+							<div class="container">
+								<div class="row center">
+								</div>
+							</div>
+						</div>
+					<div class="parallax"><img src="fundo.jpg" alt="Unsplashed background img 2"></div>
+			  </div>
+			  <!-- Fim do Parallax -->
+
 				<!-- Trabalhe conosco -->
 					<div class="container" id="trabalheconosco">
 						<a nome="trabalheconosco">
 							@include('trabalheconosco')
 					</div>
 				<!-- Fim do Trabalhe conosco -->
+
+				<!-- Parallax -->
+				<div class="parallax-container valign-wrapper">
+					<div class="section no-pad-bot">
+						<div class="container">
+							<div class="row center">
+							</div>
+						</div>
+					</div>
+					<div class="parallax"><img src="fundo.jpg" alt="Unsplashed background img 2"></div>
+				</div>
+				<!-- Fim do Parallax -->
+
 				<!-- Bloco parceiros -->
 				<div class="container" id="parceiros">
 					<a name="parceiros">
@@ -98,10 +124,13 @@
 					</a>
 				</div>
 			</div>
+			
 			<!-- Fim do Bloco parceiros -->
+
 			<!-- Icone fixo -->
 				@include('HtmlWraps.button')
 			<!-- Fim do Icone fixo -->
+
 			<!-- Rodapé -->
 				@include('HtmlWraps.rodape')
 
@@ -117,7 +146,16 @@
 				$('#modal1').modal();
 				$('#modal2').modal();
 				$('#modal3').modal();
-				$('.parallax').parallax();				
+				$('.parallax').parallax();
+				
+				// Inicio da navbar
+				$('.button-collapse').sideNav({
+					menuWidth: 300, // Default is 300
+					edge: 'left', // Choose the horizontal origin
+					closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+					draggable: true, // Choose whether you can drag to open on touch screens,
+				});
+				// Final da navbar
 			</script>
 			<script type="text/javascript" src="javascript.js"></script>
 

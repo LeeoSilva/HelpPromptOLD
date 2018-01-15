@@ -51,7 +51,7 @@ class Empresas extends Migration
 
 				$table->integer('motos')->unsigned();
 				$table->integer('carros')->unsigned();
-				$table->integer('caminhoes')->unsigned();
+				$table->integer('guinchos')->unsigned();
 				$table->integer('estab_id')->unsigned();
 				$table->foreign('estab_id')
 							->references('estab_id')
