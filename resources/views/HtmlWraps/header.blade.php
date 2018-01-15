@@ -1,11 +1,11 @@
 @section('header')
-
 <style type="text/css" media="screen">
     .logo{
     height: 100px;
     width: 180px;
     padding: 0 0 25px 0;
     }
+
     .contatos{
     height: 40px;
     width: 40px;
@@ -30,7 +30,7 @@
     }
     </style>
 
-<div class="navbar"> 
+<div class="navbar">
       <nav class="cor">
         <div class="nav-wrapper" >
           <a href="index.php" class="brand-logo"><img src="Logo/invertidasemfundo.png" class="logo"/></a>
@@ -63,6 +63,10 @@
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#trabalheconosco">Trabalhe conosco</a></li>     
                 <li><a href="#parceiros">Parceiros</a></li>
+<<<<<<< HEAD
+=======
+                <li><a href="trabalheconosco.blade.php">Trabalhe conosco</a></li>
+>>>>>>> 03f13b2469aa02a010117a666265dd17cee5f8e5
                 <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Login</a>
                 <!-- Modal Structure -->
                 <div id="modal3" class="modal modal-fixed-footer">
@@ -78,5 +82,5 @@
             </ul>
         </div>
       </nav>
-    </div>
+		</div>
 @show

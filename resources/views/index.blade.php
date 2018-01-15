@@ -1,5 +1,4 @@
 @section('principal')
-<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -9,14 +8,20 @@
 		<title>Help Prompt</title>
 		<link rel="stylesheet" href="css/materialize.css">
 		<link rel=icon href=./Logo/logobrancasemfundo.png>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 03f13b2469aa02a010117a666265dd17cee5f8e5
 	</head>
 	<body>
+
 		<!-- Cabeçalho -->
 		<div>
 		@include('HtmlWraps.header')
 		</div>
 		<!-- Fim do Cabeçalho -->
+
+
 		<!--Início -->
 		<div class="container-fluid scrollup">
 			<div id="index-banner" class="parallax-container" >
@@ -32,7 +37,11 @@
 							<br><br>
 						</div>
 					</div>
+<<<<<<< HEAD
 					<div class="parallax"><img src="fundo.jpg"></div>
+=======
+						<div class="parallax"><img src="fundo.jpg"></div>
+>>>>>>> 03f13b2469aa02a010117a666265dd17cee5f8e5
 				</div>
 			</div>
 			<!-- Fim do Início -->
@@ -105,9 +114,13 @@
 			<!-- Fim do Icone fixo -->
 			<!-- Rodapé -->
 				@include('HtmlWraps.rodape')
+
 			<!-- Fim do Rodapé -->
+
+			<!-- JavaScript -->
 			<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 			<script type="text/javascript" src="js/materialize.js"></script>
+<<<<<<< HEAD
 			<!-- JavaScript -->
 
 			<!-- Fim do JavaScript -->
@@ -134,6 +147,12 @@
 				}
 				
 			</script>
+=======
+			<script type="text/javascript" src="javascript.js"></script>
+
+			<!-- Fim do JavaScript -->
+
+>>>>>>> 03f13b2469aa02a010117a666265dd17cee5f8e5
 		</body>
 	</html>
 @show

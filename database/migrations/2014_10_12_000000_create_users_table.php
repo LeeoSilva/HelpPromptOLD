@@ -17,29 +17,29 @@ class CreateUsersTable extends Migration
         |--------------------
         | HelpPrompt Database
         |--------------------
-        | 
+        |
         | Nosso arquivo de banco de dados. Para migrar o banco de
-        | dados, entre na linha de comando:  
-        | 
-        | php artisan migrate 
-        | 
+        | dados, entre na linha de comando:
+        |
+        | php artisan migrate
+        |
         | ---------------------
-        | 
-        | A sintaxe é bem simples 
-        | 
+        |
+        | A sintaxe é bem simples
+        |
         | <MÉTODOS>
-        | 
+        |
         | increments(): Valor inteiro que é somado 1 a cada novo usuário;
         | float(): Valor com decimais;
-        | string(): Uma cadeia de caracteres; 
+        | string(): Uma cadeia de caracteres;
         | integer(): Valor inteiro;
         | date(): Campo reservado para data;
         | rememberToken(): Identificador único para o usuário para botão RememberMe;
         | timestamps(): Adiciona suporte baseado em data;
-        | 
+        |
         */
 
-        Schema::create('geo', function (Blueprint $table) {
+				Schema::create('usr_geo', function (Blueprint $table) {
             /*
             |-----
             | Geo
@@ -51,23 +51,23 @@ class CreateUsersTable extends Migration
             |
             | lat: Latitude do usuário;
             | lon: Longitude do usuário;
-            |            
+            |
             | city: Cidade do usuário;
             | state: Estado do usuário;
             | country: Pais do usuário;
             |
             */
-			
-            $table->increments('id');
-            $table->float('lat');
-            $table->float('lon');
-            
-            $table->string('city');
-            $table->string('state');
-            $table->string('country');
+
+            $table->increments('id')->unsigned();
+            $table->float('usr_lat');
+            $table->float('usr_lon');
+            $table->string('usr_cidade');
+            $table->string('usr_estado');
+            $table->string('usr_pais');
+						$table->string('usr_bairro');
         });
 
-        Schema::create('users', function (Blueprint $table) {
+				Schema::create('usr_login', function (Blueprint $table) {
             /*
             |--------
             | Users
@@ -79,48 +79,29 @@ class CreateUsersTable extends Migration
             | usr_cpf:   CPF do usuário;
             | usr_level: Nível de permissão do usuário;
             | usr_birth: Data de nascimento do usuário;
-            |            
-            |            
+            |
+            |
             | <Níveis de permissão>
-            |            
+            |
             | 0 - Nível de permissão máxima (Desenvolvedores);
             | 1 - Nível de permissão de Administradores (SysAdmins);
-            | 2 - Nível de permissão de seguradora;
-			| 3 - Nível de permissão de cliente (segurado);
-			| 4 - Nível de permissão da oficina.
-            |            
+            | 2 - Nível de permissão de empresas;
+            |
             */
 
-			// TODO Table for
-			/*
-				Nome
-				Endereço->Complemento->Número
-				CNPJ
-				CEP
-				Estado
-				Bairro
-				Nome da empresa
-				Telefone
-			 */
-
-			$table->increments('id');
-            $table->string('usr_ip');
-            $table->string('usr_name')->unique();
-            $table->string('usr_pass', 191);
-            $table->string('usr_mail')->unique();
-            $table->string('usr_cpf', 13);
-            $table->integer('usr_level');
-            $table->date('usr_birth');
+						$table->increments('usr_id');
+            $table->string		('usr_ip');
+            $table->string		('usr_name')->unique();
+            $table->string		('usr_pass', 191);
+            $table->string		('usr_mail')->unique();
+            $table->string		('usr_cpf', 13);
+            $table->integer		('usr_level');
+            $table->date			('usr_birth');
             $table->rememberToken();
-			$table->timestamps();
-        });
-    }
+						$table->timestamps();
+			});
+	}
 
-    /*
-    | Reverse as migrations.
-    |
-    | @return void
-    */
     public function down(){
         Schema::drop('users');
         Schema::drop('geo');

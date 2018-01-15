@@ -1,4 +1,5 @@
 @section('button')
+<<<<<<< HEAD
 <div class="fixed-action-btn col s12 m6 l6 subscribe-me" >
 	<a class="btn-floating btn-large teal" class="scrolltop" onclick="topFunction()" id="myBtn" title="Go to top">
 		<i class="large material-icons">arrow_upward</i>
@@ -29,3 +30,13 @@
 </script>
 
 @show
+=======
+<div id='button'>
+<div class="fixed-action-btn col s12 m6 l6 subscribe-me">
+	<a class="btn-floating btn-large teal">
+		<i class="large material-icons">arrow_upward</i>
+	</a>
+</div>
+</div>
+@show
+>>>>>>> 03f13b2469aa02a010117a666265dd17cee5f8e5
