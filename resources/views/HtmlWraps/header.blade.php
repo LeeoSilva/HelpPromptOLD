@@ -5,7 +5,6 @@
     width: 180px;
     padding: 0 0 25px 0;
     }
-
     .contatos{
     height: 40px;
     width: 40px;
@@ -28,6 +27,11 @@
         height: 10%;
         width: 10%;
     }
+    #modal3{
+        overflow: hidden;
+        width: 40%;
+        height: 50%;
+    }
     </style>
 
 <div class="navbar">
@@ -46,10 +50,12 @@
                 <a class="waves-effect waves-light btn modal-trigger" href="#modal2" class="modalmobile">Login</a>
                 <!-- Modal Structure -->
                 <div id="modal2" class="modal modal-fixed-footer">
-                    <div class="modal-content">
-                    <h4><font color="black">Login</font></h4>
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h4><font color="black">Login</font></h4>
                         @include('Formularios.Login')
                     </div>
+                </div>
                     <div class="modal-footer">
                         <a href="" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
                         <a href="" class="modal-action modal-close waves-effect waves-green btn-flat ">Logar</a>
@@ -63,16 +69,15 @@
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#trabalheconosco">Trabalhe conosco</a></li>     
                 <li><a href="#parceiros">Parceiros</a></li>
-<<<<<<< HEAD
-=======
                 <li><a href="trabalheconosco.blade.php">Trabalhe conosco</a></li>
->>>>>>> 03f13b2469aa02a010117a666265dd17cee5f8e5
-                <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Login</a>
+                <li><a class="waves-effect waves-light btn modal-trigger" href="#modal3">Login</a></li>
                 <!-- Modal Structure -->
                 <div id="modal3" class="modal modal-fixed-footer">
                     <div class="modal-content">
-                        <h4><font color="black">Login</font></h4>
-                       @include('Formularios.Login')
+                        <div class="modal-body">
+                            <h4><font color="black">Login</font></h4>
+                            @include('Formularios.Login')
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <a href="" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>

@@ -8,10 +8,6 @@
 		<title>Help Prompt</title>
 		<link rel="stylesheet" href="css/materialize.css">
 		<link rel=icon href=./Logo/logobrancasemfundo.png>
-<<<<<<< HEAD
-
-=======
->>>>>>> 03f13b2469aa02a010117a666265dd17cee5f8e5
 	</head>
 	<body>
 
@@ -20,8 +16,6 @@
 		@include('HtmlWraps.header')
 		</div>
 		<!-- Fim do Cabeçalho -->
-
-
 		<!--Início -->
 		<div class="container-fluid scrollup">
 			<div id="index-banner" class="parallax-container" >
@@ -37,11 +31,7 @@
 							<br><br>
 						</div>
 					</div>
-<<<<<<< HEAD
 					<div class="parallax"><img src="fundo.jpg"></div>
-=======
-						<div class="parallax"><img src="fundo.jpg"></div>
->>>>>>> 03f13b2469aa02a010117a666265dd17cee5f8e5
 				</div>
 			</div>
 			<!-- Fim do Início -->
@@ -120,7 +110,6 @@
 			<!-- JavaScript -->
 			<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 			<script type="text/javascript" src="js/materialize.js"></script>
-<<<<<<< HEAD
 			<!-- JavaScript -->
 
 			<!-- Fim do JavaScript -->
@@ -128,31 +117,12 @@
 				$('#modal1').modal();
 				$('#modal2').modal();
 				$('#modal3').modal();
-				$('.parallax').parallax();
-				// When the user scrolls down 20px from the top of the document, show the button
-				window.onscroll = function() {scrollFunction()};
-
-				function scrollFunction() {
-					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-						document.getElementById("myBtn").style.display = "block";
-					} else {
-						document.getElementById("myBtn").style.display = "none";
-					}
-				}
-
-				// When the user clicks on the button, scroll to the top of the document
-				function topFunction() {
-					document.body.scrollTop = 0; // For Safari
-					document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-				}
-				
+				$('.parallax').parallax();				
 			</script>
-=======
 			<script type="text/javascript" src="javascript.js"></script>
 
 			<!-- Fim do JavaScript -->
 
->>>>>>> 03f13b2469aa02a010117a666265dd17cee5f8e5
 		</body>
 	</html>
 @show
