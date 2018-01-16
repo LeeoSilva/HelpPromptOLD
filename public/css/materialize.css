@@ -2762,8 +2762,10 @@ video.responsive-video {
 .parallax-container {
   position: relative;
   overflow: hidden;
-  height: 500px;
+  height: 400px;
 }
+
+
 
 .parallax-container .parallax {
   position: absolute;
@@ -2786,6 +2788,48 @@ video.responsive-video {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+
+
+
+
+
+.parallax-container1 {
+  position: relative;
+  overflow: hidden;
+  height: 620px;
+}
+
+
+
+.parallax-container1 .parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.parallax-container1 .parallax img {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+
+
+
+
+
+
+
 
 .pin-top, .pin-bottom {
   position: relative;
