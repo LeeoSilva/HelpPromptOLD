@@ -17,7 +17,7 @@
 		</div>
 		<!-- Fim do Cabeçalho -->
 		<!--Início -->
-		<div class="container-fluid scrollup" id="scroll-to-top">
+		<div class="container-fluid scrollup">
 			<div id="index-banner" class="parallax-container1" >
 				<div class="section no-pad-bot" >
 					<div class="container">
@@ -155,7 +155,6 @@
 				@include('HtmlWraps.rodape')
 
 			<!-- Fim do Rodapé -->
-
 			<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 			<script type="text/javascript" src="js/materialize.js"></script>
 			
@@ -174,12 +173,11 @@
 					draggable: true, // Choose whether you can drag to open on touch screens,
 				});
 				// Final da navbar
-				
+						
 				</script>
 			<script type="text/javascript" src="javascript.js"></script>
 
 			<!-- Fim do JavaScript -->
-			<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 		</body>
 	</html>
