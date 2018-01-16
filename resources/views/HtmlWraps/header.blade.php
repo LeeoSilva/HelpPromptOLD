@@ -6,8 +6,8 @@
     padding: 0 0 25px 0;
     }
     .contatos{
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     text-align: right;
         }
     .cor{
@@ -47,15 +47,17 @@
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#trabalheconosco">Trabalhe conosco</a></li>
                 <li><a href="#parceiros">Parceiros</a></li>
+                <li><a href="#faleconosco">Fale Conosco</a></li>
                 <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Login</a>
                 </ul>
 
             <!--Web-->
             <ul class="right hide-on-med-and-down" id="menu-mobile">
                 <li><a href="index.php">Home</a></li>
-                <li><a href="#sobre" class="botao">Sobre</a></li>
-                <li><a href="#trabalheconosco" class="botao">Trabalhe conosco</a></li>     
-                <li><a href="#parceiros">Parceiros</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#trabalheconosco">Trabalhe conosco</a></li>    
+                <li><a href="#parceiros">Parceiros</a></li> 
+                <li><a href="#faleconosco">Fale Conosco</a></li>
                 <li><a class="waves-effect waves-light btn modal-trigger" href="#modal3">Login</a></li>
                 
             </ul>
@@ -71,12 +73,11 @@
                     </div>
                 </div>
                     <div class="modal-footer">
-                        <a href="" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
+                        <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
                         <a href="" class="modal-action modal-close waves-effect waves-green btn-flat ">Logar</a>
                     </div>
                 </div>
 
-<<<<<<< HEAD
       <!-- Modal Structure -->
                 <div id="modal3" class="modal modal-fixed-footer">
                     <div class="modal-content">
@@ -84,35 +85,9 @@
                             @include('Formularios.Login')
                     </div>
                     <div class="modal-footer">
-                        <a href="" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
+                        <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
                         <a href="" class="modal-action modal-close waves-effect waves-green btn-flat ">Logar</a>
                     </div>
                 </div>
-=======
-            <!--Web-->
-            <ul class="right hide-on-med-and-down" id="menu-mobile">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#trabalheconosco">Trabalhe conosco</a></li>
-                <li><a href="#parceiros">Parceiros</a></li>
-                <li><a href="trabalheconosco.blade.php">Trabalhe conosco</a></li>
-                <li><a class="waves-effect waves-light btn modal-trigger" href="#modal3">Login</a></li>
-                <!-- Modal Structure -->
-        </div>
-      </nav>
-      <div id="modal3" class="modal modal-fixed-footer">
-        <div class="modal-content">
-          <div class="modal-body">
-            <h4><font color="black">Login</font></h4>
-            @include('Formularios.Login')
-          </div>
-        </div>
-        <div class="modal-footer">
-          <a href="" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
-          <a href="" class="modal-action modal-close waves-effect waves-green btn-flat ">Logar</a>
-        </div>
-      </div>
->>>>>>> 7f57b625e0933cb2cae28cf02a68895031d3fb35
 		</div>
 @show
-</ul>

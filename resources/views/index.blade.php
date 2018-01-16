@@ -127,21 +127,38 @@
 			
 			<!-- Fim do Bloco parceiros -->
 
-			<!-- Icone fixo -->
+			<!-- Parallax -->
+			<div class="parallax-container valign-wrapper">
+						<div class="section no-pad-bot">
+							<div class="container">
+								<div class="row center">
+								</div>
+							</div>
+						</div>
+					<div class="parallax"><img src="fundo.jpg" alt="Unsplashed background img 2"></div>
+			  </div>
+			  <!-- Fim do Parallax -->
+			
+			<!-- Bloco Fale conosco -->
+					<div class="container" id="faleconosco">
+						<a nome="faleconosco">
+							@include('Formularios.faleconosco')
+					</div>
+			<!-- Bloco Fale conosco -->
+
+			<!-- Button fixo -->
 				@include('HtmlWraps.button')
-			<!-- Fim do Icone fixo -->
+			<!-- Fim do Button fixo -->
 
 			<!-- Rodapé -->
 				@include('HtmlWraps.rodape')
 
 			<!-- Fim do Rodapé -->
 
-			<!-- JavaScript -->
 			<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 			<script type="text/javascript" src="js/materialize.js"></script>
+			
 			<!-- JavaScript -->
-
-			<!-- Fim do JavaScript -->
 			<script type="text/javascript" language="javascript" >
 				$('#modal1').modal();
 				$('#modal2').modal();
@@ -156,10 +173,12 @@
 					draggable: true, // Choose whether you can drag to open on touch screens,
 				});
 				// Final da navbar
-			</script>
+				
+				</script>
 			<script type="text/javascript" src="javascript.js"></script>
 
 			<!-- Fim do JavaScript -->
+			<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 		</body>
 	</html>
