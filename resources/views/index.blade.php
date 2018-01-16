@@ -18,7 +18,7 @@
 		<!-- Fim do Cabeçalho -->
 		<!--Início -->
 		<div class="container-fluid scrollup">
-			<div id="index-banner" class="parallax-container" >
+			<div id="index-banner" class="parallax-container1" >
 				<div class="section no-pad-bot" >
 					<div class="container">
 						<br><br>
@@ -124,11 +124,12 @@
 					</a>
 				</div>
 			</div>
-			
+
+
 			<!-- Fim do Bloco parceiros -->
 
 			<!-- Icone fixo -->
-				@include('HtmlWraps.button')
+
 			<!-- Fim do Icone fixo -->
 
 			<!-- Rodapé -->
@@ -147,7 +148,7 @@
 				$('#modal2').modal();
 				$('#modal3').modal();
 				$('.parallax').parallax();
-				
+
 				// Inicio da navbar
 				$('.button-collapse').sideNav({
 					menuWidth: 300, // Default is 300
