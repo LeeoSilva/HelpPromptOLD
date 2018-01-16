@@ -1,42 +1,21 @@
 @section('button')
-<<<<<<< HEAD
-<div class="fixed-action-btn col s12 m6 l6 subscribe-me" >
-	<a class="btn-floating btn-large teal" class="scrolltop" onclick="topFunction()" id="myBtn" title="Go to top">
-		<i class="large material-icons">arrow_upward</i>
-	</a>
-</div>
-
-<script type="text/javascript" language="javascript">
-				// Inicio da navbar
-				$('.button-collapse').sideNav({
-					menuWidth: 300, // Default is 240
-					edge: 'left', // Choose the horizontal origin
-					closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-				});
-				// Final da navbar
-				//botão para aparecer depois da imagem
-				$(window).scroll(function() {
-					// console.log($(this).scrollTop());
-					if ($(this).scrollTop()>120)
-					{
-						$('#button').show();
-					}
-					else
-					{
-						$('#button').hide();
-					}
-				});
-				//Fim do botão para aparecer depois da imagem
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 100){
+            $('#scroll').fadeIn();
+        }else{
+            $('#scroll').fadeOut();
+        }
+    });
+    $('#scroll').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
 </script>
-
-@show
-=======
-<div id='button'>
-<div class="fixed-action-btn col s12 m6 l6 subscribe-me">
-	<a class="btn-floating btn-large teal">
-		<i class="large material-icons">arrow_upward</i>
-	</a>
-</div>
+<div class="fixed-action-btn horizontal">
+    <a class="btn-floating btn-large waves-effect waves-light teel right" id="scroll"><i class="material-icons">arrow_upward</i></a>
 </div>
 @show
->>>>>>> 03f13b2469aa02a010117a666265dd17cee5f8e5

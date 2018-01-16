@@ -32,12 +32,14 @@ width: 250px;
       <div class="footer-copyright">
         <div class="container">
           <div class="row">
-            <div class="col s12 m8 l8">
+            <div class="col s12 m8 l8" style="padding: 60px 0 0 0;">
               © 2018 Keys & Kases
             </div>
             <div class="col s12 m4 l4" style="text-align: right;">
-              <a href="https://www.facebook.com/HelpPrompt-131174850922742/?ref=bookmarks" target="_blank"><img src="Contatos/facebook.svg" class="contatos"></a>
-              <a href="https://twitter.com/HelpPrompt" target="_blank"><img src="Contatos/twitter.svg" class="contatos"></a>
+              <a href="https://www.facebook.com/HelpPrompt-131174850922742/?ref=bookmarks" target="_blank"><img src="Contatos/facebook.png" class="contatos"></a>
+              <a href="https://twitter.com/HelpPrompt" target="_blank"><img src="Contatos/twitter.png" class="contatos"></a>
+              <a href="https://www.linkedin.com/feed/" target="_blank"><img src="Contatos/linkedin.png" class="contatos"></a>
+              <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
             </div>
             <div></div>
           </div>
