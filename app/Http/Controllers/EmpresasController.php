@@ -26,9 +26,20 @@ class EmpresasController extends Controller{
 		return view('Empresas.List', compact('info'));
 	}
 
-	public function storeEstabelecimento(RegisterRequest $request){}
-	public function storeTelefones(RegisterRequest $request){}
-	public function storeTipo_servico(RegisterRequest $request){}
+	public function storeTelefones(RegisterRequest $request){
+		$tel = new telefones;
+		$tel = $request->telefones;
+		$tel->save();
+
+		return redirect('Empresas');
+	}
+		public function storeTipo_servico(RegisterRequest $request){
+		$tipo = new tipo_servico;
+		$tipo = $request->tipo_servico;
+		$tipo->save()
+
+		return redirect('Empresas');
+	}
 	public function storeVeiculos(RegisterRequest $request){
 		$veiculos = new veiculos;
 		$veiculos = $request->motos;
