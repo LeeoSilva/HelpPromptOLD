@@ -22,7 +22,7 @@
 				<div class="section no-pad-bot" >
 					<div class="container">
 						<br><br><br><br><br><br><br>
-						<h1 class="header col s12 center teal-text text-lighten-2" style="text-shadow: 3px 3px  4px black;">Help Prompt</h1>
+						<h1 class="header col s12 center teal-text text-lighten-2" style="text-shadow: 7px 7px  8px black;">Help Prompt</h1>
 						<div class="row center">
 							<h5 class="header col s12 light white-text" style="text-shadow: 3px 3px  4px black;"><strong>Sempre atentos à você!</strong></h5>
 						</div>
@@ -178,7 +178,12 @@
 			<script type="text/javascript" src="javascript.js"></script>
 
 			<!-- Fim do JavaScript -->
+<style>
+h1{
+	font-size:
+}
 
+</style>
 		</body>
 	</html>
 @show
