@@ -21,7 +21,7 @@
 			<div id="index-banner" class="parallax-container1" >
 				<div class="section no-pad-bot" >
 					<div class="container">
-						<br><br>
+						<br><br><br><br><br><br><br>
 						<h1 class="header col s12 center teal-text text-lighten-2" style="text-shadow: 3px 3px  4px black;">Help Prompt</h1>
 						<div class="row center">
 							<h5 class="header col s12 light white-text" style="text-shadow: 3px 3px  4px black;"><strong>Sempre atentos à você!</strong></h5>
@@ -68,7 +68,7 @@
 								</div>
 							</div>
 						</div>
-					<div class="parallax"><img src="fundo.jpg" alt="Unsplashed background img 2"></div>
+					<div class="parallax"><img src="fundo2.jpg" alt="Unsplashed background img 2"></div>
 			  </div>
 			  <!-- Fim do Parallax -->
 
@@ -87,7 +87,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="parallax"><img src="fundo.jpg" alt="Unsplashed background img 2"></div>
+					<div class="parallax"><img src="fundo3.jpg" alt="Unsplashed background img 2"></div>
 				</div>
 				<!-- Fim do Parallax -->
 
@@ -136,10 +136,10 @@
 								</div>
 							</div>
 						</div>
-					<div class="parallax"><img src="fundo.jpg" alt="Unsplashed background img 2"></div>
+					<div class="parallax"><img src="fundo4.jpg" alt="Unsplashed background img 2"></div>
 			  </div>
 			  <!-- Fim do Parallax -->
-			
+
 			<!-- Bloco Fale conosco -->
 					<div class="container" id="faleconosco">
 						<a nome="faleconosco">
@@ -157,7 +157,7 @@
 			<!-- Fim do Rodapé -->
 			<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 			<script type="text/javascript" src="js/materialize.js"></script>
-			
+
 			<!-- JavaScript -->
 			<script type="text/javascript" language="javascript" >
 				$('#modal1').modal();
@@ -173,7 +173,7 @@
 					draggable: true, // Choose whether you can drag to open on touch screens,
 				});
 				// Final da navbar
-						
+
 				</script>
 			<script type="text/javascript" src="javascript.js"></script>
 
