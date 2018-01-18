@@ -1,11 +1,10 @@
- <?php
+<?php
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Empresas extends Migration
-{
+class Empresas extends Migration{
     /**
      * Run the migrations.
      *
@@ -13,8 +12,6 @@ class Empresas extends Migration
      */
     public function up()
     {
-
-			// Schema::dropIfExists('estabelecimento');
 			Schema::create('estabelecimento', function (Blueprint $table) {
 				$table->increments('estab_id')->unsigned();
 			});
