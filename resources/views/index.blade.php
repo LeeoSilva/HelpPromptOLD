@@ -31,7 +31,7 @@
 							<br><br>
 						</div>
 					</div>
-					<div class="parallax"><img src="fundo.jpg"></div>
+					<div class="parallax"><img src="fundoalterado.jpg"></div>
 				</div>
 			</div>
 			<!-- Fim do Início -->
