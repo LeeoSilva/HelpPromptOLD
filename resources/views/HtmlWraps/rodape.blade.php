@@ -22,7 +22,7 @@ width: 250px;
           <div class="col l8 s12 m8">
             <h5 class="white-text">HelpPrompt</h5>
             <p class="grey-text text-lighten-4">Desenvolvido por Keys & Kases.</p>
-            <i class="material-icons prefix">room</i>Situado no Innova Space Coworking, Marília- SP
+            <i class="material-icons prefix">room</i>Innova Space Coworking<br>R. Hygino Muzi Filho, 529 - Mirante<br>CEP:17525-902 - Marília - SP
           </div>
           <div class="col l4 m4 s12">
             <img src="Logo/invertidasemfundo.png" class="logo2">

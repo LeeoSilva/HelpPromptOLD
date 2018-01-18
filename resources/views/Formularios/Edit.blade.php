@@ -1,5 +1,4 @@
 @section('content')
-	@include('HtmlWraps.header')
 	<h1>Update user number {{ $info->id }}</h1>
 
 	<hr>
@@ -63,7 +62,4 @@
 		</ul>
 	@endif
 
-
-
-	@include('HtmlWraps.footer')
 @show

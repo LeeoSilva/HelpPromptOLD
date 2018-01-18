@@ -37,7 +37,7 @@
 <div class="navbar" role="navigation">
       <nav class="cor">
         <div class="nav-wrapper" class="navbar-header">
-          <a href="index.php" class="brand-logo"><img src="Logo/invertidasemfundo.png" class="logo"/></a>
+          <a href="#" class="brand-logo"><img src="Logo/invertidasemfundo.png" class="logo"/></a>
           <a href="" data-activates="menu-mobile" class="button-collapse">
             <i class="material-icons">menu</i>
           </a>
@@ -53,7 +53,7 @@
 
             <!--Web-->
             <ul class="right hide-on-med-and-down" id="menu-mobile">
-                <li><a href="index.php">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#trabalheconosco">Trabalhe conosco</a></li>    
                 <li><a href="#parceiros">Parceiros</a></li> 
