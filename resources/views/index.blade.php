@@ -75,7 +75,7 @@
 				<!-- Trabalhe conosco -->
 					<div class="container" id="trabalheconosco">
 						<a nome="trabalheconosco">
-							@include('trabalheconosco')
+							@include('Formularios.trabalheconosco')
 					</div>
 				<!-- Fim do Trabalhe conosco -->
 
