@@ -23,7 +23,7 @@ Route::get  ('Geo/info',   'GeoLocation@getInfo');
 
 // Administração de usuários
 Route::get  ('Users',             'UsersController@index');
-Route::get  ('User/{id}', 		  'UsersController@show');
+Route::get  ('User/{id}', 		  	'UsersController@show');
 Route::post ('User/create',       'UsersController@store');
 Route::get  ('Register',          'UsersController@create');
 Route::get  ('User/delete/{id}',  'UsersController@destroy');
@@ -50,3 +50,5 @@ Route::post('Empresa/Cidade', 'EmpresasController@storeCidade');
 Route::post('Empresa/Bairro', 'EmpresasController@storeBairro');
 Route::post('Empresa/Endereco', 'EmpresasController@storeEndereco');
 Route::post('Empresa/Representante', 'EmpresasControler@storeRepresentante');
+
+Route::post('TrabalheConosco', 'TrabalhoConosco@index');

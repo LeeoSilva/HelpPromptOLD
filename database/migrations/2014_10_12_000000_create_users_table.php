@@ -1,109 +1,70 @@
--<?php
+<?php
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUsersTable extends Migration
-{
+class CreateUsersTable extends Migration{
     /**
      * Run the migrations.
      *
      * @return void
      */
     public function up(){
-
-        /*
-        |--------------------
-        | HelpPrompt Database
-        |--------------------
-        |
-        | Nosso arquivo de banco de dados. Para migrar o banco de
-        | dados, entre na linha de comando:
-        |
-        | php artisan migrate
-        |
-        | ---------------------
-        |
-        | A sintaxe é bem simples
-        |
-        | <MÉTODOS>
-        |
-        | increments(): Valor inteiro que é somado 1 a cada novo usuário;
-        | float(): Valor com decimais;
-        | string(): Uma cadeia de caracteres;
-        | integer(): Valor inteiro;
-        | date(): Campo reservado para data;
-        | rememberToken(): Identificador único para o usuário para botão RememberMe;
-        | timestamps(): Adiciona suporte baseado em data;
-        |
-        */
-
-				Schema::create('usr_geo', function (Blueprint $table) {
-            /*
-            |-----
-            | Geo
-            |-----
-            |
-            | Tabela para a geografia do usuário.
-            |
-            | <Registros>
-            |
-            | lat: Latitude do usuário;
-            | lon: Longitude do usuário;
-            |
-            | city: Cidade do usuário;
-            | state: Estado do usuário;
-            | country: Pais do usuário;
-            |
-            */
-
-            $table->increments('id')->unsigned();
-            $table->float('usr_lat');
-            $table->float('usr_lon');
-            $table->string('usr_cidade');
-            $table->string('usr_estado');
-            $table->string('usr_pais');
-						$table->string('usr_bairro');
-        });
-
-				Schema::create('usr_login', function (Blueprint $table) {
-            /*
-            |--------
-            | Users
-            |--------
-            | usr_ip:    Endereço Ipv4 do usuário;
-            | usr_name:  Nome do usuário;
-            | usr_pass:  Senha do usuário (md5 Crypyo);
-            | usr_mail:  Email do usuário;
-            | usr_cpf:   CPF do usuário;
-            | usr_level: Nível de permissão do usuário;
-            | usr_birth: Data de nascimento do usuário;
-            |
-            |
-            | <Níveis de permissão>
-            |
-            | 0 - Nível de permissão máxima (Desenvolvedores);
-            | 1 - Nível de permissão de Administradores (SysAdmins);
-            | 2 - Nível de permissão de empresas;
-            |
-            */
-
-						$table->increments('usr_id');
-            $table->string		('usr_ip');
-            $table->string		('usr_name')->unique();
-            $table->string		('usr_pass', 191);
-            $table->string		('usr_mail')->unique();
-            $table->string		('usr_cpf', 13);
-            $table->integer		('usr_level');
-            $table->date			('usr_birth');
-            $table->rememberToken();
-						$table->timestamps();
+			Schema::create('Login', function (Blueprint $table){
+				$table->string('usr_name', 191)->primary();
+				$table->string('usr_pass', 191);
+				$table->date('usr_birth');
 			});
-	}
 
-    public function down(){
-        Schema::drop('users');
-        Schema::drop('geo');
-    }
+			Schema::create('Emails', function (Blueprint $table){
+				$table->string('usr_mail', 191)->primary();
+				$table->string('usr_name');
+				$table->foreign('usr_name')->references('usr_name')->on('Login');
+			});
+
+			Schema::create('IP', function (Blueprint $table){
+				$table->string('usr_ip')->primary();
+				$table->string('usr_name');
+				$table->foreign('usr_name')->references('usr_name')->on('Login');
+			});
+
+			Schema::create('Latitude', function (Blueprint $table){
+				$table->float('usr_lat')->primary();
+				$table->string('usr_name');
+				$table->foreign('usr_name')->references('usr_name')->on('Login');
+			});
+
+			Schema::create('Longitude', function (Blueprint $table){
+				$table->float('usr_lon')->primary();
+				$table->string('usr_name');
+				$table->foreign('usr_name')->references('usr_name')->on('Login');
+			});
+
+			Schema::create('Users', function (Blueprint $table){
+				$table->increments('usr_id')->unsigned();
+				$table->string    ('usr_ip');
+				$table->string    ('usr_name');
+				$table->string    ('usr_mail');
+				$table->float     ('usr_lat');
+				$table->float     ('usr_lon');
+				$table->integer		('usr_level')->unsigned();
+				$table->integer		('usr_cpf')->unsigned();
+				$table->foreign   ('usr_ip')->references('usr_ip')->on('IP');
+				$table->foreign   ('usr_name')->references('usr_name')->on('Login');
+				$table->foreign		('usr_mail')->references('usr_mail')->on('Emails');
+				$table->foreign		('usr_lat')->references('usr_lat')->on('Latitude');
+				$table->foreign		('usr_lon')->references('usr_lon')->on('Longitude');
+			});
+
+		}
+
+		public function down(){
+			//Schema::dropIfExists('Login');
+			//Schema::dropIfExists('Emails');
+			//Schema::dropIfExists('IP');
+			//Schema::dropIfExists('Latitude');
+			//Schema::dropIfExists('Longitude');
+			//Schema::dropIfExists('Users');
+		}
 }

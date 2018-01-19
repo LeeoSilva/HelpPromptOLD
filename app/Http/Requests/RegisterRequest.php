@@ -37,21 +37,21 @@ class RegisterRequest extends FormRequest
             'usr_name.required'  => 'Campo do usuário não preenchido.',
             'usr_name.alpha_num' => 'Campo não deve ter characteres especiais',
             'usr_name.min'       => 'Campo do usuário deve ter no mínimo 6 caractéres.',
-			'usr_name.max'       => 'Campo de usuário muito grande.',
-			'usr_name.unique'    => 'Usuário já registrado.',
+						'usr_name.max'       => 'Campo de usuário muito grande.',
+						'usr_name.unique'    => 'Usuário já registrado.',
 
             'usr_pass.required'  => 'Campo da senha não preenchido',
-            'usr_pass.min'       => 'Campo de senha muito inseguro',           
+            'usr_pass.min'       => 'Campo de senha muito inseguro',
             'usr_pass.max'       => 'Campo de senha muito grande',
-            
+
             'usr_mail.required'  => 'Campo de email não preenchido',
             'usr_mail.email'     => 'Email não existe',
-			'usr_mail.max'       => 'Email muito grande',
-			'usr_mail.unique'    => 'Email já registrado.',
+						'usr_mail.max'       => 'Email muito grande',
+						'usr_mail.unique'    => 'Email já registrado.',
 
-			'usr_cpf.required'   => 'CPF não preenchido',
-			'usr_cpf.integer'    => 'Cheque seu campo de CPF',
-			'usr_cpf.unique'     => 'CPF já registrado.',
+						'usr_cpf.required'   => 'CPF não preenchido',
+						'usr_cpf.integer'    => 'Cheque seu campo de CPF',
+						'usr_cpf.unique'     => 'CPF já registrado.',
 
             'usr_birth.required' => 'Campo de nascimento não preenchido',
             'usr_birth.date'     => 'Cheque seu campo de nascimento',
@@ -74,7 +74,7 @@ class RegisterRequest extends FormRequest
         | 'alpha_num': Campo deverá ser alpha numérico (contem letras e números);
         | 'email': Campo deverá ter formato de email [e.g] exemplo@exemplo;
         | 'ipv4': Campo deverá ter o formato de um endereço ipv4 [e.g] 127.0.0.1;
-        | 'integer': Campo deverá ser preenchido por números inteiros; 
+        | 'integer': Campo deverá ser preenchido por números inteiros;
         | 'date': Campo deverá ter o formato de uma data;
         |
         | Obs: o número máximo dos campos no banco de dados são 191
