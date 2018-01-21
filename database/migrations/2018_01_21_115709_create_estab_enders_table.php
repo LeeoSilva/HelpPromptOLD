@@ -13,16 +13,15 @@ class CreateEstabEndersTable extends Migration
      */
     public function up()
     {
-			Schema::create('estab_ender', function (Blueprint $table) {
-				$table->string('estab_ender')->primary();
-				$table->string('estab_numero');
-				$table->string('estab_complement');
-				$table->integer('estab_id')->unsigned();
-				$table->foreign('estab_id')
-							->references('estab_id')
-							->on('estabelecimentos');
-			});
-
+        Schema::create('estab_enders', function (Blueprint $table) {
+					$table->string('estab_ender')->primary();
+					$table->string('estab_numero');
+					$table->string('estab_complement');
+					$table->integer('estab_id')->unsigned();
+					$table->foreign('estab_id')
+								->references('estab_id')
+								->on('estabelecimentos');
+        });
     }
 
     /**

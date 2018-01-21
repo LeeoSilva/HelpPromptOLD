@@ -13,11 +13,11 @@ class CreateEmailsTable extends Migration
      */
     public function up()
     {
-			Schema::create('email', function (Blueprint $table){
-				$table->string('usr_mail', 191)->primary();
-				$table->string('usr_name');
-				$table->foreign('usr_name')->references('usr_name')->on('Login');
-			});
+        Schema::create('emails', function (Blueprint $table) {
+					$table->string('usr_mail', 191)->primary();
+					$table->string('usr_name');
+					$table->foreign('usr_name')->references('usr_name')->on('logins');
+        });
     }
 
     /**

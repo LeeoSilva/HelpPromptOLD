@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTelefonesTable extends Migration
+class CreateLatitudesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,11 @@ class CreateTelefonesTable extends Migration
      */
     public function up()
     {
-			Schema::create('telefone', function (Blueprint $table) {
-				$table->integer('estab_tel')->unsigned()->primary();
-				$table->integer('estab_id')->unsigned();
-				$table->foreign('estab_id')
-							->references('estab_id')
-							->on('estabelecimentos');
-			});
+        Schema::create('latitudes', function (Blueprint $table) {
+					$table->float('usr_lat')->primary();
+					$table->string('usr_name');
+					$table->foreign('usr_name')->references('usr_name')->on('logins');
+        });
     }
 
     /**
@@ -29,6 +27,6 @@ class CreateTelefonesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('telefones');
+        Schema::dropIfExists('latitudes');
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLoginsTable extends Migration
+class CreateLongitudesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateLoginsTable extends Migration
      */
     public function up()
     {
-				Schema::create('login', function (Blueprint $table){
-					$table->string('usr_name', 191)->primary();
-					$table->string('usr_pass', 191);
-					$table->date('usr_birth');
-				});
+        Schema::create('longitudes', function (Blueprint $table) {
+					$table->float('usr_lon')->primary();
+					$table->string('usr_name');
+					$table->foreign('usr_name')->references('usr_name')->on('logins');
+        });
     }
 
     /**
@@ -27,6 +27,6 @@ class CreateLoginsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('logins');
+        Schema::dropIfExists('longitudes');
     }
 }

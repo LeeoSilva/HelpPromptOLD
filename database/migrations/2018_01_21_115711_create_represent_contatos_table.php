@@ -13,16 +13,16 @@ class CreateRepresentContatosTable extends Migration
      */
     public function up()
     {
-			Schema::create('represent_contato', function (Blueprint $table) {
-				$table->string('represent_nome')->primary();
-				$table->string('represent_email');
-				$table->integer('represent_cel')->unsigned();
-				$table->string('como_conheceu');
-				$table->integer('estab_id')->unsigned();
-				$table->foreign('estab_id')
-							->references('estab_id')
-							->on('estabelecimentos');
-			});
+        Schema::create('represent_contatos', function (Blueprint $table) {
+					$table->string('represent_nome')->primary();
+					$table->string('represent_email');
+					$table->integer('represent_cel')->unsigned();
+					$table->string('como_conheceu');
+					$table->integer('estab_id')->unsigned();
+					$table->foreign('estab_id')
+								->references('estab_id')
+								->on('estabelecimentos');
+        });
     }
 
     /**

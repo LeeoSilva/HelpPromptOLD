@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateEstabCidadesTable extends Migration
+class CreateLoginsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,11 @@ class CreateEstabCidadesTable extends Migration
      */
     public function up()
     {
-			Schema::create('estab_cidade', function (Blueprint $table) {
-				$table->string('estab_cidade')->primary();
-				$table->integer('estab_id')->unsigned();
-				$table->foreign('estab_id')
-							->references('estab_id')
-							->on('estabelecimentos');
-			});
+        Schema::create('logins', function (Blueprint $table) {
+					$table->string('usr_name', 191)->primary();
+					$table->string('usr_pass', 191);
+					$table->date('usr_birth');
+        });
     }
 
     /**
@@ -29,6 +27,6 @@ class CreateEstabCidadesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('estab_cidades');
+        Schema::dropIfExists('logins');
     }
 }

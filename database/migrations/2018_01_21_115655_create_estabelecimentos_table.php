@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateEstabCepsTable extends Migration
+class CreateEstabelecimentosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,9 @@ class CreateEstabCepsTable extends Migration
      */
     public function up()
     {
-			Schema::create('estab_cep', function (Blueprint $table) {
-				$table->integer('estab_cep')->unsigned()->primary();
-				$table->integer('estab_id')->unsigned();
-				$table->foreign('estab_id')
-							->references('estab_id')
-							->on('estabelecimento');
-			});
+        Schema::create('estabelecimentos', function (Blueprint $table) {
+						$table->increments('estab_id')->unsigned();
+        });
     }
 
     /**
@@ -29,6 +25,6 @@ class CreateEstabCepsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('estab_ceps');
+        Schema::dropIfExists('estabelecimentos');
     }
 }

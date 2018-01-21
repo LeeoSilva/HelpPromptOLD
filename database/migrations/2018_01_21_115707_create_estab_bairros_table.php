@@ -13,13 +13,13 @@ class CreateEstabBairrosTable extends Migration
      */
     public function up()
     {
-			Schema::create('estab_bairro', function (Blueprint $table) {
-				$table->string('estab_bairro')->primary();
-				$table->integer('estab_id')->unsigned();
-				$table->foreign('estab_id')
-							->references('estab_id')
-							->on('estabelecimentos');
-			});
+        Schema::create('estab_bairros', function (Blueprint $table) {
+					$table->string('estab_bairro')->primary();
+					$table->integer('estab_id')->unsigned();
+					$table->foreign('estab_id')
+								->references('estab_id')
+								->on('estabelecimentos');
+        });
     }
 
     /**

@@ -13,18 +13,17 @@ class CreateVeiculosTable extends Migration
      */
     public function up()
     {
-			Schema::create('veiculo', function (Blueprint $table) {
-				$table->integer('veiculos')->unsigned();
-				$table->primary('veiculos');
+        Schema::create('veiculos', function (Blueprint $table) {
+					$table->integer('veiculos')->unsigned()->primary();
 
-				$table->integer('motos')->unsigned();
-				$table->integer('carros')->unsigned();
-				$table->integer('guinchos')->unsigned();
-				$table->integer('estab_id')->unsigned();
-				$table->foreign('estab_id')
-							->references('estab_id')
-							->on('estabelecimentos');
-			});
+					$table->integer('motos')->unsigned();
+					$table->integer('carros')->unsigned();
+					$table->integer('guinchos')->unsigned();
+					$table->integer('estab_id')->unsigned();
+					$table->foreign('estab_id')
+								->references('estab_id')
+								->on('estabelecimentos');
+        });
     }
 
     /**

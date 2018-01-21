@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUsersTable extends Migration
+class CreateTipoServicosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,12 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
+        Schema::create('tipo_servicos', function (Blueprint $table) {
+					$table->string('tipo_servico')->primary();
+					$table->integer('estab_id')->unsigned();
+					$table->foreign('estab_id')
+								->references('estab_id')
+								->on('estabelecimentos');
         });
     }
 
@@ -26,6 +29,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('tipo_servicos');
     }
 }

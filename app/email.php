@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class emails extends Model
+class email extends Model
 {
     //
 }
