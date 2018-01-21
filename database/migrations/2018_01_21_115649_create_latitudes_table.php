@@ -17,6 +17,7 @@ class CreateLatitudesTable extends Migration
 					$table->float('usr_lat')->primary();
 					$table->string('usr_name');
 					$table->foreign('usr_name')->references('usr_name')->on('logins');
+					$table->timestamps();
         });
     }
 

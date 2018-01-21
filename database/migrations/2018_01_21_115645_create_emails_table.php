@@ -17,6 +17,7 @@ class CreateEmailsTable extends Migration
 					$table->string('usr_mail', 191)->primary();
 					$table->string('usr_name');
 					$table->foreign('usr_name')->references('usr_name')->on('logins');
+					$table->timestamps();
         });
     }
 

@@ -17,6 +17,7 @@ class CreateLoginsTable extends Migration
 					$table->string('usr_name', 191)->primary();
 					$table->string('usr_pass', 191);
 					$table->date('usr_birth');
+					$table->timestamps();
         });
     }
 

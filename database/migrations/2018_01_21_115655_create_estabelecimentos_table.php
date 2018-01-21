@@ -15,6 +15,7 @@ class CreateEstabelecimentosTable extends Migration
     {
         Schema::create('estabelecimentos', function (Blueprint $table) {
 						$table->increments('estab_id')->unsigned();
+						$table->timestamps();
         });
     }
 

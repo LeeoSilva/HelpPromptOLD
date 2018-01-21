@@ -27,7 +27,8 @@ class CreateUsersTable extends Migration
 					$table->foreign		('usr_mail')->references('usr_mail')->on('emails');
 					$table->foreign		('usr_lat')->references('usr_lat')->on('latitudes');
 					$table->foreign		('usr_lon')->references('usr_lon')->on('longitudes');
-        });
+					$table->timestamps();
+				});
     }
 
     /**

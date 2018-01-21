@@ -19,6 +19,7 @@ class CreateTipoServicosTable extends Migration
 					$table->foreign('estab_id')
 								->references('estab_id')
 								->on('estabelecimentos');
+					$table->timestamps();		
         });
     }
 

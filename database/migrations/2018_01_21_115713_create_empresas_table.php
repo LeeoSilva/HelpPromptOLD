@@ -35,6 +35,7 @@ class CreateEmpresasTable extends Migration
 					$table->foreign('endereco')->references('estab_ender')->on('estab_enders');
 					$table->foreign('veiculos')->references('veiculos')->on('veiculos');
 					$table->foreign('cep')->references('estab_cep')->on('estab_ceps');
+					$table->timestamps();
         });
     }
 

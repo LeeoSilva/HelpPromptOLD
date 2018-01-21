@@ -17,6 +17,7 @@ class CreateIpsTable extends Migration
 					$table->string('usr_ip')->primary();
 					$table->string('usr_name');
 					$table->foreign('usr_name')->references('usr_name')->on('logins');
+					$table->timestamps();
         });
     }
 
