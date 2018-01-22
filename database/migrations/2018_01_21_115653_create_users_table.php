@@ -22,11 +22,11 @@ class CreateUsersTable extends Migration
 					$table->float     ('usr_lon');
 					$table->integer		('usr_level')->unsigned();
 					$table->integer		('usr_cpf')->unsigned();
-					$table->foreign   ('usr_ip')->references('usr_ip')->on('ips');
-					$table->foreign   ('usr_name')->references('usr_name')->on('logins');
-					$table->foreign		('usr_mail')->references('usr_mail')->on('emails');
-					$table->foreign		('usr_lat')->references('usr_lat')->on('latitudes');
-					$table->foreign		('usr_lon')->references('usr_lon')->on('longitudes');
+					$table->foreign   ('usr_ip')->references('usr_ip')->on('ips')->onDelete('CASCADE');
+					$table->foreign   ('usr_name')->references('usr_name')->on('logins')->onDelete('CASCADE');
+					$table->foreign		('usr_mail')->references('usr_mail')->on('emails')->onDelete('CASCADE');
+					$table->foreign		('usr_lat')->references('usr_lat')->on('latitudes')->onDelete('CASCADE');
+					$table->foreign		('usr_lon')->references('usr_lon')->on('longitudes')->onDelete('CASCADE');
 					$table->timestamps();
 				});
     }

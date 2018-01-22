@@ -18,7 +18,8 @@ class CreateEstabCidadesTable extends Migration
 					$table->integer('estab_id')->unsigned();
 					$table->foreign('estab_id')
 								->references('estab_id')
-								->on('estabelecimentos');
+								->on('estabelecimentos')
+								->onDelete('CASCADE');
 					$table->timestamps();
 				});
     }

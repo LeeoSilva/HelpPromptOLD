@@ -3,10 +3,11 @@ Uma comunicação entre seguradora e segurado.
 
 ## Requisitos mínimos pra contribuir com o projeto:
 ### Software
-Composer;
-Git;
-WAMP ou XAMP Server caso esteja rodando Windows;
-e LAMP Server caso esteja rodando Linux;
++ Composer;
++ Git;
++ Apache;
++ MySQL ou MariaDB;
++ PHP7;
 
 ### Preparação para desenvolvimento:
 Após clonar o repositório são necessários alguns passos para começar a desenvolver.
@@ -56,9 +57,3 @@ Seu repositório deve estar atualizado a esse ponto.
 
 3. Envie para o branch principal.
 `git push -u origin master`
-
-
-## Ambiente de Banco de Dados `database/migrations/2014_10_12_000000_create_users_table.php`
-Tabela users: `App\users`;
-Tabela geo: `App\geo`;
-Ambiente de Controladores `app/Http/Controllers/`;

@@ -10,8 +10,7 @@ class ipSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
-    {
+    public function run(){
 			$LeeoSilva   = new ip;
 			$LoohBiondi  = new ip;
 			$LiivSouto 	 = new ip;
@@ -31,6 +30,5 @@ class ipSeeder extends Seeder
 			$Arnaldo	->save();
 			$MariaV		->save();
 			$MariaG		->save();
-
     }
 }

@@ -16,7 +16,7 @@ class CreateIpsTable extends Migration
         Schema::create('ips', function (Blueprint $table) {
 					$table->string('usr_ip')->primary();
 					$table->string('usr_name');
-					$table->foreign('usr_name')->references('usr_name')->on('logins');
+					$table->foreign('usr_name')->references('usr_name')->on('logins')->onDelete('CASCADE');
 					$table->timestamps();
         });
     }

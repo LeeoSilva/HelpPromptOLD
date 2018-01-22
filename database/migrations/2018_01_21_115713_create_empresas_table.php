@@ -26,15 +26,15 @@ class CreateEmpresasTable extends Migration
 					$table->string('endereco', 191);
 					$table->integer('veiculos')->unsigned();
 					$table->integer('cep')->unsigned();
-					$table->foreign('estabelecimentos')->references('estab_id')->on('estabelecimentos');
-					$table->foreign('tipo_servico')->references('tipo_servico')->on('tipo_servicos');
-					$table->foreign('telefones')->references('estab_tel')->on('telefones');
-					$table->foreign('representante')->references('represent_nome')->on('represent_contatos');
-					$table->foreign('estado')->references('estab_estado')->on('estab_estados');
-					$table->foreign('cidade')->references('estab_cidade')->on('estab_cidades');
-					$table->foreign('endereco')->references('estab_ender')->on('estab_enders');
-					$table->foreign('veiculos')->references('veiculos')->on('veiculos');
-					$table->foreign('cep')->references('estab_cep')->on('estab_ceps');
+					$table->foreign('estabelecimentos')->references('estab_id')->on('estabelecimentos')->onDelete('CASCADE');
+					$table->foreign('tipo_servico')->references('tipo_servico')->on('tipo_servicos')->onDelete('CASCADE');
+					$table->foreign('telefones')->references('estab_tel')->on('telefones')->onDelete('CASCADE');
+					$table->foreign('representante')->references('represent_nome')->on('represent_contatos')->onDelete('CASCADE');
+					$table->foreign('estado')->references('estab_estado')->on('estab_estados')->onDelete('CASCADE');
+					$table->foreign('cidade')->references('estab_cidade')->on('estab_cidades')->onDelete('CASCADE');
+					$table->foreign('endereco')->references('estab_ender')->on('estab_enders')->onDelete('CASCADE');
+					$table->foreign('veiculos')->references('veiculos')->on('veiculos')->onDelete('CASCADE');
+					$table->foreign('cep')->references('estab_cep')->on('estab_ceps')->onDelete('CASCADE');
 					$table->timestamps();
         });
     }

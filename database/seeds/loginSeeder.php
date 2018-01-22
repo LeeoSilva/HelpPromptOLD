@@ -41,5 +41,12 @@ class loginSeeder extends Seeder
 			$MariaG->usr_name				= 'Maria Gabriela';
 			$MariaG->usr_pass				= 'doawijdawoijdawijdaw';
 			$MariaG->usr_birth			= '2001-01-24';
+
+			$LeeoSilva ->save();
+			$LoohBiondi->save();
+			$LiivSouto ->save();
+			$Arnaldo	 ->save();
+			$MariaV		 ->save();
+			$MariaG		 ->save();
     }
 }

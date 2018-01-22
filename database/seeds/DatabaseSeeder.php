@@ -1,23 +1,6 @@
 <?php
 
 use Illuminate\Database\Seeder;
-// use App\login;
-// use App\email;
-// use App\ip;
-// use App\latitude;
-// use App\longitude;
-// use App\user;
-// use App\estabelecimento;
-// use App\estab_cep;
-// use App\telefone;
-// use App\tipo_servico;
-// use App\veiculo;
-// use App\estab_estado;
-// use App\estab_cidade;
-// use App\estab_bairro;
-// use App\estab_ender;
-// use App\represent_contato;
-// use App\empresa;
 
 class DatabaseSeeder extends Seeder{
     /**

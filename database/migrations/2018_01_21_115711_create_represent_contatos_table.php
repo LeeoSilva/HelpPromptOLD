@@ -21,8 +21,9 @@ class CreateRepresentContatosTable extends Migration
 					$table->integer('estab_id')->unsigned();
 					$table->foreign('estab_id')
 								->references('estab_id')
-								->on('estabelecimentos');
-					$table->timestamps();			
+								->on('estabelecimentos')
+								->onDelete('CASCADE');
+					$table->timestamps();
         });
     }
 
