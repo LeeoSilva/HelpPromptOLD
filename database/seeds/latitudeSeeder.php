@@ -20,17 +20,17 @@ class latitudeSeeder extends Seeder
 			$MariaG 		= new latitude;
 
 			$LeeoSilva->usr_lat 	= 0.0000;
-			$LoohBiondi->usr_lat 	= 0.0000;
-			$LiivSouto->usr_lat 	= 0.0000;
-			$Arnaldo->usr_lat 		= 0.0000;
-			$MariaV->usr_lat 			= 0.0000;
-			$MariaG->usr_lat 			= 0.0000;
+			$LoohBiondi->usr_lat 	= 0.1000;
+			$LiivSouto->usr_lat 	= 0.0200;
+			$Arnaldo->usr_lat 		= 0.0030;
+			$MariaV->usr_lat 			= 0.0005;
+			$MariaG->usr_lat 			= 1.0000;
 
 			$LeeoSilva ->save();
 			$LoohBiondi->save();
 			$LiivSouto ->save();
 			$Arnaldo   ->save();
-			$MariV     ->save();
-			$MariG     ->save();
+			$MariaV    ->save();
+			$MariaG    ->save();
     }
 }

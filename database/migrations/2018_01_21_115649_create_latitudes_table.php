@@ -14,7 +14,7 @@ class CreateLatitudesTable extends Migration
     public function up()
     {
         Schema::create('latitudes', function (Blueprint $table) {
-					$table->float('usr_lat')->primary();
+					$table->double('usr_lat')->primary();
 					$table->string('usr_name');
 					$table->foreign('usr_name')->references('usr_name')->on('logins')->onDelete('CASCADE');
 					$table->timestamps();

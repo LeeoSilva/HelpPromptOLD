@@ -9,6 +9,7 @@ class DatabaseSeeder extends Seeder{
      * @return void
      */
     public function run(){
+			DB::statement('SET FOREIGN_KEY_CHECKS=0;');
 			$this->call(loginSeeder::class);
 			$this->call(emailSeeder::class);
 			$this->call(ipSeeder::class);
@@ -28,5 +29,7 @@ class DatabaseSeeder extends Seeder{
 			// $this->call(estab_ender::class);
 			// $this->call(represent_contato::class);
 			// $this->call(empresa::class);
+
+			DB::statement('SET FOREIGN_KEY_CHECKS=1;');
     }
 }

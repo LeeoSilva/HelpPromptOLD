@@ -19,16 +19,16 @@ class ipSeeder extends Seeder
 			$MariaG  		 = new ip;
 			$LeeoSilva->usr_ip   = '179.232.213.58';
 			$LoohBiondi->usr_ip  = '0.0.0.0';
-			$LiivSouto->usr_ip   = '0.0.0.0';
-			$Arnaldo->usr_ip     = '0.0.0.0';
-			$MariaV->usr_ip      = '0.0.0.0';
-			$MariaG->usr_ip      = '0.0.0.0';
+			$LiivSouto->usr_ip   = '0.1.0.0';
+			$Arnaldo->usr_ip     = '0.0.2.0';
+			$MariaV->usr_ip      = '0.0.0.3';
+			$MariaG->usr_ip      = '1.0.0.0';
 
-			$LeeoSilva->save();
-			$Loog			->save();
-			$LiivSouto->save();
-			$Arnaldo	->save();
-			$MariaV		->save();
-			$MariaG		->save();
+			$LeeoSilva ->save();
+			$LoohBiondi->save();
+			$LiivSouto ->save();
+			$Arnaldo	 ->save();
+			$MariaV		 ->save();
+			$MariaG		 ->save();
     }
 }

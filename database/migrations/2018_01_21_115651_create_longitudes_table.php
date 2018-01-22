@@ -14,7 +14,7 @@ class CreateLongitudesTable extends Migration
     public function up()
     {
         Schema::create('longitudes', function (Blueprint $table) {
-					$table->float('usr_lon')->primary();
+					$table->double('usr_lon')->primary();
 					$table->string('usr_name');
 					$table->foreign('usr_name')->references('usr_name')->on('logins')->onDelete('CASCADE');
 					$table->timestamps();
