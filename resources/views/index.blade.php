@@ -173,7 +173,11 @@
 					draggable: true, // Choose whether you can drag to open on touch screens,
 				});
 				// Final da navbar
+				
 
+				$(document).ready(function() {
+					$('select').material_select();
+				});
 				</script>
 			<script type="text/javascript" src="javascript.js"></script>
 
