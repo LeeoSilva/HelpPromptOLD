@@ -1,5 +1,7 @@
 @section('contente')
-
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+<script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
 	<div class="row">
     <form class="col s12 m12 l12">
         {!! Form::open(['url' => 'User/create', 'method' => 'post', 'autocomplete' => 'off']) !!}
@@ -23,12 +25,17 @@
         {!! Form::label('email', 'Email: ') !!}
     </div>
 
-     <div class="input-field col s6 m6 l6">
+     <div class="input-field col s6 m6 l6" id="calendario">
         {!! Form::date('birthday') !!} <br>
+     
      </div>
-  
+    
     </form>
-  </div>
+  </div> <script>
+        $(function() {
+            $("#calendario").datepicker({dateFormat: 'dd-mm-yy'});
+        });
+    </script>
 	{!! Form::close() !!}
 	
 	{{-- Verificação e apresentação de erros --}}
