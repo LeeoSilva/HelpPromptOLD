@@ -10,7 +10,7 @@ main {
 flex: 1 0 auto;
 }
 .logo2{
-height: 100px;
+height: 130px;
 width: 250px;
 }
 </style>
@@ -48,5 +48,5 @@ width: 250px;
     </main>
     </header><!-- /header -->
   </footer>
-  
+
 @show

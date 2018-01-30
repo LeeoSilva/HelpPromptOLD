@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,7 +26,7 @@
 						<br><br><br><br><br><br><br>
 						<h1 class="header col s12 center teal-text text-lighten-2" style="text-shadow: 7px 7px  8px black;">Help Prompt</h1>
 						<div class="row center">
-							<h5 class="header col s12 light white-text" style="text-shadow: 3px 3px  4px black;"><strong>Sempre atentos à você!</strong></h5>
+							<h5 class="header col s12 light white-text" style="text-shadow: 5px 5px  6px black;"><strong>Sempre atentos à você!</strong></h5>
 						</div>
 						<div class="row">
 							@include('HtmlWraps.modal');
@@ -38,26 +40,26 @@
 
 			<!-- Bloco sobre  -->
 			<div class="container-fluid" id="sobre">
-				<div>
 					<a name="sobre">
-						<div class="section">
-							<div class="container">
-								<div class="row"><h3 class="black-text" style="text-shadow: 3px 3px  4px black;">SOBRE  </h3></div>
+					</a>
+					<div class="container">
+								<div class="row">
+									<div class="col s12 m12 l12">
+									<h2 class="black-text">SOBRE  </h2></div>
+								</div>
 								<div class="divider"></div>
 								<div class="row">
 									<div class="col s12 m4 l4 left">
-										<img src="Logo/logobrancasemfundo.png" class="responsive-img" style="text-align: center">
-									</div>
-									<div class="col s12 m8 l8 right" style="padding-left: 10px; padding-right: 10px;">
-										<div class="bloco">
-											<h3 class="center-align light flow-text black-text" style="line-height: 150%; ">Help Prompt é um aplicativo desenvolvido pela empresa Keys & Kases, que tem como desafio facilitar a vida de quem procura uma oficina mecânica mais próxima e um maior gosto financeiro. Help Prompt também tem a capacidade de calcular o tempo de trajeto para a chegada de um prestador de serviço até você.</h3>
-										</div>
+										<div class="icon-block">
+										<img src="Logo/logobrancasemfundo.png" class="responsive-img" style="text-align: left;">
 									</div>
 								</div>
+									<div class="col s12 m8 l8">
+											<h4 class="light flow-text black-text" style="line-height: 150%;" style="text-align: justify;">Help Prompt é um aplicativo desenvolvido pela empresa Keys & Kases, que tem como desafio facilitar a vida de quem procura uma oficina mecânica mais próxima e um maior gosto financeiro. Help Prompt também tem a capacidade de calcular o tempo de trajeto para a chegada de um prestador de serviço até você.</h2>
+										</div>
+									</div>
+</div>
 							</div>
-						</a>
-					</div>
-				</div>
 				<!-- Fim do Bloco sobre -->
 
 				<!-- Parallax -->
@@ -95,12 +97,12 @@
 				<div class="container" id="parceiros">
 					<a name="parceiros">
 						<div class="section black-text">
-							<div class="row"><h3 style="text-shadow: 3px 3px  4px black;">PARCEIROS</h3></div>
+							<div class="row"><h2>PARCEIROS</h2></div>
 							<div class="divider"></div>
 							<div class="row">
 								<div class="col s12 m4 l4 white">
 									<div class="icon-block">
-										<h2 class="center brown-text"><img src="Parceiros/etec.png" class="parceiros"></h2>
+										<h2 class="center brown-text"><img src="Parceiros/etec.jpg" class="parceiros"></h2>
 										<h5 class="center">Etec Antonio Devisate</h5>
 										<p class="light" style="text-align: center; padding: 5px;">Escola Técnica Estadual</p>
 									</div>
@@ -114,7 +116,7 @@
 								</div>
 								<div class="col s12 m4 l4 white">
 									<div class="icon-block">
-										<h2 class="center brown-text"><img src="Parceiros/citec.png" class="parceiros"></h2>
+										<h2 class="center brown-text"><img src="Parceiros/citec.jpg" class="parceiros"></h2>
 										<h5 class="center">Citec Marília</h5>
 										<p class="light" style="text-align: center; padding: 5px;">Centro de Inovação Técnológico de Marília (CITEC - Marília) </p>
 									</div>
@@ -173,7 +175,7 @@
 					draggable: true, // Choose whether you can drag to open on touch screens,
 				});
 				// Final da navbar
-				
+
 
 				$(document).ready(function() {
 					$('select').material_select();
@@ -183,8 +185,32 @@
 
 			<!-- Fim do JavaScript -->
 <style>
-h1{
-	font-size:
+
+h2{
+	  font-family: 'Josefin Sans', serif;
+		text-shadow: 2px 1px 2px black;"
+}
+
+#trabalheconosco{
+	height: 660px;
+	padding: 110px 10px 10px 0px;
+	background-color:  #FBFBFB;
+}
+
+#parceiros{
+	padding: 110px 10px 10px 0px;
+	height: 660px;
+	background-color:  #FBFBFB;
+}
+
+#sobre{
+		background-color:  #FBFBFB;
+		padding: 110px 10px 10px 0px;
+		height: 660px;
+}
+
+.icon-block{
+			background-color:  #FBFBFB;
 }
 
 </style>
