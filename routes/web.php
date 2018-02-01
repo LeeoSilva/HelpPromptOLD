@@ -15,7 +15,8 @@
 // Páginas
 Route::get  ('/',        'Requests@index');
 Route::get  ('Login',    'Requests@Login');
-Route::get  ('Register', 'Request@Register');
+Route::get  ('Register', 'Requests@Register');
+Route::post  ('Work',     'Requests@Work');
 
 // GeoLocalização
 Route::post ('Geo/update', 'GeoLocation@update');
