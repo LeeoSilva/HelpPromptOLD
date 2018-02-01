@@ -100,21 +100,21 @@
 							<div class="row"><h2>PARCEIROS</h2></div>
 							<div class="divider"></div>
 							<div class="row">
-								<div class="col s12 m4 l4 white">
-									<div class="icon-block">
+								<div class="col s12 m4 l4">
+									<div class="icon-block" class="grow">
 										<h2 class="center brown-text"><img src="Parceiros/etec.jpg" class="parceiros"></h2>
 										<h5 class="center">Etec Antonio Devisate</h5>
 										<p class="light" style="text-align: center; padding: 5px;">Escola Técnica Estadual</p>
 									</div>
 								</div>
-								<div class="col s12 m4 l4 white">
+								<div class="col s12 m4 l4">
 									<div class="icon-block">
 										<h2 class="center brown-text"><img src="Parceiros/ciem.png" class="parceiros"></h2>
 										<h5 class="center">Ciem Marília</h5>
 										<p class="light" style="text-align: center; padding: 5px;">Centro Incubador de Empresas de Marília (CIEM - Marília)</p>
 									</div>
 								</div>
-								<div class="col s12 m4 l4 white">
+								<div class="col s12 m4 l4">
 									<div class="icon-block">
 										<h2 class="center brown-text"><img src="Parceiros/citec.jpg" class="parceiros"></h2>
 										<h5 class="center">Citec Marília</h5>
@@ -211,6 +211,25 @@ h2{
 
 .icon-block{
 			background-color:  #FBFBFB;
+}
+/*
+#fade
+{
+        opacity:0.5;
+}
+#fade:hover
+{
+        opacity:1;
+}
+
+//adicionar id fade
+*/
+
+.grow:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
 }
 
 </style>
