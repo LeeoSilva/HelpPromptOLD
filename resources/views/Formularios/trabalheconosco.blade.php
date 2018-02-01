@@ -2,7 +2,7 @@
 <div class="section black-text">
 							<div class="row"><h2>TRABALHE CONOSCO</h2></div>
 							<div class="divider"></div>
-								<form class="col s12 m12 l12" action="work.blade.php">
+								<form class="col s12 m12 l12" action="Work">
 								{!! Form::open(['url' => 'TrabalheConosco', 'method' => 'post', 'autocomplete' => 'off']); !!}
 									<div class="row">
 										<div class="input-field col s12 l6 m6">
@@ -33,9 +33,11 @@
 									</div>
                                     <div class="row">
 										<div class="input-field col s12 l12 m12">
-										<button class="btn waves-effect waves-light right" type="submit" name="action">Enviar
+										{!! Form :: submit ('enviar', array ('class' => 'btn waves-effect waves-light right')) !!}
+<!-- 
+										<button class="btn waves-effect waves-light right material-icons right" type="submit" name="action">Enviar
                                             <i class="material-icons right">send</i>
-                                        </button>
+                                        </button> -->
 										</div>
 									</div>
 
