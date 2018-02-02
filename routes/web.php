@@ -16,7 +16,7 @@
 Route::get  ('/',        'Requests@index');
 Route::get  ('Login',    'Requests@Login');
 Route::get  ('Register', 'Requests@Register');
-Route::post  ('Work',     'Requests@Work');
+Route::get  ('Work',     'TrabalheConosco@index');
 
 // GeoLocalização
 Route::post ('Geo/update', 'GeoLocation@update');
@@ -52,4 +52,4 @@ Route::post('Empresa/Bairro', 'EmpresasController@storeBairro');
 Route::post('Empresa/Endereco', 'EmpresasController@storeEndereco');
 Route::post('Empresa/Representante', 'EmpresasControler@storeRepresentante');
 
-Route::post('TrabalheConosco', 'TrabalhoConosco@index');
+//Route::post('TrabalheConosco', 'TrabalhoConosco@index');

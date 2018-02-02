@@ -8,7 +8,7 @@
 										<div class="input-field col s12 l6 m6">
 										    <i class="material-icons prefix">account_circle</i>
 											{!! Form::text('username') !!} <br>
-											{!! Form::label('name', 'Nome (ou empresa): ') !!}
+											{!! Form::label('name', 'Nome: ') !!}
 										</div>
 
 										<div class="input-field col s12 l6 m6">
@@ -27,17 +27,13 @@
 
 										<div class="input-field col s12 l6 m6">
 										<i class="material-icons prefix">room</i>
-											{!! Form::text('userlocation') !!}
-                                            {!!Form::label('Endereço:')!!}
+											{!! Form::text('tipo_servico') !!}
+                                            {!!Form::label('Tipo de Serviço:')!!}
 										</div>
 									</div>
                                     <div class="row">
 										<div class="input-field col s12 l12 m12">
-										{!! Form :: submit ('enviar', array ('class' => 'btn waves-effect waves-light right')) !!}
-<!-- 
-										<button class="btn waves-effect waves-light right material-icons right" type="submit" name="action">Enviar
-                                            <i class="material-icons right">send</i>
-                                        </button> -->
+											{!! Form :: submit ('enviar', array ('class' => 'btn waves-effect waves-light right')) !!}
 										</div>
 									</div>
 
