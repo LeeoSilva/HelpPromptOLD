@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Request;
-use App\users; // Tabela de 'users' banco de dados.
+use App\user; // Tabela de 'users' banco de dados.
 use App\geo; // Tabela de 'geo' banco de dados.
 use Carbon\Carbon; // Função de datas do laravel.
 use App\Http\Requests\RegisterRequest; // Request de validação para registro.
@@ -16,7 +16,7 @@ class UsersController extends Controller{
       // Envia todos os usuários registrados no banco
       // Para uma página trata-los e lista-los
 
-			$info = users::all();
+			$info = user::all();
 			return view('Users.List', compact('info'));
     }
 
@@ -32,8 +32,8 @@ class UsersController extends Controller{
         */
 
 
-				$users            = new users;
-        $users->usr_ip    = Request::ip(); // Request especial para pegar o IP do usuário (teste).
+        $users            = new user;
+        $users->usr_ip    = Request::ip(); // Solicita o IP do usuário.
         $users->usr_name  = $request->usr_name;
         $users->usr_pass  = md5($request->usr_pass);
         $users->usr_mail  = $request->usr_mail;
@@ -73,7 +73,7 @@ class UsersController extends Controller{
 		|
 		*/
 
-		$output =  users::find($id);
+		$output =  user::find($id);
 		if( $output == null ){ return "Usuário não existe."; }
         return $output;
     }
@@ -90,7 +90,7 @@ class UsersController extends Controller{
 		|
 		*/
 
-		$destroy = users::find($id);
+		$destroy = user::find($id);
 		if( $destroy == null ){ return "Usuário não existe."; }
 		$destroy->delete();
 		return redirect('Users');
@@ -109,7 +109,7 @@ class UsersController extends Controller{
 		|
 		*/
 
-		$info = users::find($id);
+		$info = user::find($id);
 		if( $info == null ){ return 'Usuário não existe.'; }
 		return view('Formularios.Edit', compact('info'));
 	}
@@ -128,7 +128,7 @@ class UsersController extends Controller{
 		|
 		*/
 
-		$users = users::find($id);
+		$users = user::find($id);
 
 		if( $users == null ){ return "Usuário não existe"; }
 		$users->usr_ip    = $request->usr_ip;
@@ -150,15 +150,15 @@ class UsersController extends Controller{
 	|
 	| Métodos GET para pegar cada valor individual do banco de dados.
 	| [e.g] O método getIP recebe o IP do usuário como parâmetro e
-	| retorna o IP daquele usuário daquele id em específico.
+	| retorna o IP daquele usuário daquele ID em específico.
 	| O método getName recebe o IP e retorna o nome, e assim por diante;
 	*/
 
-	public function getIP($id)   { return users::find($id)->usr_ip;    }
-	public function getName($id) { return users::find($id)->usr_name;  }
-	public function getPass($id) { return users::find($id)->usr_pass;  }
-	public function getMail($id) { return users::find($id)->usr_mail;  }
-	public function getCPF($id)  { return users::find($id)->usr_cpf;   }
-	public function getBirth($id){ return users::find($id)->usr_birth; }
-	public function getLevel($id){ return users::find($id)->usr_level; }
+	public function getIP($id)   { return user::find($id)->usr_ip;    }
+	public function getName($id) { return user::find($id)->usr_name;  }
+	public function getPass($id) { return user::find($id)->usr_pass;  }
+	public function getMail($id) { return user::find($id)->usr_mail;  }
+	public function getCPF($id)  { return user::find($id)->usr_cpf;   }
+	public function getBirth($id){ return user::find($id)->usr_birth; }
+	public function getLevel($id){ return user::find($id)->usr_level; }
 }

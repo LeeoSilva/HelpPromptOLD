@@ -65,7 +65,6 @@ class EmpresasController extends Controller{
 	public function storeCidade(CidadeRequest $request){
 		$cidade = new estab_cidade;
 		$cidade = $request->estab_cidade;
-
 		return redirect('Empresas');
 	}
 
@@ -79,7 +78,6 @@ class EmpresasController extends Controller{
 	public function storeBairro(BairroRequest $request){
 		$bairro = new estab_bairro;
 		$bairro = $request->estab_bairro;
-
 		return redirect('Empresas');
 	}
 
@@ -87,7 +85,6 @@ class EmpresasController extends Controller{
 		$ender = new estab_ender;
 		$ender = $request->estab_ender;
 		$ender->save();
-
 		return redirect('Empresas');
 	}
 

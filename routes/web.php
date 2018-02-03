@@ -3,7 +3,7 @@
 /*
 |--------------------------------------------------------------------------
 | Web Routes
-|---------p----------------------------------------------------------------
+|-------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
 | routes are loaded by the RouteServiceProvider within a group which
@@ -40,15 +40,21 @@ Route::get  ('User/Birth/{id}',  'UsersController@getBirth');
 Route::get  ('Users/Level/{id}', 'UsersController@getLevel');
 
 // Administração de empresas
-Route::post('Empresas/estabelecimento', 'EmpresasController@storeEstabelecimento');
-Route::post('Empresas/cep', 'EmpresasController@storeEstab_cep');
-Route::post('Empresas/telefones', 'EmpresasController@storeTelefones');
-Route::post('Empresas/TipoServico', 'EmpresasController@storeTipo_servico');
-Route::post('Empresas/Veiculos', 'EmpresasController@storeVeiculos');
-Route::post('Empresas/Estado', 'EmpresasControler@storeEstado');
-Route::post('Empresa/Cidade', 'EmpresasController@storeCidade');
-Route::post('Empresa/Bairro', 'EmpresasController@storeBairro');
-Route::post('Empresa/Endereco', 'EmpresasController@storeEndereco');
-Route::post('Empresa/Representante', 'EmpresasControler@storeRepresentante');
+Route::post('Empresas', 							 'EmpresasController@index');
+Route::post('Empresa/estabelecimento', 'EmpresasController@storeEstabelecimento');
+Route::post('Empresa/cep', 						 'EmpresasController@storeEstab_cep');
+Route::post('Empresa/telefones', 			 'EmpresasController@storeTelefones');
+Route::post('Empresa/TipoServico', 		 'EmpresasController@storeTipo_servico');
+Route::post('Empresa/Veiculos', 			 'EmpresasController@storeVeiculos');
+Route::post('Empresa/Estado', 				 'EmpresasControler@storeEstado');
+Route::post('Empresa/Cidade', 				 'EmpresasController@storeCidade');
+Route::post('Empresa/Bairro', 				 'EmpresasController@storeBairro');
+Route::post('Empresa/Endereco', 			 'EmpresasController@storeEndereco');
+Route::post('Empresa/Representante', 	 'EmpresasControler@storeRepresentante');
 
-Route::post('TrabalheConosco', 'TrabalhoConosco@index');
+// Posts para administração e criação de
+Route::post('TrabalheConosco', 					 'TrabalhoConosco@index');
+Route::post('TrabalheConosco/create', 	 'TrabalheConosco@store');
+Route::post('TrabalheConosco/update', 	 'TrabalheConosco@update');
+Route::post('TrabalheConosco/delete', 	 'TrabalheConosco@delete');
+Route::post('TrabalheConosco/edit/{id}', 'TrabalheConosco@edit');
