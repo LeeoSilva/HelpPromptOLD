@@ -25,17 +25,13 @@
         {!! Form::label('email', 'Email: ') !!}
     </div>
 
-     <div class="input-field col s6 m6 l6" id="calendario">
-        {!! Form::date('birthday') !!} <br>
+     <div class="input-field col s6 m6 l6">
+     {!! Form::date('birthday') !!} <br>
      
      </div>
     
     </form>
-  </div> <script>
-        $(function() {
-            $("#calendario").datepicker({dateFormat: 'dd-mm-yy'});
-        });
-    </script>
+  </div>
 	{!! Form::close() !!}
 	
 	{{-- Verificação e apresentação de erros --}}

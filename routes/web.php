@@ -15,7 +15,8 @@
 // Páginas
 Route::get  ('/',        'Requests@index');
 Route::get  ('Login',    'Requests@Login');
-Route::get  ('Register', 'Request@Register');
+Route::get  ('Register', 'Requests@Register');
+Route::get  ('Work',     'TrabalheConosco@index');
 
 // GeoLocalização
 Route::post ('Geo/update', 'GeoLocation@update');
@@ -40,6 +41,7 @@ Route::get  ('User/Birth/{id}',  'UsersController@getBirth');
 Route::get  ('Users/Level/{id}', 'UsersController@getLevel');
 
 // Administração de empresas
+<<<<<<< HEAD
 Route::post('Empresas', 							 'EmpresasController@index');
 Route::post('Empresa/estabelecimento', 'EmpresasController@storeEstabelecimento');
 Route::post('Empresa/cep', 						 'EmpresasController@storeEstab_cep');
@@ -58,3 +60,17 @@ Route::post('TrabalheConosco/create', 	 'TrabalheConosco@store');
 Route::post('TrabalheConosco/update', 	 'TrabalheConosco@update');
 Route::post('TrabalheConosco/delete', 	 'TrabalheConosco@delete');
 Route::post('TrabalheConosco/edit/{id}', 'TrabalheConosco@edit');
+=======
+Route::post('Empresas/estabelecimento', 'EmpresasController@storeEstabelecimento');
+Route::post('Empresas/cep', 'EmpresasController@storeEstab_cep');
+Route::post('Empresas/telefones', 'EmpresasController@storeTelefones');
+Route::post('Empresas/TipoServico', 'EmpresasController@storeTipo_servico');
+Route::post('Empresas/Veiculos', 'EmpresasController@storeVeiculos');
+Route::post('Empresas/Estado', 'EmpresasControler@storeEstado');
+Route::post('Empresa/Cidade', 'EmpresasController@storeCidade');
+Route::post('Empresa/Bairro', 'EmpresasController@storeBairro');
+Route::post('Empresa/Endereco', 'EmpresasController@storeEndereco');
+Route::post('Empresa/Representante', 'EmpresasControler@storeRepresentante');
+
+//Route::post('TrabalheConosco', 'TrabalhoConosco@index');
+>>>>>>> 025c7c61f07a268421fc8678853c64d4ee35b851

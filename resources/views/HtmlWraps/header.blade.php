@@ -43,7 +43,7 @@
           </a>
           <!-- mobile -->
             <ul class="side-nav" id="menu-mobile" >
-                <li><a href="">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#trabalheconosco">Trabalhe conosco</a></li>
                 <li><a href="#parceiros">Parceiros</a></li>
@@ -53,7 +53,7 @@
 
             <!--Web-->
             <ul class="right hide-on-med-and-down" id="menu-mobile">
-                <li><a href="#">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#trabalheconosco">Trabalhe conosco</a></li>    
                 <li><a href="#parceiros">Parceiros</a></li> 

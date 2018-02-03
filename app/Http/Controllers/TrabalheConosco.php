@@ -36,6 +36,9 @@
 			return redirect('work');
 		}
 
+class TrabalheConosco extends Controller{
+	public function index(){
+		return view('Formularios.work');
 	}
 
 ?>
