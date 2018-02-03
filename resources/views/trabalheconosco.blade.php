@@ -1,9 +1,7 @@
 <div class="section black-text">
 							<div class="row"><h3 style="text-shadow: 3px 3px  4px black;">TRABALHE CONOSCO</h3></div>
 							<div class="divider"></div>
-							{{-- <form class="col s12 m12 l12" action="work.blade.php"> --}}
-							<form class="col s12 m12 l12">
-								{!! Form::open(['action' => 'TrabalheConosco@index', 'autocomplete' => 'off']); !!}
+								{!! Form::open(['action' => 'EmpresasController@index', 'autocomplete' => 'off', 'class' => 'col s12 m12 l12']); !!}
 									<div class="row">
 										<div class="input-field col s12 l6 m6">
 										    <i class="material-icons prefix">account_circle</i>
@@ -39,7 +37,6 @@
 										</button>
 									</div>
 								</div>
-							</form>
 							{!! Form::close() !!}
 
 

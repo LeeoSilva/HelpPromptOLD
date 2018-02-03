@@ -47,10 +47,10 @@ class TrabalheConoscoRequest extends FormRequest{
           */
 
         return [
-          'empresa_nome' => ['unique', 'min:8', 'max:191', 'required', 'alpha_num'],
-          'empresa_mail' => ['email', 'required', 'unique'],
-          'empresa_fone' => ['required', 'integer'],
-          'tipo_servico' => ['required'],
+          'empresa_nome'  => ['unique:empresas', 'min:8', 'max:191', 'required', 'alpha_num'],
+          'estab_email' => ['email', 'required', 'unique:empresas'],
+          'empresa_fone'  => ['required', 'integer'],
+          'tipo_servico'  => ['required'],
         ];
     }
 
@@ -65,9 +65,9 @@ class TrabalheConoscoRequest extends FormRequest{
         'empresa_fone.required' => 'Telefone da empresa não especificado.',
         'empresa_fone.integer' => 'Cheque o telefone da empresa.',
 
-        'empresa_mail.email' => 'Formato de email inválido.',
-        'empresa_mail.required' => 'Email não especificado.',
-        'empresa_mail.unique' => 'Email já cadastrado.',
+        'empresa_email.email' => 'Formato de email inválido.',
+        'empresa_email.required' => 'Email não especificado.',
+        'empresa_email.unique' => 'Email já cadastrado.',
 
         'tipo_servico.required' => 'Tipo de serviço não especificado.'
       ];

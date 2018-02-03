@@ -4,8 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class TrabalheConoscoComplementar extends FormRequest
-{
+class TrabalheConoscoComplementar extends FormRequest{
     /**
      * Determine if the user is authorized to make this request.
      *
@@ -23,14 +22,14 @@ class TrabalheConoscoComplementar extends FormRequest
      */
     public function rules(){
         return [
-          'empresa_nome' => ['unique', 'min:8', 'max:191', 'required', 'alpha_num'],
-          'empresa_mail' => ['email', 'required', 'unique'],
+          'empresa_nome' => ['unique:empresas', 'min:8', 'max:191', 'required', 'alpha_num'],
+          'estab_email' => ['email', 'required', 'unique:empresas'],
           'empresa_fone' => ['required', 'integer'],
           'tipo_servico' => ['required'],
 
-          'represent_nome' => ['required', 'max:191']
-					'represent_mail' => ['required', 'email', 'unique']
-					'represent_cel' =>  ['required', 'integer']
+          'represent_nome' => ['required', 'max:191'],
+					'represent_email' => ['required', 'email', 'unique:represent_contatos'],
+					'represent_cel' =>  ['required', 'integer'],
 					'como_conheceu' =>  ['required']
 
         ];
@@ -47,23 +46,23 @@ class TrabalheConoscoComplementar extends FormRequest
         'empresa_fone.required' => 'Telefone da empresa não especificado.',
         'empresa_fone.integer' => 'Cheque o telefone da empresa.',
 
-        'empresa_mail.email' => 'Formato de email inválido.',
-        'empresa_mail.required' => 'Email não especificado.',
-        'empresa_mail.unique' => 'Email já cadastrado.',
+        'estab_email.email' => 'Formato de email inválido.',
+        'estab_email.required' => 'Email não especificado.',
+        'estab_email.unique' => 'Email já cadastrado.',
 
         'tipo_servico.required' => 'Tipo de serviço não especificado.',
 
         'represent_nome.required' => 'Nome não preenchido.',
         'represent_mail.max'      => 'Nome muito grande',
 
-        'represent_mail.required' => 'Email não preechido',
-        'represent_mail.email'    => 'Email inválido',
-        'represent_mail.unique'   => 'Email já registrado',
+        'represent_email.required' => 'Email não preechido',
+        'represent_email.email'    => 'Email inválido',
+        'represent_email.unique'   => 'Email já registrado',
 
         'represent_cel.required'  => 'Telefone não preenchido',
         'represent_cel.integer'   => 'Apenas números permitidos',
 
-        'como_conheceu.required'  => 'Campo não preenchido',
+        'como_conheceu.required'  => 'Campo não preenchido'
 
       ];
     }

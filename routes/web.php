@@ -16,8 +16,5 @@ Route::get('Login', 'Requests@login');
 // Administração de usuários
 Route::resource('Users', 'UsersController');
 
-// Administração de empresas
+// Administração e registro de empresas
 Route::resource('Empresas', 'EmpresasController');
-
-// Rotas para o cadastro de serviços
-Route::resource('TrabalheConosco', 'TrabalheConosco');

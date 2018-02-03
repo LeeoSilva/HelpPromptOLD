@@ -118,8 +118,8 @@
   // PS: comentei tudo pq queria só mexer com a área do representante.
   // logo logo termino o resto.
 
-  {!! Form::open(['action' => 'TrabalheConosco@create',
-                'method' => 'post',
+  {!! Form::open(['action' => 'EmpresasController@create',
+                'method' => 'get',
                 'autocomplete' => 'off']); !!}
 
   {!! Form::label('name', 'Nome Completo: ') !!}
