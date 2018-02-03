@@ -11,7 +11,6 @@ use App\Http\Requests\UpdateRequest; // Request de validação para atualizaçã
 use App\Http\Requests\EditRequest; // Request de validação para edição de dados.
 
 class UsersController extends Controller{
-
     public function index(){
       // Envia todos os usuários registrados no banco
       // Para uma página trata-los e lista-los
@@ -20,7 +19,7 @@ class UsersController extends Controller{
 			return view('Users.List', compact('info'));
     }
 
-	public function store(RegisterRequest $request){
+    public function store(RegisterRequest $request){
         /*
         |-------
         | Store
@@ -143,22 +142,6 @@ class UsersController extends Controller{
 		return redirect('Users');
 	}
 
-	/*
-	|---------------
-	| Métodos GET's
-	|---------------
-	|
-	| Métodos GET para pegar cada valor individual do banco de dados.
-	| [e.g] O método getIP recebe o IP do usuário como parâmetro e
-	| retorna o IP daquele usuário daquele ID em específico.
-	| O método getName recebe o IP e retorna o nome, e assim por diante;
-	*/
 
-	public function getIP($id)   { return user::find($id)->usr_ip;    }
-	public function getName($id) { return user::find($id)->usr_name;  }
-	public function getPass($id) { return user::find($id)->usr_pass;  }
-	public function getMail($id) { return user::find($id)->usr_mail;  }
-	public function getCPF($id)  { return user::find($id)->usr_cpf;   }
-	public function getBirth($id){ return user::find($id)->usr_birth; }
-	public function getLevel($id){ return user::find($id)->usr_level; }
+  public function update($id){}
 }
