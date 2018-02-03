@@ -143,5 +143,9 @@ class UsersController extends Controller{
 	}
 
 
-  public function update($id){}
+  public function update($id){
+    $userUpToDate = Request::all();
+    $user = users::find($id);
+    $user->update($userUpToDate);
+  }
 }
