@@ -17,11 +17,12 @@ use App\Http\Requests\TrabalheConoscoEditRequest;
 	class EmpresasController extends Controller{
 
 		public function store(TrabalheConoscoRequest $request){ // POST
-			return view('Formularios.workcomplementar');
+			return view('Formularios.workcomplementar', compact('request'));
 		}
 
 		public function index(TrabalheConoscoRequest $request){ // GET
-			return view('Formularios.workcomplementar');
+			dd('teste2');
+			// return view('Formularios.workcomplementar');
 		}
 
 		public function create(TrabalheConoscoComplementar $request){
@@ -37,14 +38,15 @@ use App\Http\Requests\TrabalheConoscoEditRequest;
 				$represent->represent_fone = $request->represent_fone;
 				$represent->como_conheceu  = $request->como_conheceu;
 				if( $represent->save() ){ return view('/'); }
-			}
+				else{ dd('erro'); }
+			}else{ dd('erro'); }
 		}
 
 		public function destroy(TrabalheConoscoUpdateRequest $request){
 			$empresa = empresas::find($id);
 			$empresa->delete();
 
-			return redirect('work');
+			return redirect('/');
 		}
 
 		public function update(){

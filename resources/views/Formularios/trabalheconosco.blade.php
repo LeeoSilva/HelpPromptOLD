@@ -2,7 +2,7 @@
 <div class="section black-text">
 							<div class="row"><h3 style="text-shadow: 3px 3px  4px black;">TRABALHE CONOSCO</h3></div>
 							<div class="divider"></div>
-								{!! Form::open(['route' => 'Empresas.store', 'autocomplete' => 'off', 'class' => 'col s12 m12 l12"']); !!}
+								{!! Form::open(['url' => 'Empresas', 'autocomplete' => 'off', 'class' => 'col s12 m12 l12"']); !!}
 									<div class="row">
 										<div class="input-field col s12 l6 m6">
 										    <i class="material-icons prefix">account_circle</i>
@@ -27,7 +27,7 @@
 										<div class="input-field col s12 l6 m6">
 										<i class="material-icons prefix">room</i>
 											{!! Form::text('tipo_servico') !!}
-                      {!! Form::label('Tipo de servico(TODO):') !!}
+                      {!! Form::label('Tipo de servico(FAZER):') !!}
 										</div>
 									</div>
 

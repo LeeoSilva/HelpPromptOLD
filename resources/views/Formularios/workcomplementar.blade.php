@@ -115,12 +115,24 @@
   // Por algum motivo o codigo acima não funciona.
   // Então refiz aqui em baixo, e deu certo.
 
-  // PS: comentei tudo pq queria só mexer com a área do representante.
-  // logo logo termino o resto.
-
   {!! Form::open(['action' => 'EmpresasController@create',
                 'method' => 'get',
                 'autocomplete' => 'off']); !!}
+
+  <h1>Informações da empresa</h1>
+
+  {!! Form::label('name', 'Nome da empresa: ') !!}
+  {!! Form::text('empresa_nome') !!} <br>
+  {!! Form::label('name', 'Telefone para contato: ') !!}
+  {!! Form::text('empresa_fone') !!} <br>
+  {!! Form::label('name', 'Email empresarial: ') !!}
+  {!! Form::text('estab_email') !!} <br>
+  {!! Form::label('name', 'Tipo de serviço: ') !!}
+  {!! Form::text('tipo_servico') !!} <br>
+
+
+
+  <h1>Informações do representante</h1>
 
   {!! Form::label('name', 'Nome Completo: ') !!}
   {!! Form::text('represent_nome') !!} <br>
@@ -145,5 +157,10 @@
       @endforeach
     </ul>
   @endif
+
+
+  <p>Se houver algum erro ao enviar o formulário me avise</p>
+
+
 
 @show
