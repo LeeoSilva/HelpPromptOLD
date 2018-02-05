@@ -17,7 +17,7 @@ use App\Http\Requests\TrabalheConoscoEditRequest;
 	class EmpresasController extends Controller{
 
 		public function store(TrabalheConoscoRequest $request){ // POST
-			return view('Formularios.workcomplementar', compact('request'));
+			return view('Formularios.work', compact('request'));
 		}
 
 		public function index(TrabalheConoscoRequest $request){ // GET
