@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
 					$table->string    ('usr_mail');
 					$table->float     ('usr_lat');
 					$table->float     ('usr_lon');
-					$table->integer	    ('usr_level')->unsigned();
+					$table->integer	  ('usr_level')->unsigned();
 					$table->integer		('usr_cpf')->unsigned();
 					$table->foreign   ('usr_ip')->references('usr_ip')->on('ips')->onDelete('CASCADE');
 					$table->foreign   ('usr_name')->references('usr_name')->on('logins')->onDelete('CASCADE');
