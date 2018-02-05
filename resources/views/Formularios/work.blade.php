@@ -6,7 +6,7 @@
                 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                <title>Help Prompt</title>
+                <title>Trabalhe Conosco</title>
                 <link rel="stylesheet" href="css/materialize.css">
                 <link rel=icon href=./Logo/logobrancasemfundo.png>
     </head>
@@ -86,6 +86,7 @@
 <!-- Formulário -->
     @include('Formularios.workcomplementar')
 <!-- Fim do Formulário -->
+
             <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 			<script type="text/javascript" src="js/materialize.js"></script>
         <script type="text/javascript" language="javascript">

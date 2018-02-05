@@ -1,5 +1,4 @@
 <!-- TrabalheConosco 
-     Arrumar icone do tipo de servico 
      Colocar todos os tipos de serviços que contratamos -->
 
 <!-- Register 
@@ -12,9 +11,14 @@
     Arrumar routes -->
 
 <!-- Register
-    Arrumaar routes -->
+    Arrumar routes -->
 
 <!-- Logago
     Arrumar cabeçalho
     Arrumar routes -->
 
+<!-- Index
+    Arrumar efeito scrolltop, mas ao contrário -->
+
+<!-- Parceiros
+    Arrumar as imagens dos parceiros -->

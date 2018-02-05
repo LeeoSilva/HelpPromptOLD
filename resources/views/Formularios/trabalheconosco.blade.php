@@ -25,9 +25,15 @@
 										</div>
 
 										<div class="input-field col s12 l6 m6">
-										<i class="material-icons prefix">room</i>
-											{!! Form::text('tipo_servico') !!}
-                      {!! Form::label('Tipo de servico(FAZER):') !!}
+											<i class="material-icons prefix">build</i>
+												{!! Form::text('tipo_servico') !!}
+												{!! Form::label('Tipo de serviço: ') !!}
+												<select multiple>
+													<option value="1">Option 1</option>
+													<option value="2">Option 2</option>
+													<option value="3">Option 3</option>
+												</select>
+												
 										</div>
 									</div>
 
