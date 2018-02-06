@@ -18,3 +18,8 @@ Route::resource('Users', 'UsersController');
 
 // Administração e registro de empresas
 Route::resource('Empresas', 'EmpresasController');
+
+
+Route::get('work', function () {
+  return view('Formularios.workcomplementar');
+});
