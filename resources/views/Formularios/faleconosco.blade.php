@@ -31,10 +31,8 @@
 										</div>
 									</div>
                                     <div class="row">
-										<div class="input-field col s12 l12 m12">
-											<button class="btn waves-effect waves-light right" type="submit" name="action">Enviar
-												<i class="material-icons right">send</i>
-											</button>
+										<div class="col s12 l12 m12">
+											{{ Form::submit('ENVIAR', array ('class' => 'btn right')) }}
 										</div>
 									</div>
 

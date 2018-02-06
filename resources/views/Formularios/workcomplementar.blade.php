@@ -36,10 +36,23 @@
                     </div>
 
                     <div class="row">
-                        <div class="input-field col s12 l12 m12">
-                            {!! Form::text('tipo_servico') !!} <br>
-                            {!! Form::label('name', 'Tipo de serviço: ') !!}
+                       <div class="col s12 l12 m12">
+                            <br><h2>Endereço da empresa</h2><br><br>
                         </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="input-field col s12 l12 m12">
+                        {!! Form::text('empresa_cidade') !!} <br>
+                        {!!Form::label('Cidade:')!!}
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="input-field col s12 l12 m12">
+                        {!! Form::text('empresa_bairro') !!} <br>
+                        {!!Form::label('Bairro:')!!}
+                      </div>
                     </div>
 
                     <div class="row">
@@ -48,8 +61,9 @@
                         {!!Form::label('Endereço:')!!}
                       </div>
                     </div>
+
             </div>
-            <div class="col s12 l6 m6">
+                <div class="col s12 l6 m6">
                             <div class="row">
                                 <div class="col s12 l12 m12">
                                     <br><h2>Informações do representante</h2><br><br>
@@ -77,10 +91,31 @@
                         </div>
                     </div>
 
+                    <div class="col s12 l12 m12">
+                            <div class="row">
+                                <div class="col s12 l12 m12">
+                                    <br><h2>Informações adicionais</h2><br><br>
+                                </div>
+                            </div>
+
                     <div class="row">
                         <div class="input-field col s12 l12 m12">
-                            {!! Form::text('como_conheceu') !!} <br>
-                            {!! Form::label('fone', 'Como Conheceu o Help Prompt: ') !!}
+                            {!! Form::text('tipo_servico') !!} <br>
+                            {!! Form::label('name', 'Tipo de serviço: ') !!}
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12 l12 m12">
+                            {!! Form::text('quant_guinchos') !!} <br>
+                            {!! Form::label('name', 'Quantidade de guinchos: ') !!}
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12 l12 m12">
+                            {!! Form::text('quant_motoristas') !!} <br>
+                            {!! Form::label('name', 'Quantidade de motoristas: ') !!}
                         </div>
                     </div>
                 </div>
@@ -89,7 +124,7 @@
             </form>
             <div class="row">
                 <div class="col s12 l12 m12">
-            {{ Form::submit('enviar', array ('class' => 'btn waves-effect waves-light right')) }}
+                    {{ Form::submit('ENVIAR', array ('class' => 'btn right')) }}
           </div>
         </div>
       </div>
