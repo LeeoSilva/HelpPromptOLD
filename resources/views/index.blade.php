@@ -45,8 +45,9 @@
 								<div class="row">
 									<div class="col s12 m12 l12">
 									<h2 class="black-text">SOBRE  </h2></div>
-								</div>
+</div>
 								<div class="divider"></div>
+							</div>
 								<div class="row">
 									<div class="col s12 m4 l4 left">
 										<div class="icon-block">
@@ -58,7 +59,7 @@
 										</div>
 									</div>
 </div>
-							</div>
+
 				<!-- Fim do Bloco sobre -->
 
 				<!-- Parallax -->
@@ -74,7 +75,7 @@
 			  <!-- Fim do Parallax -->
 
 				<!-- Trabalhe conosco -->
-					<div class="container" id="trabalheconosco">
+					<div  id="trabalheconosco">
 						<a nome="trabalheconosco">
 							@include('Formularios.trabalheconosco')
 					</div>
@@ -95,9 +96,13 @@
 				<!-- Bloco parceiros -->
 				<div class="container" id="parceiros">
 					<a name="parceiros">
-						<div class="section black-text">
+					</a>
 							<div class="row"><h2>PARCEIROS</h2></div>
 							<div class="divider"></div>
+</div>
+<div class="section black-text">
+	<div class="container-fluid" id="parceirosimg">
+
 							<div class="row">
 								<div class="col s12 m4 l4">
 									<div class="icon-block" class="grow">
@@ -119,10 +124,9 @@
 										<h5 class="center">Citec Marília</h5>
 										<p class="light" style="text-align: center; padding: 5px;">Centro de Inovação Técnológico de Marília (CITEC - Marília) </p>
 									</div>
-								</div>
+
 							</div>
 						</div>
-					</a>
 				</div>
 			</div>
 
@@ -193,12 +197,19 @@ h2{
 #trabalheconosco{
 	height: 660px;
 	padding: 110px 10px 10px 0px;
-	background-color:  #FBFBFB;
+
 }
 
 #parceiros{
 	padding: 110px 10px 10px 0px;
-	height: 660px;
+	height: 270px;
+	background-color:  #FBFBFB;
+}
+
+
+#parceirosimg{
+	padding: 10px 10px 390px 0px;
+	height: 270px;
 	background-color:  #FBFBFB;
 }
 
