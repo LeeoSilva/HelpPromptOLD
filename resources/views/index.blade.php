@@ -1,6 +1,13 @@
 @section('principal')
 <html>
 	<head>
+		<script>
+        $(function() {
+          $.scrollify({
+            section : ".example-classname",
+          });
+        });
+      </script>
 		<meta charset="utf-8">
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -19,7 +26,7 @@
 		<!-- Fim do Cabeçalho -->
 		<!--Início -->
 		<div class="container-fluid scrollup">
-			<div id="index-banner" class="parallax-container1" >
+			<div id="index-banner" class="parallax-container1" class="example-classname">
 				<div class="section no-pad-bot" >
 					<div class="container">
 						<br><br><br><br><br><br><br>
@@ -106,21 +113,21 @@
 							<div class="row">
 								<div class="col s12 m4 l4">
 									<div class="icon-block" class="grow">
-										<h2 class="center brown-text"><img src="Parceiros/etec.png" class="parceiros"></h2>
+										<h3 class="center brown-text"><img src="Parceiros/etec.png" class="parceiros"></h3>
 										<h5 class="center">Etec Antonio Devisate</h5>
 										<p class="light" style="text-align: center; padding: 5px;">Escola Técnica Estadual</p>
 									</div>
 								</div>
 								<div class="col s12 m4 l4">
 									<div class="icon-block">
-										<h2 class="center brown-text"><img src="Parceiros/ciem.png" class="parceiros"></h2>
+										<h3 class="center brown-text"><img src="Parceiros/ciem.png" class="parceiros"></h3>
 										<h5 class="center">Ciem Marília</h5>
 										<p class="light" style="text-align: center; padding: 5px;">Centro Incubador de Empresas de Marília (CIEM - Marília)</p>
 									</div>
 								</div>
 								<div class="col s12 m4 l4">
 									<div class="icon-block">
-										<h2 class="center brown-text"><img src="Parceiros/citec.png" class="parceiros"></h2>
+										<h3 class="center brown-text"><img src="Parceiros/citec.png" class="parceiros"></h3>
 										<h5 class="center">Citec Marília</h5>
 										<p class="light" style="text-align: center; padding: 5px;">Centro de Inovação Técnológico de Marília (CITEC - Marília) </p>
 									</div>
@@ -183,8 +190,36 @@
 				$(document).ready(function() {
 					$('select').material_select();
 				});
+
+
+				//Efeitos de animação
+
+				$.scrollify({
+			     section : "section",
+			     sectionName : "section-name",
+			     interstitialSection : "",
+			     easing: "easeOutExpo",
+			     scrollSpeed: 1100,
+			     offset : 0,
+			     scrollbars: true,
+			     standardScrollElements: "",
+			     setHeights: true,
+			     overflowScroll: true,
+			     updateHash: true,
+			     touchScroll:true,
+			     before:function() {},
+			     after:function() {},
+			     afterResize:function() {},
+			     afterRender:function() {}
+			   });
+			         
 				</script>
 			<script type="text/javascript" src="javascript.js"></script>
+
+
+
+
+
 
 			<!-- Fim do JavaScript -->
 <style>
@@ -217,11 +252,33 @@ h2{
 		background-color:  #FBFBFB;
 		padding: 110px 10px 10px 0px;
 		height: 660px;
+
+
 }
 
 .icon-block{
 			background-color:  #FBFBFB;
 }
+
+
+
+h1,h2,h5{
+animation-duration: 2s;
+animation-name: slidein;
+}
+@keyframes slidein {
+from {
+	margin-left: -220%;
+	width: 300%
+}
+
+to {
+	margin-left: 0%;
+	width: 100%;
+}
+}
+
+
 /*
 #fade
 {
@@ -243,6 +300,37 @@ h2{
 }
 
 </style>
+<script>
+
+
+				//Efeitos de animação
+				var $animation_elements = $('.slidein');
+				var $window = $(window);
+
+				$window.on('scroll resize', check_if_in_view);
+
+				function check_if_in_view() {
+					  var window_height = $window.height();
+					  var window_top_position = $window.scrollTop();
+					  var window_bottom_position = (window_top_position + window_height);
+
+					  $.each($animation_elements, function() {
+					    var $element = $(this);
+					    var element_height = $element.outerHeight();
+					    var element_top_position = $element.offset().top;
+					    var element_bottom_position = (element_top_position + element_height);
+
+					    //check to see if this current container is within viewport
+					    if ((element_bottom_position >= window_top_position) &&
+					        (element_top_position <= window_bottom_position)) {
+					      $element.addClass('in-view');
+					    } else {
+					      $element.removeClass('in-view');
+					    }
+					  });
+}
+
+</script>
 		</body>
 	</html>
 @show
