@@ -23,3 +23,7 @@ Route::resource('Empresas', 'EmpresasController');
 Route::get('work', function () {
   return view('Formularios.workcomplementar');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

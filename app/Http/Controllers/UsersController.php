@@ -1,10 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Request;
+
+// Tabelas.
 use App\users; // Tabela de 'users' banco de dados.
-use Carbon\Carbon; // Função de datas do laravel.
+
+// Request de validação.
 use App\Http\Requests\RegisterRequest; // Request de validação para registro.
 use App\Http\Requests\UpdateRequest; // Request de validação para atualização de dados.
 use App\Http\Requests\EditRequest; // Request de validação para edição de dados.
@@ -53,7 +55,6 @@ class UsersController extends Controller{
 		| Route para enviar o usuário para a página de registro
 		|
 		*/
-
         return view('Formularios.Register');
     }
 

@@ -3,16 +3,15 @@
 namespace App\Http\Controllers;
 use Request;
 
-// Tabelas
+// Tabelas.
 use App\empresas; // Tabela 'empresas' do banco de dados.
 use App\represent_contatos; // Tabela 'represent_contatos' do banco de dados.
 
-// Requests
+// Requests de validação.
 use App\Http\Requests\TrabalheConoscoRequest; // Request de validação inicial.
 use App\Http\Requests\TrabalheConoscoComplementar; // Request de validação complementar.
 use App\Http\Requests\TrabalheConoscoUpdateRequest; // Request de validação de updates.
 use App\Http\Requests\TrabalheConoscoEditRequest; // Request de validação de edição.
-
 
 	class EmpresasController extends Controller{
 		public function store(TrabalheConoscoRequest $request){ // POST
@@ -31,7 +30,7 @@ use App\Http\Requests\TrabalheConoscoEditRequest; // Request de validação de e
 		public function index(TrabalheConoscoRequest $request){ // GET
 			/*
 			|-----
-			|index
+			| index
 			|-----
 			|
 			| Request GET para a página do formulário.
