@@ -1,11 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Request;
-use App\user; // Tabela de 'users' banco de dados.
-use App\geo; // Tabela de 'geo' banco de dados.
-use Carbon\Carbon; // Função de datas do laravel.
+
+// Tabelas.
+use App\users; // Tabela de 'users' banco de dados.
+
+// Request de validação.
 use App\Http\Requests\RegisterRequest; // Request de validação para registro.
 use App\Http\Requests\UpdateRequest; // Request de validação para atualização de dados.
 use App\Http\Requests\EditRequest; // Request de validação para edição de dados.
@@ -30,16 +31,17 @@ class UsersController extends Controller{
         |
         */
 
-
-        $users            = new user;
-        $users->usr_ip    = Request::ip(); // Solicita o IP do usuário.
-        $users->usr_name  = $request->usr_name;
-        $users->usr_pass  = md5($request->usr_pass);
-        $users->usr_mail  = $request->usr_mail;
-        $users->usr_cpf   = $request->usr_cpf;
-        $users->usr_birth = $request->usr_birth;
-        $users->usr_level = 0;
-        $users->save();
+        try{
+          $users            = new user;
+          $users->usr_ip    = Request::ip();
+          $users->usr_name  = $request->usr_name;
+          $users->usr_pass  = md5($request->usr_pass);
+          $users->usr_mail  = $request->usr_mail;
+          $users->usr_cpf   = $request->usr_cpf;
+          $users->usr_birth = $request->usr_birth;
+          $users->usr_level = 0;
+          $users->save();
+        }
 
         return redirect('Users');
     }
@@ -53,7 +55,6 @@ class UsersController extends Controller{
 		| Route para enviar o usuário para a página de registro
 		|
 		*/
-
         return view('Formularios.Register');
     }
 
@@ -108,8 +109,7 @@ class UsersController extends Controller{
 		|
 		*/
 
-		$info = user::find($id);
-		if( $info == null ){ return 'Usuário não existe.'; }
+		$info = user::FindorFail($id);
 		return view('Formularios.Edit', compact('info'));
 	}
 
@@ -118,7 +118,7 @@ class UsersController extends Controller{
 		/*
 		|----------
 		| Edition
-		|---------
+		|----------
 		|
 		| Atualiza os campos editados na página de edição
 		| de um usuário dado seu id.
@@ -142,10 +142,6 @@ class UsersController extends Controller{
 		return redirect('Users');
 	}
 
+  public function update($id){}
 
-  public function update($id){
-    $userUpToDate = Request::all();
-    $user = users::find($id);
-    $user->update($userUpToDate);
-  }
 }
