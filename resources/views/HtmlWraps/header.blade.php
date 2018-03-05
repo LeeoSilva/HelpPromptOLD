@@ -41,7 +41,7 @@
             <div class="nav-wrapper" class="navbar-header">
             <a class="brand-logo"><img src="Logo/invertidasemfundo.png" class="logo"/></a>
             <a href="" data-activates="menu-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-            
+
             <!-- mobile -->
                 <ul class="side-nav" id="menu-mobile" >
                     <li><a href="/">Home</a></li>
@@ -56,10 +56,10 @@
                 <ul class="right hide-on-med-and-down" id="menu-mobile">
                     <li><a href="/">Home</a></li>
                     <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#trabalheconosco">Trabalhe conosco</a></li>    
-                    <li><a href="#parceiros">Parceiros</a></li> 
+                    <li><a href="#trabalheconosco">Trabalhe conosco</a></li>
+                    <li><a href="#parceiros">Parceiros</a></li>
                     <li><a href="#faleconosco">Fale Conosco</a></li>
-                    <li><a class="waves-effect waves-light btn modal-trigger" href="#modal3">Cadastro</a></li>   
+                    <li><a class="waves-effect waves-light btn modal-trigger" href="#modal3">Cadastro</a></li>
                 </ul>
             </div>
         </div>
@@ -70,7 +70,7 @@
             <div id="modal2" class="modal modal-fixed-footer">
                 <div class="modal-content">
                     <div class="modal-body">
-                        @include('HtmlWraps.modal');
+                        @include('Formularios.Register')
                     </div>
                 </div>
                     <div class="modal-footer">
@@ -82,11 +82,11 @@
        <!-- Modal Structure  -->
                 <div id="modal3" class="modal modal-fixed-footer">
                     <div class="modal-content">
-                        @include('HtmlWraps.modal');
+                        @include('Formularios.Register')
                     </div>
                     <div class="modal-footer">
                         <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
-                        <a href="" class="modal-action modal-close waves-effect waves-green btn-flat ">Logar</a>
+                        <a href="" class="modal-action modal-close waves-effect waves-green btn-flat ">Cadastrar</a>
                     </div>
                 </div>
 		</div>
