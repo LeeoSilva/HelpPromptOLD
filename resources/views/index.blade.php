@@ -21,7 +21,7 @@
 
 		<!-- Cabeçalho -->
 		<div>
-		@include('HtmlWraps.header')
+			@include('HtmlWraps.header')
 		</div>
 		<!-- Fim do Cabeçalho -->
 		<!--Início -->
@@ -29,14 +29,9 @@
 			<div id="index-banner" class="parallax-container1" class="example-classname">
 				<div class="section no-pad-bot" >
 					<div class="container">
-						<br><br><br><br><br><br><br>
-						<h1 class="header col s12 center teal-text text-lighten-2" style="text-shadow: 7px 7px  8px black;">Help Prompt</h1>
+						<h1 class="header col s12 center teal-text text-lighten-2" style="padding: 250px 0 0 0;text-shadow: 7px 7px  8px black;">Help Prompt</h1>
 						<div class="row center">
 							<h5 class="header col s12 light white-text" style="text-shadow: 5px 5px  6px black;"><strong>Sempre atentos à você!</strong></h5>
-						</div>
-						<div class="row">
-							@include('HtmlWraps.modal');
-							<br><br>
 						</div>
 					</div>
 					<div class="parallax"><img src="fundoalterado.jpg"></div>

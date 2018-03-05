@@ -4310,11 +4310,11 @@ nav .button-collapse i {
 }
 
 nav .brand-logo {
-  position: absolute;
+  position: relative;
   color: #fff;
   display: inline-block;
   font-size: 2.1rem;
-  padding: 0;
+  padding: 10px 0 0 0;
 }
 
 nav .brand-logo.center {
@@ -4326,13 +4326,15 @@ nav .brand-logo.center {
 @media only screen and (max-width: 992px) {
   nav .brand-logo {
     left: 50%;
+    height: 56px;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
   nav .brand-logo.left, nav .brand-logo.right {
-    padding: 0;
+    padding: 10px 0 0 0;
     -webkit-transform: none;
             transform: none;
+            height: 56px;
   }
   nav .brand-logo.left {
     left: 0.5rem;
@@ -4454,14 +4456,17 @@ nav .input-field label.active i {
 
 @media only screen and (min-width: 601px) {
   nav.nav-extended .nav-wrapper {
-    min-height: 64px;
+    min-height: 100px;
+    text-align: center;
   }
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    height: 64px;
-    line-height: 64px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
   }
   .navbar-fixed {
-    height: 64px;
+    height: 100px;
+    text-align: center;
   }
 }
 
@@ -5797,22 +5802,22 @@ button.btn-floating {
 .side-nav .collapsible,
 .side-nav.fixed .collapsible {
   border: none;
+  height: 100px;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
 .side-nav .collapsible li,
 .side-nav.fixed .collapsible li {
-  padding: 0;
+  height: 100px;
 }
 
 .side-nav .collapsible-header,
 .side-nav.fixed .collapsible-header {
   background-color: transparent;
   border: none;
-  line-height: inherit;
-  height: inherit;
-  padding: 0 16px;
+  line-height: 100px;
+  height: 100px;
 }
 
 .side-nav .collapsible-header:hover,
@@ -5822,7 +5827,7 @@ button.btn-floating {
 
 .side-nav .collapsible-header i,
 .side-nav.fixed .collapsible-header i {
-  line-height: inherit;
+  line-height: 100px;
 }
 
 .side-nav .collapsible-body,
@@ -5833,7 +5838,6 @@ button.btn-floating {
 
 .side-nav .collapsible-body li a,
 .side-nav.fixed .collapsible-body li a {
-  padding: 0 23.5px 0 31px;
 }
 
 .collapsible.popout {
@@ -7390,13 +7394,13 @@ input[type=range]:focus::-ms-fill-upper {
 
 .side-nav {
   position: fixed;
-  width: 300px;
+  width: 800px;
   left: 0;
   top: 0;
   margin: 0;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
-  height: 100%;
+  height: 100px;
   height: calc(100% + 60px);
   height: -moz-calc(100%);
   padding-bottom: 60px;
