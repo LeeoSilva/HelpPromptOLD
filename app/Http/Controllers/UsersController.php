@@ -41,7 +41,7 @@ class UsersController extends Controller{
           $users->usr_birth = $request->usr_birth;
           $users->usr_level = 0;
           $users->save();
-        }
+        }catch(Exception $e){ die($e); }
 
         return redirect('Users');
     }
