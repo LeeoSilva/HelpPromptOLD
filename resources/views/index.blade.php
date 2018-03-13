@@ -25,134 +25,97 @@
 		</div>
 		<!-- Fim do Cabeçalho -->
 		<!--Início -->
-		<div class="container-fluid scrollup">
+		<div class="container-fluid scrollup" id="inicio">
 			<div id="index-banner" class="parallax-container1" class="example-classname">
 				<div class="section no-pad-bot" >
 					<div class="container">
-						<h1 class="header col s12 center teal-text text-lighten-2" style="padding: 250px 0 0 0;text-shadow: 7px 7px  8px black;">Help Prompt</h1>
+						<h1 class="header col s12 center" style="padding: 170 0 0 0;text-shadow: 7px 7px  8px black;">Help Prompt</h1>
 						<div class="row center">
-							<h5 class="header col s12 light white-text" style="text-shadow: 5px 5px  6px black;"><strong>Sempre atentos à você!</strong></h5>
+							<h5 id="subtitulo"class="header col s12" style="text-shadow: 5px 5px  6px black;"><strong>Sempre atentos à você!</strong></h5>
 						</div>
 					</div>
-					<div class="parallax"><img src="fundoalterado.jpg"></div>
 				</div>
 			</div>
+		</div>
 			<!-- Fim do Início -->
+
+
+
 
 			<!-- Bloco sobre  -->
 			<div class="container-fluid" id="sobre">
-					<a name="sobre">
-					</a>
-					<div class="container">
-								<div class="row">
-									<div class="col s12 m12 l12">
-									<h2 class="black-text">SOBRE  </h2></div>
-</div>
-								<div class="divider"></div>
-							</div>
-								<div class="row">
-									<div class="col s12 m4 l4 left">
-										<div class="icon-block">
-										<img src="Logo/logobrancasemfundo.png" class="responsive-img" style="text-align: left;">
-									</div>
-								</div>
-									<div class="col s12 m8 l8">
-											<h4 class="light flow-text black-text" style="line-height: 150%;" style="text-align: justify;">Help Prompt é um aplicativo desenvolvido pela empresa Keys & Kases, que tem como desafio facilitar a vida de quem procura uma oficina mecânica mais próxima e um maior gosto financeiro. Help Prompt também tem a capacidade de calcular o tempo de trajeto para a chegada de um prestador de serviço até você.</h2>
-										</div>
-									</div>
-</div>
+				<a name="sobre">
+				</a>
+				<div class="container">
+					<div class="row">
+						<div class="col s12 m12 l12">
+							<h2 class="black-text">SOBRE  </h2></div>
+						</div>
+						<!-- <div class="divider"></div> -->
 
-				<!-- Fim do Bloco sobre -->
-
-				<!-- Parallax -->
-				<div class="parallax-container valign-wrapper">
-						<div class="section no-pad-bot">
-							<div class="container">
-								<div class="row center">
-								</div>
+					<div class="row">
+						<div class="col s12 m4 l4 left">
+							<div class="icon-block">
+								<img src="Logo/logobrancasemfundo.png" class="responsive-img" style="text-align: left;">
 							</div>
 						</div>
-					<div class="parallax"><img src="fundo2.jpg" alt="Unsplashed background img 2"></div>
-			  </div>
-			  <!-- Fim do Parallax -->
-
-				<!-- Trabalhe conosco -->
+						<div class="col s12 m8 l8">
+							<h4 class="light flow-text black-text" style="line-height: 150%;" style="text-align: justify;">Help Prompt é um aplicativo desenvolvido pela empresa Keys & Kases, que tem como desafio facilitar a vida de quem procura uma oficina mecânica mais próxima e um maior gosto financeiro. Help Prompt também tem a capacidade de calcular o tempo de trajeto para a chegada de um prestador de serviço até você.</h2>
+							</div>
+						</div>
+					</div>
+</div>
+					<!-- Fim do Bloco sobre -->
+					<!-- Trabalhe conosco  -->
 					<div  id="trabalheconosco">
 						<a nome="trabalheconosco">
 							@include('Formularios.trabalheconosco')
-					</div>
-				<!-- Fim do Trabalhe conosco -->
-
-				<!-- Parallax -->
-				<div class="parallax-container valign-wrapper">
-					<div class="section no-pad-bot">
-						<div class="container">
-							<div class="row center">
-							</div>
 						</div>
-					</div>
-					<div class="parallax"><img src="fundo3.jpg" alt="Unsplashed background img 2"></div>
-				</div>
-				<!-- Fim do Parallax -->
-
-				<!-- Bloco parceiros -->
-				<div class="container" id="parceiros">
-					<a name="parceiros">
-					</a>
-							<div class="row"><h2>PARCEIROS</h2></div>
-							<div class="divider"></div>
-</div>
-<div class="section black-text">
-	<div class="container-fluid" id="parceirosimg">
-
-							<div class="row">
-								<div class="col s12 m4 l4">
-									<div class="icon-block" class="grow">
-										<h3 class="center brown-text"><img src="Parceiros/etec.png" class="parceiros"></h3>
-										<h5 class="center">Etec Antonio Devisate</h5>
-										<p class="light" style="text-align: center; padding: 5px;">Escola Técnica Estadual</p>
-									</div>
-								</div>
-								<div class="col s12 m4 l4">
-									<div class="icon-block">
-										<h3 class="center brown-text"><img src="Parceiros/ciem.png" class="parceiros"></h3>
-										<h5 class="center">Ciem Marília</h5>
-										<p class="light" style="text-align: center; padding: 5px;">Centro Incubador de Empresas de Marília (CIEM - Marília)</p>
-									</div>
-								</div>
-								<div class="col s12 m4 l4">
-									<div class="icon-block">
-										<h3 class="center brown-text"><img src="Parceiros/citec.png" class="parceiros"></h3>
-										<h5 class="center">Citec Marília</h5>
-										<p class="light" style="text-align: center; padding: 5px;">Centro de Inovação Técnológico de Marília (CITEC - Marília) </p>
-									</div>
-
-							</div>
-						</div>
-				</div>
-			</div>
-
-
-			<!-- Fim do Bloco parceiros -->
-
-			<!-- Parallax -->
-			<div class="parallax-container valign-wrapper">
-						<div class="section no-pad-bot">
-							<div class="container">
-								<div class="row center">
-								</div>
-							</div>
-						</div>
-					<div class="parallax"><img src="fundo4.jpg" alt="Unsplashed background img 2"></div>
-			  </div>
-			  <!-- Fim do Parallax -->
-
-			<!-- Bloco Fale conosco -->
+						<!-- Fim do Trabalhe conosco
+					<!-- Bloco Fale conosco -->
 					<div class="container" id="faleconosco">
 						<a nome="faleconosco">
 							@include('Formularios.faleconosco')
 					</div>
-			<!-- Bloco Fale conosco -->
+					<!-- Bloco Fale conosco -->
+
+			<!-- Bloco parceiros -->
+			<!-- <div class="container" id="parceiros">
+				<a name="parceiros">
+				</a>
+				<div class="row"><h2>PARCEIROS</h2></div>
+				<div class="divider"></div>
+			</div>
+			<div class="section black-text">
+				<div class="container-fluid" id="parceirosimg">
+
+					<div class="row">
+						<div class="col s12 m4 l4">
+							<div class="icon-block" class="grow">
+								<h3 class="center brown-text"><img src="Parceiros/etec.png" class="parceiros"></h3>
+								<h5 class="center">Etec Antonio Devisate</h5>
+								<p class="light" style="text-align: center; padding: 5px;">Escola Técnica Estadual</p>
+							</div>
+						</div>
+						<div class="col s12 m4 l4">
+							<div class="icon-block">
+								<h3 class="center brown-text"><img src="Parceiros/ciem.png" class="parceiros"></h3>
+								<h5 class="center">Ciem Marília</h5>
+								<p class="light" style="text-align: center; padding: 5px;">Centro Incubador de Empresas de Marília (CIEM - Marília)</p>
+							</div>
+						</div>
+						<div class="col s12 m4 l4">
+							<div class="icon-block">
+								<h3 class="center brown-text"><img src="Parceiros/citec.png" class="parceiros"></h3>
+								<h5 class="center">Citec Marília</h5>
+								<p class="light" style="text-align: center; padding: 5px;">Centro de Inovação Técnológico de Marília (CITEC - Marília) </p>
+							</div>
+
+						</div> -->
+						<!-- Fim do Bloco parceiros -->
+					</div>
+				</div>
+			</div>
 
 			<!-- Button fixo -->
 				@include('HtmlWraps.button')
@@ -207,7 +170,7 @@
 			     afterResize:function() {},
 			     afterRender:function() {}
 			   });
-			         
+
 				</script>
 			<script type="text/javascript" src="javascript.js"></script>
 
@@ -230,26 +193,35 @@ h2{
 
 }
 
-#parceiros{
+/*#parceiros{
 	padding: 110px 10px 10px 0px;
 	height: 270px;
 	background-color:  #FBFBFB;
-}
+}*/
 
 
-#parceirosimg{
+/*#parceirosimg{
 	padding: 10px 10px 390px 0px;
 	height: 270px;
 	background-color:  #FBFBFB;
-}
+}*/
 
 #sobre{
-		background-color:  #FBFBFB;
+		background-color:  #fbfe01;
 		padding: 110px 10px 10px 0px;
 		height: 660px;
 
 
 }
+
+#inicio{
+		background-color:  #ffffff;
+		padding: 110px 10px 10px 0px;
+		height: 660px;
+
+
+}
+
 
 .icon-block{
 			background-color:  #FBFBFB;
@@ -257,9 +229,19 @@ h2{
 
 
 
-h1,h2,h5{
+h1,h2{
 animation-duration: 2s;
 animation-name: slidein;
+color: black;
+}
+
+#subtitulo{
+	animation-duration: 2s;
+	animation-name: slidein;
+	color: black;
+
+
+
 }
 @keyframes slidein {
 from {

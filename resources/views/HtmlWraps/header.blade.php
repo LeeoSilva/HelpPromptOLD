@@ -35,7 +35,7 @@
     }
     </style>
 
-<div class="navbar" role="navigation">
+<div class="navbar-fixed" role="navigation">
       <nav class="cor">
         <div class="container">
             <div class="nav-wrapper" class="navbar-header">
@@ -49,7 +49,7 @@
                     <li><a href="#trabalheconosco">Trabalhe conosco</a></li>
                     <li><a href="#parceiros">Parceiros</a></li>
                     <li><a href="#faleconosco">Fale Conosco</a></li>
-                    <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Cadastro</a>
+                    <!-- <a id="botao" class="waves-effect waves-light btn modal-trigger" href="#modal2">Cadastro</a> -->
                 </ul>
 
                 <!--Web-->
@@ -59,7 +59,7 @@
                     <li><a href="#trabalheconosco">Trabalhe conosco</a></li>
                     <li><a href="#parceiros">Parceiros</a></li>
                     <li><a href="#faleconosco">Fale Conosco</a></li>
-                    <li><a class="waves-effect waves-light btn modal-trigger" href="#modal3">Cadastro</a></li>
+                    <!-- <li><a class="waves-effect waves-light btn modal-trigger" href="#modal3">Cadastro</a></li> -->
                 </ul>
             </div>
         </div>
@@ -75,7 +75,7 @@
                 </div>
                     <div class="modal-footer">
                         <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
-                        <a href="" class="modal-action modal-close waves-effect waves-green btn-flat ">Logar</a>
+                        <a href="" class="modal-action modal-close waves-effect waves-green btn-flat ">Cadastrar</a>
                     </div>
                 </div>
 
@@ -91,3 +91,8 @@
                 </div>
 		</div>
 @show
+<style>
+#botao{
+  color: black;
+}
+</style>
