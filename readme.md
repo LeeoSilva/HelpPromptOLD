@@ -57,3 +57,12 @@ Seu repositório deve estar atualizado a esse ponto.
 
 3. Envie para o branch principal.
 `git push -u origin master`
+
+
+## Coisas a arrumar
+#### Página Index
++ Imagem de fundo (primeira imagem);
+Obs.: Criar imagem do "P" como icone de local; 
++ Cabeçalho mobile;
++ Mudar cor dos icones;
++ Mudar mobile inteiro;
