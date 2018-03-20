@@ -1,5 +1,8 @@
 <body>
 	<div class="section black-text">
+	<br>
+	<br>
+	<br>
 							<div class="row"><h2>FALE CONOSCO</h2></div>
 							<div class="divider"></div>
 								<form class="col s12 m12 l12" action="enviar.php">
@@ -32,7 +35,7 @@
 									</div>
                                     <div class="row">
 										<div class="col s12 l12 m12">
-											{{ Form::submit('ENVIAR', array ('class' => 'btn right')) }}
+											{{ Form::submit('ENVIAR', array ('class' => 'btn right red')) }}
 										</div>
 									</div>
 

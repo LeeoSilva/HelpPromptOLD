@@ -16,6 +16,6 @@ $(document).ready(function(){
 });
 </script>
 <div class="fixed-action-btn horizontal">
-    <a class="btn-floating btn-large waves-effect waves-light teel right" id="scroll"><i class="material-icons">arrow_upward</i></a>
+    <a class="btn-floating btn-large waves-effect waves-light red right" id="scroll"><i class="material-icons">arrow_upward</i></a>
 </div>
 @show

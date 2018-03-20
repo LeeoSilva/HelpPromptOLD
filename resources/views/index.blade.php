@@ -24,6 +24,7 @@
 			@include('HtmlWraps.header')
 		</div>
 		<!-- Fim do Cabeçalho -->
+	
 		<!--Início -->
 		<div class="container-fluid scrollup" id="inicio">
 			<div id="index-banner" class="parallax-container1" class="example-classname">
@@ -39,20 +40,14 @@
 		</div>
 			<!-- Fim do Início -->
 
-
-
-
 			<!-- Bloco sobre  -->
 			<div class="container-fluid" id="sobre">
-				<a name="sobre">
-				</a>
+				<a name="sobre"></a>
 				<div class="container">
 					<div class="row">
 						<div class="col s12 m12 l12">
-							<h2 class="black-text">SOBRE  </h2></div>
+							<h2 class="black-text">SOBRE</h2></div>
 						</div>
-						<!-- <div class="divider"></div> -->
-
 					<div class="row">
 						<div class="col s12 m4 l4 left">
 							<div class="icon-block">
@@ -60,59 +55,30 @@
 							</div>
 						</div>
 						<div class="col s12 m8 l8">
-							<h4 class="light flow-text black-text" style="line-height: 150%;" style="text-align: justify;">Help Prompt é um aplicativo desenvolvido pela empresa Keys & Kases, que tem como desafio facilitar a vida de quem procura uma oficina mecânica mais próxima e um maior gosto financeiro. Help Prompt também tem a capacidade de calcular o tempo de trajeto para a chegada de um prestador de serviço até você.</h2>
+							<h4 class="light flow-text black-text" style="line-height: 150%; text-align: justify;">Help Prompt é um aplicativo desenvolvido pela empresa Keys & Kases, que tem como desafio facilitar a vida de quem procura uma oficina mecânica mais próxima e um maior gosto financeiro. Help Prompt também tem a capacidade de calcular o tempo de trajeto para a chegada de um prestador de serviço até você.</h2>
 							</div>
 						</div>
 					</div>
-</div>
+				</div>
 					<!-- Fim do Bloco sobre -->
+					<br>
+					<br>
 					<!-- Trabalhe conosco  -->
 					<div  id="trabalheconosco">
 						<a nome="trabalheconosco">
 							@include('Formularios.trabalheconosco')
-						</div>
-						<!-- Fim do Trabalhe conosco
+					</div>
+					<!-- Fim do Trabalhe conosco -->
+						<br>
+						<br>
 					<!-- Bloco Fale conosco -->
 					<div class="container" id="faleconosco">
 						<a nome="faleconosco">
 							@include('Formularios.faleconosco')
 					</div>
 					<!-- Bloco Fale conosco -->
-
-			<!-- Bloco parceiros -->
-			<!-- <div class="container" id="parceiros">
-				<a name="parceiros">
-				</a>
-				<div class="row"><h2>PARCEIROS</h2></div>
-				<div class="divider"></div>
-			</div>
-			<div class="section black-text">
-				<div class="container-fluid" id="parceirosimg">
-
-					<div class="row">
-						<div class="col s12 m4 l4">
-							<div class="icon-block" class="grow">
-								<h3 class="center brown-text"><img src="Parceiros/etec.png" class="parceiros"></h3>
-								<h5 class="center">Etec Antonio Devisate</h5>
-								<p class="light" style="text-align: center; padding: 5px;">Escola Técnica Estadual</p>
-							</div>
-						</div>
-						<div class="col s12 m4 l4">
-							<div class="icon-block">
-								<h3 class="center brown-text"><img src="Parceiros/ciem.png" class="parceiros"></h3>
-								<h5 class="center">Ciem Marília</h5>
-								<p class="light" style="text-align: center; padding: 5px;">Centro Incubador de Empresas de Marília (CIEM - Marília)</p>
-							</div>
-						</div>
-						<div class="col s12 m4 l4">
-							<div class="icon-block">
-								<h3 class="center brown-text"><img src="Parceiros/citec.png" class="parceiros"></h3>
-								<h5 class="center">Citec Marília</h5>
-								<p class="light" style="text-align: center; padding: 5px;">Centro de Inovação Técnológico de Marília (CITEC - Marília) </p>
-							</div>
-
-						</div> -->
-						<!-- Fim do Bloco parceiros -->
+					<br>
+					<br>
 					</div>
 				</div>
 			</div>
@@ -123,8 +89,8 @@
 
 			<!-- Rodapé -->
 				@include('HtmlWraps.rodape')
-
 			<!-- Fim do Rodapé -->
+
 			<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 			<script type="text/javascript" src="js/materialize.js"></script>
 
@@ -151,7 +117,6 @@
 
 
 				//Efeitos de animação
-
 				$.scrollify({
 			     section : "section",
 			     sectionName : "section-name",
@@ -173,12 +138,6 @@
 
 				</script>
 			<script type="text/javascript" src="javascript.js"></script>
-
-
-
-
-
-
 			<!-- Fim do JavaScript -->
 <style>
 
@@ -188,94 +147,54 @@ h2{
 }
 
 #trabalheconosco{
-	height: 660px;
-	padding: 110px 10px 10px 0px;
-
+	background-color: #e5e3e3;
+	height: 460px;
+	padding: 10px 10px 0px 0px;
 }
 
-/*#parceiros{
-	padding: 110px 10px 10px 0px;
-	height: 270px;
-	background-color:  #FBFBFB;
-}*/
-
-
-/*#parceirosimg{
-	padding: 10px 10px 390px 0px;
-	height: 270px;
-	background-color:  #FBFBFB;
-}*/
-
 #sobre{
-		background-color:  #fbfe01;
-		padding: 110px 10px 10px 0px;
+		background-color:  #023a5d;
+		padding: 10px 10px 10px 0px;
 		height: 660px;
-
-
 }
 
 #inicio{
 		background-color:  #ffffff;
 		padding: 110px 10px 10px 0px;
-		height: 660px;
-
-
+		height: 560px;
 }
-
 
 .icon-block{
 			background-color:  #FBFBFB;
 }
 
-
+#faleconosco{
+	height: 460px;
+	padding: 110px 10px 10px 0px;
+}
 
 h1,h2{
-animation-duration: 2s;
-animation-name: slidein;
-color: black;
+	animation-duration: 2s;
+	animation-name: slidein;
+	color: black;
 }
 
 #subtitulo{
 	animation-duration: 2s;
 	animation-name: slidein;
 	color: black;
-
-
-
 }
+
 @keyframes slidein {
-from {
-	margin-left: -220%;
-	width: 300%
+	from{
+		margin-left: -220%;
+		width: 300%;
+	}
+	 to{
+		margin-left: 0%;
+		width: 100%;
+	 }
 }
-
-to {
-	margin-left: 0%;
-	width: 100%;
-}
-}
-
-
-/*
-#fade
-{
-        opacity:0.5;
-}
-#fade:hover
-{
-        opacity:1;
-}
-
-//adicionar id fade
-*/
-
-.grow:hover
-{
-        -webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-        transform: scale(1.3);
-}
-
 </style>
 <script>
 
