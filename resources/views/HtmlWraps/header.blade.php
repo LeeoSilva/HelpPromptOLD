@@ -3,26 +3,11 @@
     .logo{
     height: 100px;
     width: 180px;
-    padding: 0 0 25px 0;
+    align: center;
     }
-    .contatos{
-    height: 35px;
-    width: 35px;
-    text-align: right;
-        }
     .cor{
-    background-color: #000000;
-    color: #000000;
-    }
-    .parceiros{
-      height: 150px;
-      width: 275px;
-    }
-    .parallax{
-        background-image: url('fundo.jpg');
-        width: auto;
-        height: auto;
-        position: sticky;
+    background-color: #023a5d;
+    color: #023a5d;
     }
     .modalmobile{
         height: 10%;
@@ -33,7 +18,15 @@
         width: 35%;
         height: 50%;
     }
-    </style>
+
+    @media screen and (max-width: 600px){
+        .logo{
+            max-width:100px;
+            max-height:60px;
+        }
+    }
+</style>
+
 
 <div class="navbar-fixed" role="navigation">
       <nav class="cor">
@@ -47,9 +40,7 @@
                     <li><a href="/">Home</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#trabalheconosco">Trabalhe conosco</a></li>
-                    <li><a href="#parceiros">Parceiros</a></li>
                     <li><a href="#faleconosco">Fale Conosco</a></li>
-                    <!-- <a id="botao" class="waves-effect waves-light btn modal-trigger" href="#modal2">Cadastro</a> -->
                 </ul>
 
                 <!--Web-->
@@ -57,9 +48,7 @@
                     <li><a href="/">Home</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#trabalheconosco">Trabalhe conosco</a></li>
-                    <li><a href="#parceiros">Parceiros</a></li>
                     <li><a href="#faleconosco">Fale Conosco</a></li>
-                    <!-- <li><a class="waves-effect waves-light btn modal-trigger" href="#modal3">Cadastro</a></li> -->
                 </ul>
             </div>
         </div>
