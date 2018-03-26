@@ -63,6 +63,7 @@ Seu repositório deve estar atualizado a esse ponto.
 #### Página Index
 + Imagem de fundo (primeira imagem);
 Obs.: Criar imagem do "P" como icone de local; 
-+ Cabeçalho mobile;
+* Cabeçalho mobile;
 + Mudar cor dos icones;
 + Mudar mobile inteiro;
+* Bater na Lívia;
