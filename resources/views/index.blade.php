@@ -69,8 +69,7 @@
 							@include('Formularios.trabalheconosco')
 					</div>
 					<!-- Fim do Trabalhe conosco -->
-						<br>
-						<br>
+						
 					<!-- Bloco Fale conosco -->
 					<div class="container" id="faleconosco">
 						<a nome="faleconosco">
@@ -148,8 +147,8 @@ h2{
 
 #trabalheconosco{
 	background-color: #e5e3e3;
-	height: 460px;
-	padding: 10px 10px 0px 0px;
+	/* height: 460px; */
+	/* padding: 10px 10px 0px 0px; */
 }
 
 #sobre{
@@ -169,8 +168,8 @@ h2{
 }
 
 #faleconosco{
-	height: 460px;
-	padding: 110px 10px 10px 0px;
+	/* height: 460px; */
+	/* padding: 110px 10px 10px 0px; */
 }
 
 #titulo{

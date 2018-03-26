@@ -6,7 +6,7 @@
     align: center;
     }
     .cor{
-    background-color: #023a5d;
+    background-color: #000000;
     color: #023a5d;
     }
     .modalmobile{

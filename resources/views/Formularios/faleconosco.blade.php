@@ -35,7 +35,7 @@
 									</div>
                                     <div class="row">
 										<div class="col s12 l12 m12">
-											{{ Form::submit('ENVIAR', array ('class' => 'btn right red')) }}
+											{{ Form::submit('ENVIAR', array ('class' => 'btn right blue')) }}
 										</div>
 									</div>
 
