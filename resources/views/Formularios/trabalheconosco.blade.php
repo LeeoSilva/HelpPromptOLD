@@ -55,6 +55,7 @@ height: 40%;
 }
 .meio{
 height: 20%;
+background-color: white;
 }
 .baixo{
 height: 40%;

@@ -30,7 +30,7 @@
 			<div id="index-banner" class="parallax-container1" class="example-classname">
 				<div class="section no-pad-bot" >
 					<div class="container">
-						<h1 class="header col s12 center" style="padding: 170 0 0 0;text-shadow: 7px 7px  8px black;">Help Prompt</h1>
+						<h1 id="titulo" class="header col s12 center" style="padding: 20% 0% 0% 0%;text-shadow: 5px 5px 5px black;font-size: 600%">Help Prompt</h1>
 						<div class="row center">
 							<h5 id="subtitulo"class="header col s12" style="text-shadow: 5px 5px  6px black;"><strong>Sempre atentos à você!</strong></h5>
 						</div>
@@ -153,7 +153,7 @@ h2{
 }
 
 #sobre{
-		background-color:  #023a5d;
+		background-color:  #b3d0e2;
 		padding: 10px 10px 10px 0px;
 		height: 660px;
 }
@@ -173,7 +173,7 @@ h2{
 	padding: 110px 10px 10px 0px;
 }
 
-h1,h2{
+#titulo{
 	animation-duration: 2s;
 	animation-name: slidein;
 	color: black;
