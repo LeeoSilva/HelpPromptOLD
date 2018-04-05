@@ -7,7 +7,7 @@
 <center><div class="col s12 l3 m3" id="primeiro">
 	<div class="cima" class="primeiro"></div>
 			<div class="meio">
-				<h5>CADASTRE SEU ESTABELECIMENTO</h5>
+				<h5 class="position">CADASTRE SEU ESTABELECIMENTO</h5>
 			</div>
 	<div class="baixo"></div>
 </div></center>
@@ -15,7 +15,7 @@
 <center><div class="col s12 l3 m3" id="segundo">
 	<div class="cima"></div>
 		<div class="meio">
-			<h5>ENTRAMOS EM CONTATO E FECHAMOS CONTRATO</h5>
+			<h5 class="position2">ENTRAMOS EM CONTATO E FECHAMOS CONTRATO</h5>
 		</div>
 	<div class="baixo"></div>
 </div></center>
@@ -23,7 +23,7 @@
 <center><div class="col s12 l3 m3" id="terceiro">
 	<div class="cima"></div>
 		<div class="meio">
-			<h5>CONFIGURAMOS SUA EMPRESA PARA O HELPPROMPT</h5>
+			<h5 class="position3">CONFIGURAMOS SUA EMPRESA PARA O HELPPROMPT</h5>
 		</div>
 	<div class="baixo"></div>
 </div></center>
@@ -31,7 +31,7 @@
 <center><div class="col s12 l3 m3" id="quarto">
 	<div class="cima"></div>
 		<div class="meio">
-			<h5>E JÁ ESTÁ PRONTO!</h5>
+			<h5 class="position4">E JÁ ESTÁ PRONTO!</h5>
 		</div>
 	<div class="baixo"></div>
 </div></center>
@@ -51,49 +51,61 @@
 
 <style>
 .cima{
-height: 40%;
+height: 20%;
 }
 .meio{
-height: 20%;
+height: 15%;
 background-color: white;
 }
 .baixo{
-height: 40%;
+height: 20%;
+}
+.position{
+	padding: 5% 0% 5% 0%;
+}
+.position2{
+	padding: 2% 0% 2% 0%;
+}
+.position3{
+	padding: 2% 0% 2% 0%;
+}
+.position4{
+	padding: 10% 0% 10% 0%;	
 }
 #primeiro{
 	background-image: url('numeros1.png');
 	background-repeat: no-repeat;
-	background-position: center; 
-	border-width: 5px;  
+	background-position: center;
+	background-size:contain; 
     border-style: solid;
-	border-radius: 10px;
-	margin: 10px 10px 10px 20px;
+	border-radius: 8%;
+	margin: 0.5% 0.5% 0.5% 0.5%;
 }
 #segundo{
 	background-image: url('numeros2.png');
 	background-repeat: no-repeat;
-	background-position: center; 
-	border-width:5px;  
+	background-position: center;  
+	background-size:contain; 
     border-style: solid;
-	border-radius: 10px;
-	margin: 10px;	
+	border-radius: 8%;
+	margin: 0.5% 0.5% 0.5% 0.5%;	
 }
 #terceiro{
 	background-image: url('numeros3.png');
 	background-repeat: no-repeat;
-	background-position: center;
-	border-width:5px;  
+	background-position: center;  
+	background-size:contain;
     border-style: solid;
-	border-radius: 10px;
-	margin: 10px; 
+	border-radius: 8%;
+	margin: 0.5% 0.5% 0.5% 0.5%; 
 }
 #quarto{
 	background-image: url('numeros4.png');
 	background-repeat: no-repeat;
-	background-position: center; 
-	border-width:5px;  
+	background-position: center;
+	background-size:contain;   
     border-style: solid;
-	border-radius: 10px;
-	margin: 10px;
+	border-radius: 8%;
+	margin: 0.5% 2.5% 0.5% 0.5%;
 }
 </style>

@@ -42,11 +42,10 @@
 
 			<!-- Bloco sobre  -->
 			<div class="container-fluid" id="sobre">
-				<a name="sobre"></a>
 				<div class="container">
 					<div class="row">
 						<div class="col s12 m12 l12">
-							<h2 class="black-text">SOBRE</h2></div>
+							<h2 class="black-text" style="padding: 20% 0% 0% 0%;">SOBRE</h2></div>
 						</div>
 					<div class="row">
 						<div class="col s12 m4 l4 left">
@@ -63,18 +62,27 @@
 					<!-- Fim do Bloco sobre -->
 					<br>
 					<br>
+
+					<!-- Bloco Baixe o App -->
+						<!--  @include('HtmlWraps.baixeoapp') -->
+					<!-- Fim do Bloco Baixe o App -->
+
 					<!-- Trabalhe conosco  -->
-					<div  id="trabalheconosco">
-						<a nome="trabalheconosco">
+						<div  id="trabalheconosco">
 							@include('Formularios.trabalheconosco')
-					</div>
+						</div>
 					<!-- Fim do Trabalhe conosco -->
-						
+
+					<!-- Bloco Informações  -->
+						<div class="container" id="informacoes">
+							@include('HtmlWraps.informacoes')
+						</div>
+					<!-- Fim do Bloco Informações  -->
+
 					<!-- Bloco Fale conosco -->
-					<div class="container" id="faleconosco">
-						<a nome="faleconosco">
+						<div class="container" id="faleconosco">
 							@include('Formularios.faleconosco')
-					</div>
+						</div>
 					<!-- Bloco Fale conosco -->
 					<br>
 					<br>
@@ -98,7 +106,6 @@
 				$('#modal1').modal();
 				$('#modal2').modal();
 				$('#modal3').modal();
-				$('.parallax').parallax();
 
 				// Inicio da navbar
 				$('.button-collapse').sideNav({
@@ -108,32 +115,6 @@
 					draggable: true, // Choose whether you can drag to open on touch screens,
 				});
 				// Final da navbar
-
-
-				$(document).ready(function() {
-					$('select').material_select();
-				});
-
-
-				//Efeitos de animação
-				$.scrollify({
-			     section : "section",
-			     sectionName : "section-name",
-			     interstitialSection : "",
-			     easing: "easeOutExpo",
-			     scrollSpeed: 1100,
-			     offset : 0,
-			     scrollbars: true,
-			     standardScrollElements: "",
-			     setHeights: true,
-			     overflowScroll: true,
-			     updateHash: true,
-			     touchScroll:true,
-			     before:function() {},
-			     after:function() {},
-			     afterResize:function() {},
-			     afterRender:function() {}
-			   });
 
 				</script>
 			<script type="text/javascript" src="javascript.js"></script>
@@ -146,13 +127,11 @@ h2{
 }
 
 #trabalheconosco{
-	background-color: #e5e3e3;
 	/* height: 460px; */
 	/* padding: 10px 10px 0px 0px; */
 }
 
 #sobre{
-		background-color:  #b3d0e2;
 		padding: 10px 10px 10px 0px;
 		height: 660px;
 }
