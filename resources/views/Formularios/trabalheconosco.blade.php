@@ -79,7 +79,7 @@ height: 20%;
 	background-size:contain; 
     border-style: solid;
 	border-radius: 8%;
-	margin: 0.5% 0.5% 0.5% 0.5%;
+	margin: 0.5% 0.5% 0.5% 2.5%;
 }
 #segundo{
 	background-image: url('numeros2.png');
