@@ -7,7 +7,7 @@
     }
     .cor{
     background-color: #000000;
-    color: #023a5d;
+    color: #ffffff;
     }
     .modalmobile{
         height: 10%;

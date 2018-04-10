@@ -1,16 +1,18 @@
+@section('trabalheconosco')
 <body>
-<div class="section black-text">
-						<div class="container">
-							<div class="row"><h2 style="text-shadow: 3px 3px  4px black;">QUER TRABALHAR CONOSCO?</h2></div><br><br>
-</div>
+	<div class="section black-text">
+		<div class="container">
+			<div class="row"><h2 style="text-shadow: 3px 3px  4px black; padding: 10% 0% 0% 0%;">QUER TRABALHAR CONOSCO?</h2></div><br><br>
+	</div>
+
 <div class="row">
-<center><div class="col s12 l3 m3" id="primeiro">
-	<div class="cima" class="primeiro"></div>
-			<div class="meio">
-				<h5 class="position">CADASTRE SEU ESTABELECIMENTO</h5>
-			</div>
-	<div class="baixo"></div>
-</div></center>
+	<center><div class="col s12 l3 m3" id="primeiro">
+		<div class="cima" class="primeiro"></div>
+				<div class="meio">
+					<h5 class="position">CADASTRE SEU ESTABELECIMENTO</h5>
+				</div>
+		<div class="baixo"></div>
+	</div></center>
 
 <center><div class="col s12 l3 m3" id="segundo">
 	<div class="cima"></div>
@@ -35,19 +37,14 @@
 		</div>
 	<div class="baixo"></div>
 </div></center>
-</div>
-</div>
-{{-- Verificação e apresentação de erros --}}
-@if( $errors->any() )
-<ul class='alert alert-danger'>
-	@foreach( $errors->all() as $error )
-		<li>{{ $error }} </li>
-	@endforeach
-</ul>
-@endif
 
+		</div>
+	</div>
 </div>
 
+@include('HtmlWraps.errors')
+
+@show
 
 <style>
 .cima{

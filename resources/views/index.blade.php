@@ -126,11 +126,6 @@ h2{
 		text-shadow: 2px 1px 2px black;"
 }
 
-#trabalheconosco{
-	/* height: 460px; */
-	/* padding: 10px 10px 0px 0px; */
-}
-
 #sobre{
 		padding: 10px 10px 10px 0px;
 		height: 660px;

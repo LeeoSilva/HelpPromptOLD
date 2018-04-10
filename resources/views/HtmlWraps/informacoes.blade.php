@@ -7,7 +7,8 @@
     <h6 style="line-height: 150%; text-align: center; color: grey;">* O valor da taxa é de 6% sobre o total do serviço prestado concluído no HelpPrompt. *</h6>
     <br>
     <div class="col s12 m12 l12">
-		{{ Form::submit('QUERO SER COLABORADOR', array ('class' => 'btn center blue')) }}
+    <br>
+		{{ Form::button('QUERO SER COLABORADOR', array ('class' => 'btn right blue')) }}
 	</div>
 
 </div>

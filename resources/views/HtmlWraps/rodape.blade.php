@@ -28,7 +28,7 @@ width: 250px;
         <div class="row">
           <div class="col s12 m8 l8">
             <h5 class="white-text">HelpPrompt</h5>
-            <p class="white-text text-lighten-4">Desenvolvido por Keys & Kases.</p>
+            <p class="white-text text-lighten-4">Desenvolvido por Keys &#38; Kases.</p>
             <i class="material-icons prefix">room</i>Innova Space Coworking<br>R. Hygino Muzi Filho, 529 - Mirante<br>CEP:17525-902 - Marília - SP
           </div>
           <div class="col s12 m4 l4">
@@ -40,7 +40,7 @@ width: 250px;
         <div class="container">
           <div class="row">
             <div class="col s12 m8 l8" style="padding: 60px 0px 0px 0px;">
-              © 2018 Keys & Kases
+            &#169; 2018 Keys &#38; Kases
             </div>
             <div class="col s12 m4 l4" style="text-align: right;">
               <a href="https://www.facebook.com/HelpPrompt-131174850922742/?ref=bookmarks" target="_blank"><img src="Contatos/facebook.png" class="contatos"></a>
