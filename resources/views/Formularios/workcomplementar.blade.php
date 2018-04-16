@@ -124,7 +124,7 @@
             </form>
             <div class="row">
                 <div class="col s12 l12 m12">
-                    {{ Form::submit('ENVIAR', array ('class' => 'btn right')) }}
+                    {{ Form::submit('ENVIAR', array ('class' => 'btn right blue')) }}
           </div>
         </div>
       </div>
@@ -132,16 +132,10 @@
 </body>
 </html>
 
-  {{-- Verificação e apresentação de erros --}}
-  @if( $errors->any() )
-    <ul class='alert alert-danger'>
-      @foreach( $errors->all() as $error )
-        <li>{{ $error }} </li>
-      @endforeach
-    </ul>
-  @endif
+@include('HtmlWraps.errors')
 
 @show
+
 <style>
 body{
   background-color: #FBFBFB;
