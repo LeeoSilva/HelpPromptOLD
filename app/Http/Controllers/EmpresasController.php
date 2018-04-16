@@ -41,7 +41,7 @@ use App\Http\Requests\TrabalheConoscoEditRequest; // Request de validação de e
 
 		public function create(TrabalheConoscoComplementar $request){
 			try{ // Error handler for empresas.
-				$empresa 							 = new empresas;
+				$empresa 			   = new empresas;
 				$empresa->empresa_nome = $request->empresa_nome;
 				$empresa->estab_email  = $request->estab_email;
 				$empresa->empresa_fone = $request->empresa_fone;
@@ -50,9 +50,9 @@ use App\Http\Requests\TrabalheConoscoEditRequest; // Request de validação de e
 			}catch(Exception $e){ die($e); }
 
 			try{ // Error handler for represent_contatos.
-				$represent 								 = new represent_contatos;
+				$represent 				   = new represent_contatos;
 				$represent->represent_nome = $request->represent_nome;
-				$represent->estab_email 	 = $request->estab_email;
+				$represent->estab_email    = $request->estab_email;
 				$represent->represent_fone = $request->represent_fone;
 				$represent->como_conheceu  = $request->como_conheceu;
 				$represent->save();
@@ -89,18 +89,18 @@ use App\Http\Requests\TrabalheConoscoEditRequest; // Request de validação de e
 			*/
 
 			try{ // Error handling
-				$empresa 			 = Empresas::FindorFail($id);
+				$empresa 	   = Empresas::FindorFail($id);
 				$representante = represent_contatos::where('estab_id')->value($id);
 				$empresa->fill($request->only(['empresa_nome', 'estab_email',
-																		   'tipo_servico', 'estados',
-																			 'estados', 'cidades',
-																			 'bairros', 'endereco',
-																			 'complemento', 'empresa_cnpj',
-																			 'guinchos', 'carros',
-																			 'motos', 'represent_nome',
-																			 'represent_mail', 'represent_fone'
+										  	   'tipo_servico', 'estados',
+											   'estados', 'cidades',
+											   'bairros', 'endereco',
+											   'complemento', 'empresa_cnpj',
+											   'guinchos', 'carros',
+											   'motos', 'represent_nome',
+											   'represent_mail', 'represent_fone'
 				]));
-				$product->save();
+				$empresas->save();
 			}catch(Exception $e){ die($e); }
 		}
 

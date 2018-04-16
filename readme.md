@@ -66,4 +66,4 @@ Obs.: Criar imagem do "P" como icone de local;
 * Cabeçalho mobile;
 + Mudar cor dos icones;
 + Mudar mobile inteiro;
-* Bater na Lívia;
++ Alterações no front mobile (ícone de subir ao topo);
