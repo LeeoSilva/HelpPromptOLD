@@ -24,42 +24,43 @@
 			@include('HtmlWraps.header')
 		</div>
 		<!-- Fim do Cabeçalho -->
-	
+
 		<!--Início -->
-		<div class="container-fluid scrollup" id="inicio">
-			<div id="index-banner" class="parallax-container1" class="example-classname">
-				<div class="section no-pad-bot" >
-					<div class="container">
-						<h1 id="titulo" class="header col s12 center" style="padding: 20% 0% 0% 0%;text-shadow: 5px 5px 5px black;font-size: 600%">Help Prompt</h1>
-						<div class="row center">
-							<h5 id="subtitulo"class="header col s12" style="text-shadow: 5px 5px  6px black;"><strong>Sempre atentos à você!</strong></h5>
+		<div id="index-banner" class="parallax-container">
+			<div class="section no-pad-bot">
+				<div class="container">
+					<br><br>
+						<h1 id="titulo" class="header col s12 center" style="padding: 10% 0% 0% 0%;text-shadow: 5px 5px 5px black;font-size: 600%;color:white;">Help Prompt</h1>
+					<div class="row center">
+						<h5 id="subtitulo"class="header col s12" style="text-shadow: 5px 5px  6px black;color:white;"><strong>Sempre atentos à você!</strong></h5>
+					</div>
+					<br><br>
+				</div>
+			</div>
+			<div class="parallax"><img src="fundo.jpg" alt=""></div>
+ 		</div>
+		<!-- Fim do Início -->
+
+		<!-- Bloco sobre  -->
+		<div class="container-fluid" id="sobre">
+			<div class="container">
+				<div class="row">
+					<div class="col s12 m12 l12">
+						<h2 class="black-text" style="padding: 20% 0% 0% 0%;">SOBRE</h2></div>
+					</div>
+				<div class="row">
+					<div class="col s12 m4 l4 left">
+						<div class="icon-block">
+							<img src="Logo/logobrancasemfundo.png" class="responsive-img" style="text-align: left;">
+						</div>
+					</div>
+					<div class="col s12 m8 l8">
+						<h4 class="light flow-text black-text" style="line-height: 150%; text-align: justify;">Help Prompt é um aplicativo desenvolvido pela empresa Keys & Kases, que tem como desafio facilitar a vida de quem procura uma oficina mecânica mais próxima e um maior gosto financeiro. Help Prompt também tem a capacidade de calcular o tempo de trajeto para a chegada de um prestador de serviço até você.</h2>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-			<!-- Fim do Início -->
-
-			<!-- Bloco sobre  -->
-			<div class="container-fluid" id="sobre">
-				<div class="container">
-					<div class="row">
-						<div class="col s12 m12 l12">
-							<h2 class="black-text" style="padding: 20% 0% 0% 0%;">SOBRE</h2></div>
-						</div>
-					<div class="row">
-						<div class="col s12 m4 l4 left">
-							<div class="icon-block">
-								<img src="Logo/logobrancasemfundo.png" class="responsive-img" style="text-align: left;">
-							</div>
-						</div>
-						<div class="col s12 m8 l8">
-							<h4 class="light flow-text black-text" style="line-height: 150%; text-align: justify;">Help Prompt é um aplicativo desenvolvido pela empresa Keys & Kases, que tem como desafio facilitar a vida de quem procura uma oficina mecânica mais próxima e um maior gosto financeiro. Help Prompt também tem a capacidade de calcular o tempo de trajeto para a chegada de um prestador de serviço até você.</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-					<!-- Fim do Bloco sobre -->
+			<!-- Fim do Bloco sobre -->
 					<br>
 					<br>
 
@@ -103,6 +104,7 @@
 
 			<!-- JavaScript -->
 			<script type="text/javascript" language="javascript" >
+				$('.parallax').parallax();
 				$('#modal1').modal();
 				$('#modal2').modal();
 				$('#modal3').modal();
