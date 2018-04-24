@@ -48,14 +48,14 @@ class TrabalheConoscoUpdateRequest extends FormRequest{
         'empresa_nome.required'  => 'Empresa não preenchida.',
         'estab_email.required'   => 'Email empresarial não preenchido.',
         'tipo_servico.required' => 'Tipo de serviços não preenchidos.',
-        'estados.required'      => 'Estado do estabelecimento não preenchido.'.
+        'estados.required'      => 'Estado do estabelecimento não preenchido.',
         'cidades.required'      => 'Cidade do estabelecimento não preenchido.',
         'bairros.required'      => 'Bairro do estabelecimento não preenchido.',
         'endereco.required'     => 'Endereço do estabelecimento não preenchido.',
         'empresa_cnpj.required' => 'CNPJ da empresa não preenchido.',
 
-        'guinchos.required' => 'Guinchos do estabelecimento não preenchido.'.
-        'motos.required'    => 'Motos do estabelecimento não preenchido.'
+        'guinchos.required' => 'Guinchos do estabelecimento não preenchido.',
+        'motos.required'    => 'Motos do estabelecimento não preenchido.',
         'represent_nome.required'  => 'Nome do representante legal não preenchido.',
         'represent_email.required' => 'Email do representante legal não preenchido.',
         'represent_fone.required'  => 'Telefone do representante legal não preenchido.',
