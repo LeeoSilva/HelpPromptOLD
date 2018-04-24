@@ -1,9 +1,23 @@
 @section('complementar')
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Help Prompt</title>
+		<link rel="stylesheet" href="css/materialize.css">
+		<link rel=icon href=./Logo/logobrancasemfundo.png>
   </head>
   <body>
+
+        <!-- Cabeçalho -->
+        <div>
+            @include('HtmlWraps.headerWork');
+		</div>
+		<!-- Fim do Cabeçalho -->
+    
     <div class="container">
             {!! Form::open(['action' => 'EmpresasController@create', 'method' => 'get', 'autocomplete' => 'off']); !!}
        <div class="row">

@@ -1,5 +1,5 @@
 <div class="container">
-    <h3 style="line-height: 130%; text-align: center; color: #023a5d;"><strong>Cobramos apenas quando seu estabelecimento vender!</strong></h3>
+    <h3 style="padding:20% 0 0 0;line-height: 130%; text-align: center; color: #023a5d;"><strong>Cobramos apenas quando seu estabelecimento vender!</strong></h3>
     <br>
     <br>
     <h5 style="line-height: 150%; text-align: center; color: black;">A taxa só é cobrada sobre os atendimentos realizados pelo site ou pelo aplicativo!</h5>
@@ -8,7 +8,6 @@
     <br>
     <div class="col s12 m12 l12">
     <br>
-		{{ Form::button('QUERO SER COLABORADOR', array ('class' => 'btn right blue')) }}
+    {{ Form::button('QUERO SER COLABORADOR', array('url' => 'http://127.0.0.1:8000/work', 'class' => 'btn right blue')) }}
 	</div>
-
 </div>

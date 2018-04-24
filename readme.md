@@ -61,9 +61,6 @@ Seu repositório deve estar atualizado a esse ponto.
 
 ## Coisas a arrumar
 #### Página Index
-+ Imagem de fundo (primeira imagem);
-Obs.: Criar imagem do "P" como icone de local; 
 * Cabeçalho mobile;
-+ Mudar cor dos icones;
-+ Mudar mobile inteiro;
-+ Alterações no front mobile (ícone de subir ao topo);
+* Arrumar o botão;
+* Arrumar o cabeçalho do mobile da página WorkComplementar;

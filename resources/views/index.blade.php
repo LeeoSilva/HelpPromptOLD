@@ -1,13 +1,6 @@
 @section('principal')
 <html>
 	<head>
-		<script>
-        $(function() {
-          $.scrollify({
-            section : ".example-classname",
-          });
-        });
-      </script>
 		<meta charset="utf-8">
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -105,10 +98,7 @@
 			<!-- JavaScript -->
 			<script type="text/javascript" language="javascript" >
 				$('.parallax').parallax();
-				$('#modal1').modal();
-				$('#modal2').modal();
-				$('#modal3').modal();
-
+				
 				// Inicio da navbar
 				$('.button-collapse').sideNav({
 					menuWidth: 300, // Default is 300
@@ -119,7 +109,7 @@
 				// Final da navbar
 
 				</script>
-			<script type="text/javascript" src="javascript.js"></script>
+			<!-- <script type="text/javascript" src="javascript.js"></script> -->
 			<!-- Fim do JavaScript -->
 <style>
 

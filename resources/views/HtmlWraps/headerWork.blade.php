@@ -9,16 +9,6 @@
     background-color: #000000;
     color: #ffffff;
     }
-    .modalmobile{
-        height: 10%;
-        width: 10%;
-    }
-    #modal3{
-        overflow: hidden;
-        width: 35%;
-        height: 50%;
-    }
-
     @media screen and (max-width: 600px){
         .logo{
             max-width:100px;
@@ -38,28 +28,15 @@
             <!-- mobile -->
                 <ul class="side-nav" id="menu-mobile" >
                     <li><a href="/">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#trabalheconosco">Trabalhe conosco</a></li>
-                    <li><a href="#faleconosco">Fale Conosco</a></li>
                 </ul>
 
                 <!--Web-->
                 <ul class="right hide-on-med-and-down" id="menu-mobile">
                     <li><a href="/">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#trabalheconosco">Trabalhe conosco</a></li>
-                    <li><a href="#faleconosco">Fale Conosco</a></li>
                 </ul>
             </div>
         </div>
-
       </nav>
-
-            
 </div>
 @show
-<style>
-#botao{
-  color: black;
-}
-</style>
+

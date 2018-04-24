@@ -1,4 +1,5 @@
 @section('header')
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <style type="text/css" media="screen">
     .logo{
     height: 100px;
@@ -9,16 +10,6 @@
     background-color: #000000;
     color: #ffffff;
     }
-    .modalmobile{
-        height: 10%;
-        width: 10%;
-    }
-    #modal3{
-        overflow: hidden;
-        width: 35%;
-        height: 50%;
-    }
-
     @media screen and (max-width: 600px){
         .logo{
             max-width:100px;
@@ -45,7 +36,7 @@
 
                 <!--Web-->
                 <ul class="right hide-on-med-and-down" id="menu-mobile">
-                    <li><a href="/">Home</a></li>
+                    <li><a href="/" >Home</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#trabalheconosco">Trabalhe conosco</a></li>
                     <li><a href="#faleconosco">Fale Conosco</a></li>
@@ -54,11 +45,18 @@
         </div>
 
       </nav>
+		<script>
+			var $doc = $('html, body');
+			$('a').click(function() {
+				$doc.animate({
+					scrollTop: $( $.attr(this, 'href') ).offset().top
+				}, 500);
+				return false;
+			});
+            // $(document).ready(function () { 
+            //     $(".navbar-nav li a").click(function(event) { 
+            //         $(".navbar-collapse").collapse('hide'); }); });
+		</script>
 
 </div>
 @show
-<style>
-#botao{
-  color: black;
-}
-</style>
