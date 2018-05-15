@@ -148,16 +148,18 @@
 
 @include('HtmlWraps.errors')
 
-@show
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" language="javascript" >
 
 <style>
 body{
   background-color: #FBFBFB;
 }
 
-
 h2{
 	  font-family: 'Josefin Sans', serif;
 		text-shadow: 2px 1px 2px black;"
 }
 </style>
+@show

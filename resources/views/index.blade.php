@@ -55,9 +55,9 @@
 			</div>
 			<!-- Fim do Bloco sobre -->
 					
-					<!-- Bloco Baixe o App --> -->
+					<!-- Bloco Baixe o App -->
 						 @include('HtmlWraps.baixeoapp')
-					<!-- Fim do Bloco Baixe o App
+					<!-- Fim do Bloco Baixe o App -->
 
 					<!-- Trabalhe conosco  -->
 						<div  id="trabalheconosco">

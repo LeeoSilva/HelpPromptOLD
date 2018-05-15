@@ -8,12 +8,6 @@
     <br>
     <div class="col s12 m12 l12">
     <br>
-<<<<<<< HEAD
-=======
-
-        {{--  <button onclick="location.href='/work'" class="btn right blue">QUERO SER COLABORADOR</button>  --}}
-
->>>>>>> 7dee92128ba54213db456518a8930a9fc1be29fb
     {{ Form::button('QUERO SER COLABORADOR', array('onclick' => 'location.href="/work"', 'class' => 'btn right blue')) }}
 	</div>
 </div>

@@ -7,7 +7,7 @@
 		<div class="row"><h2 style="text-shadow: 3px 3px  4px black; padding: 10% 0% 0% 0%;">FALE CONOSCO</h2></div>
 			<div class="divider"></div>
 			<br>
-				<form class="col s12 m12 l12" action="enviar.php">
+				<form class="col s12 m12 l12">
 					{!! Form::open(['url' => 'FaleConosco', 'method' => 'post', 'autocomplete' => 'off']); !!}
 						<div class="row">
 							<div class="input-field col s12 l6 m6">
