@@ -56,7 +56,7 @@
 			<!-- Fim do Bloco sobre -->
 					
 					<!-- Bloco Baixe o App -->
-						 @include('HtmlWraps.baixeoapp')
+						 <!-- @include('HtmlWraps.baixeoapp') -->
 					<!-- Fim do Bloco Baixe o App -->
 
 					<!-- Trabalhe conosco  -->

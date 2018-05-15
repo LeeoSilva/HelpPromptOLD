@@ -34,7 +34,7 @@
                     <li><a href="#faleconosco">Fale Conosco</a></li>
                 </ul>
 
-                <!--Web-->
+            <!--Web-->
                 <ul class="right hide-on-med-and-down" id="menu-mobile">
                     <li><a href="/" >Home</a></li>
                     <li><a href="#sobre">Sobre</a></li>
@@ -57,6 +57,5 @@
             //     $(".navbar-nav li a").click(function(event) { 
             //         $(".navbar-collapse").collapse('hide'); }); });
 		</script>
-
 </div>
 @show
