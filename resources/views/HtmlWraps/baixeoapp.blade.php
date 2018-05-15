@@ -7,7 +7,7 @@
 		<div class="row">
 			<div class="col s12 m4 l4 left">
 				<div class="icon-block">
-					<img src="Logo/logobrancasemfundo.png" class="responsive-img" style="text-align: left;">
+					<img src="Logo/invertidasemfundo.png" class="responsive-img" style="text-align: left;">
 				</div>
 			</div>
 				<div class="col s12 m8 l8">

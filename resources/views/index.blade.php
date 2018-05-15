@@ -30,7 +30,7 @@
 					<br><br>
 				</div>
 			</div>
-			<div class="parallax"><img src="fundo.jpg" alt=""></div>
+			<div class="parallax"><img src="fundo.jpg"></div>
  		</div>
 		<!-- Fim do Início -->
 
@@ -39,7 +39,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col s12 m12 l12">
-						<h2 class="black-text" style="padding: 20% 0% 0% 0%;">SOBRE</h2></div>
+						<h2 class="black-text" style="padding: 10% 0% 0% 0%;">SOBRE</h2></div>
 					</div>
 				<div class="row">
 					<div class="col s12 m4 l4 left">
@@ -54,12 +54,10 @@
 				</div>
 			</div>
 			<!-- Fim do Bloco sobre -->
-					<br>
-					<br>
-
-					<!-- Bloco Baixe o App -->
-						<!--  @include('HtmlWraps.baixeoapp') -->
-					<!-- Fim do Bloco Baixe o App -->
+					
+					<!-- Bloco Baixe o App --> -->
+						 @include('HtmlWraps.baixeoapp')
+					<!-- Fim do Bloco Baixe o App
 
 					<!-- Trabalhe conosco  -->
 						<div  id="trabalheconosco">

@@ -8,6 +8,6 @@
     <br>
     <div class="col s12 m12 l12">
     <br>
-    {{ Form::button('QUERO SER COLABORADOR', array('url' => 'http://127.0.0.1:8000/work', 'class' => 'btn right blue')) }}
+    {{ Form::button('QUERO SER COLABORADOR', array('onclick' => 'location.href="/work"', 'class' => 'btn right blue')) }}
 	</div>
 </div>
