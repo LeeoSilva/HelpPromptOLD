@@ -67,6 +67,7 @@ Seu repositório deve estar atualizado a esse ponto.
 + Arrumar faleconosco (banco);
 + Arrumar imagem parallax (Leo);
 + Enviar página work (banco);
-+ Arrumar banco;
+* Arrumar banco;
 + Button (aparece no parallax quando atualiza);
-+ Excluir SMS Gateway;
+* Excluir SMS Gateway;
++ Excliur arquivos obsoletos;
