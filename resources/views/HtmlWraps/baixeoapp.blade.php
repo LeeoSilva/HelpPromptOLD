@@ -11,15 +11,19 @@
 				</div>
 			</div>
 				<div class="col s12 m8 l8">
-					<h4 class="light flow-text black-text" style="line-height: 150%; text-align: center;">HelpPrompt está disponível para Android e IOS.</h4>
-					<h2 class="light flow-text black-text" style="line-height: 150%; text-align: center;">BAIXE O SEU APP AGORA!</h2>
-
-					<div class="col s12 m6 l6">
-						<a href="google.com"><img src="google.png" class="responsive-img" aling="center" style="height: 70px; width: 220px;"></a>
+					<div class="row">
+						<h4 class="light flow-text black-text" style="line-height: 150%; text-align: center;">HelpPrompt está disponível para Android e IOS.</h4>
+						<h2 class="light flow-text black-text" style="line-height: 150%; text-align: center;">BAIXE O SEU APP AGORA!</h2>
 					</div>
 
-					<div class="col s12 m6 l6">
-						<a href="google.com"><img src="apple.png" class="responsive-img" align="center" style="height: 70px; width: 220px;"></a>
+					<div class="row">
+						<div class="col s12 m6 l6">
+							<a href="google.com" target="_blank"><img src="google.png" class="responsive-img" style="height: 10%; width: 70%;"></a>
+						</div>
+					
+						<div class="col s12 m6 l6">
+							<a href="google.com" target="_blank"><img src="apple.png" class="responsive-img" style="height: 10%; width: 70%;"></a>
+						</div>
 					</div>
 				</div>
 			</div>

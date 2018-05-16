@@ -1,4 +1,5 @@
 @section('header')
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <style type="text/css" media="screen">
     .logo{
     height: 100px;
@@ -30,7 +31,7 @@
                     <li><a href="/">Home</a></li>
                 </ul>
 
-                <!--Web-->
+            <!--Web-->
                 <ul class="right hide-on-med-and-down" id="menu-mobile">
                     <li><a href="/">Home</a></li>
                 </ul>
@@ -39,4 +40,3 @@
       </nav>
 </div>
 @show
-
