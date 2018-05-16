@@ -8,7 +8,7 @@
 			<div class="divider"></div>
 			<br>
 				<form class="col s12 m12 l12">
-					{!! Form::open(['url' => 'FaleConosco', 'method' => 'post', 'autocomplete' => 'off']); !!}
+					{!! Form::open(['url' => '/FaleConosco', 'method' => 'post', 'autocomplete' => 'off']); !!}
 						<div class="row">
 							<div class="input-field col s12 l6 m6">
 								<i class="material-icons prefix">account_circle</i>

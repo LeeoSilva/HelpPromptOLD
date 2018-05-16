@@ -24,6 +24,9 @@ Route::get('work', function () {
   return view('Formularios.workcomplementar');
 });
 
+Route::post('FaleConosco', 'UserMessage@store');
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
