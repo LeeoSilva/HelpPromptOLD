@@ -1,16 +1,7 @@
 @section('principal')
-<html>
-	<head>
-		<meta charset="utf-8">
-		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Help Prompt</title>
-		<link rel="stylesheet" href="css/materialize.css">
-		<link rel=icon href=./Logo/logobrancasemfundo.png>
-	</head>
-	<body>
+
+@include('HtmlWraps.comeco')
+
 
 		<!-- Cabeçalho -->
 		<div>
@@ -106,8 +97,33 @@
 				});
 				// Final da navbar
 
+				//Efeitos de animação
+				var $animation_elements = $('.slidein');
+				var $window = $(window);
+
+				$window.on('scroll resize', check_if_in_view);
+
+				function check_if_in_view() {
+					  var window_height = $window.height();
+					  var window_top_position = $window.scrollTop();
+					  var window_bottom_position = (window_top_position + window_height);
+
+					  $.each($animation_elements, function() {
+					    var $element = $(this);
+					    var element_height = $element.outerHeight();
+					    var element_top_position = $element.offset().top;
+					    var element_bottom_position = (element_top_position + element_height);
+
+					    //check to see if this current container is within viewport
+					    if ((element_bottom_position >= window_top_position) &&
+					        (element_top_position <= window_bottom_position)) {
+					      $element.addClass('in-view');
+					    } else {
+					      $element.removeClass('in-view');
+					    }
+					  });
+}
 				</script>
-			<!-- <script type="text/javascript" src="javascript.js"></script> -->
 			<!-- Fim do JavaScript -->
 <style>
 
@@ -159,37 +175,6 @@ h2{
 	 }
 }
 </style>
-<script>
-
-
-				//Efeitos de animação
-				var $animation_elements = $('.slidein');
-				var $window = $(window);
-
-				$window.on('scroll resize', check_if_in_view);
-
-				function check_if_in_view() {
-					  var window_height = $window.height();
-					  var window_top_position = $window.scrollTop();
-					  var window_bottom_position = (window_top_position + window_height);
-
-					  $.each($animation_elements, function() {
-					    var $element = $(this);
-					    var element_height = $element.outerHeight();
-					    var element_top_position = $element.offset().top;
-					    var element_bottom_position = (element_top_position + element_height);
-
-					    //check to see if this current container is within viewport
-					    if ((element_bottom_position >= window_top_position) &&
-					        (element_top_position <= window_bottom_position)) {
-					      $element.addClass('in-view');
-					    } else {
-					      $element.removeClass('in-view');
-					    }
-					  });
-}
-
-</script>
 		</body>
 	</html>
 @show
