@@ -62,8 +62,8 @@ Seu repositório deve estar atualizado a esse ponto.
 ## Coisas a arrumar
 #### Página Index
 + Cabeçalho mobile;
-+ Página erro 404;
-+ Página erro encontrado;
+* Página erro 404;
+* Página erro encontrado;
 + Arrumar faleconosco (banco);
 + Arrumar imagem parallax (Leo);
 + Enviar página work (banco);
@@ -71,4 +71,4 @@ Seu repositório deve estar atualizado a esse ponto.
 + Button (aparece no parallax quando atualiza);
 * Excluir SMS Gateway;
 + Excliur arquivos obsoletos;
-+ Criar nova página para começo do cabeçalho;
+* Criar nova página para começo do cabeçalho;
