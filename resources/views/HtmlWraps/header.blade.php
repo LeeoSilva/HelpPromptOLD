@@ -35,7 +35,7 @@
                 </ul>
 
             <!--Web-->
-                <ul class="right hide-on-med-and-down" id="menu-mobile">
+                <ul class="right hide-on-med-and-down">
                     <li><a href="/" >Home</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#trabalheconosco">Trabalhe conosco</a></li>
@@ -53,9 +53,9 @@
 				}, 500);
 				return false;
 			});
-            // $(document).ready(function () { 
-            //     $(".navbar-nav li a").click(function(event) { 
-            //         $(".navbar-collapse").collapse('hide'); }); });
+            //  $(document).ready(function () { 
+            //      $(".navbar-nav li a").click(function(event) { 
+            //          $(".navbar-collapse").collapse('hide'); }); });
 		</script>
 </div>
 @show

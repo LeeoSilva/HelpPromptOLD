@@ -26,6 +26,9 @@ Route::get('work', function () {
 
 Route::post('FaleConosco', 'UserMessage@store');
 
+Route::get('error', function () {
+  return view('errors.error404');
+});
 
 Auth::routes();
 

@@ -71,3 +71,4 @@ Seu repositório deve estar atualizado a esse ponto.
 + Button (aparece no parallax quando atualiza);
 * Excluir SMS Gateway;
 + Excliur arquivos obsoletos;
++ Criar nova página para começo do cabeçalho;
