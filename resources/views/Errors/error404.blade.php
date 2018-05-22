@@ -8,7 +8,7 @@
 	<div class="section no-pad-bot">
 		<div class="container">
 			<br><br>
-				<h1 id="titulo" class="header col s12 center" style="padding: 10% 0% 0% 0%;text-shadow: 5px 5px 5px black;font-size: 600%;color:white;">ERROR 404</h1>
+				<h1 id="titulo" class="header col s12 center" style="padding: 10% 0% 0% 0%;text-shadow: 5px 5px 5px black;font-size: 600%;color:white;">PÁGINA NÃO ENCONTRADA :(</h1>
 		</div>
 	</div>
     <div class="parallax"><img src="error404.jpg"></div>
