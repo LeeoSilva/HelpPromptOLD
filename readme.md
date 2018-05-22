@@ -59,16 +59,18 @@ Seu repositório deve estar atualizado a esse ponto.
 `git push -u origin master`
 
 
-## Coisas a arrumar
+## Lista de afazeres:
 #### Página Index
 + Cabeçalho mobile;
-* Página erro 404;
-* Página erro encontrado;
 + Arrumar faleconosco (banco);
-+ Arrumar imagem parallax (Leo);
++ Arrumar imagem parallax;
 + Enviar página work (banco);
-* Arrumar banco;
 + Button (aparece no parallax quando atualiza);
-* Excluir SMS Gateway;
-+ Excliur arquivos obsoletos;
-* Criar nova página para começo do cabeçalho;
+
+## Lista de afazeres completos:
+* Página erro 404 (feito por Lorena);
+* Página erro encontrado (feito por Lorena);
+* Arrumar banco (feito por Leeo);
+* Criar nova página para começo do cabeçalho (feito por Leeo);
+* Excluir SMS Gateway (feito por Leeo);
+* Excluir arquivos obsoletos (feito por Leeo);
