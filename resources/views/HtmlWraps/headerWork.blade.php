@@ -18,12 +18,11 @@
     }
 </style>
 
-
 <div class="navbar-fixed" role="navigation">
       <nav class="cor">
         <div class="container">
             <div class="nav-wrapper" class="navbar-header">
-            <a class="brand-logo"><img src="Logo/invertidasemfundo.png" class="logo"/></a>
+            <a class="brand-logo" href="/" ><img src="Logo/invertidasemfundo.png" class="logo"/></a>
             <a href="" data-activates="menu-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 
             <!-- mobile -->
@@ -32,7 +31,7 @@
                 </ul>
 
             <!--Web-->
-                <ul class="right hide-on-med-and-down" id="menu-mobile">
+                <ul class="right hide-on-med-and-down">
                     <li><a href="/">Home</a></li>
                 </ul>
             </div>
