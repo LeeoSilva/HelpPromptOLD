@@ -69,6 +69,7 @@ Seu repositório deve estar atualizado a esse ponto.
 + Alinhar a página work em todos os monitores;
 + Adicionar tipo de serviço na página work;
 + Adicionar país da empresa na página work;
++ Adicionar máscara de telefone nas 2 páginas que contem um campo de telefone;
 
 ## Lista de afazeres completos:
 * Button (aparece no parallax quando atualiza) (Feita por Lorena);
