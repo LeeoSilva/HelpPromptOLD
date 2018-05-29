@@ -65,9 +65,11 @@ Seu repositório deve estar atualizado a esse ponto.
 + Arrumar faleconosco (banco);
 + Arrumar imagem parallax;
 + Enviar página work (banco);
-+ Button (aparece no parallax quando atualiza);
++ Site inicia no fale conosco;
++ Alinhar a página work em todos os monitores;
 
 ## Lista de afazeres completos:
+* Button (aparece no parallax quando atualiza) (Feita por Lorena);
 * Página erro 404 (feito por Lorena);
 * Página erro encontrado (feito por Lorena);
 * Arrumar banco (feito por Leeo);
