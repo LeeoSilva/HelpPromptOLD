@@ -67,6 +67,7 @@ Seu repositório deve estar atualizado a esse ponto.
 + Enviar página work (banco);
 + Site inicia no fale conosco;
 + Alinhar a página work em todos os monitores;
++ Adicionar tipo de serviço na página work;
 
 ## Lista de afazeres completos:
 * Button (aparece no parallax quando atualiza) (Feita por Lorena);
