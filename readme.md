@@ -70,7 +70,6 @@ Seu repositório deve estar atualizado a esse ponto.
 + Adicionar tipo de serviço na página work;
 + Adicionar país da empresa na página work;
 + Adicionar máscara de telefone nas 2 páginas que contem um campo de telefone;
-+ Adicionar CSRF protection em todos os formulários;
 
 ## Lista de afazeres completos:
 * Button (aparece no parallax quando atualiza) (Feita por Lorena);
@@ -80,3 +79,4 @@ Seu repositório deve estar atualizado a esse ponto.
 * Criar nova página para começo do cabeçalho (feito por Leeo);
 * Excluir SMS Gateway (feito por Leeo);
 * Excluir arquivos obsoletos (feito por Leeo);
+* Adicionar CSRF protection em todos os formulários;
