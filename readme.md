@@ -60,15 +60,17 @@ Seu repositório deve estar atualizado a esse ponto.
 
 
 ## Lista de afazeres:
-#### Página Index
+## Tarefas urgentes:
++ Arrumar comunicação com o banco do formulário faleconosco;
++ Arrumar comunicação com o banco do formulário work;
++ Adicionar país da empresa na página work;
++ Adicionar tipo de serviço na página work;
+
+## Extras
 + Cabeçalho mobile;
-+ Arrumar faleconosco (banco);
 + Arrumar imagem parallax;
-+ Enviar página work (banco);
 + Site inicia no fale conosco;
 + Alinhar a página work em todos os monitores;
-+ Adicionar tipo de serviço na página work;
-+ Adicionar país da empresa na página work;
 + Adicionar máscara de telefone nas 2 páginas que contem um campo de telefone;
 
 ## Lista de afazeres completos:
