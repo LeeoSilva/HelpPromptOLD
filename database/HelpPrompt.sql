@@ -1,3 +1,0 @@
-DROP DATABASE IF EXISTS HelpPrompt;
-CREATE DATABASE HelpPrompt;
-
